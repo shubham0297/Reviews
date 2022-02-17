@@ -1,0 +1,140 @@
+Screenshots for each table after extracting 6 Yelp files into staging schema are provided  :white_check_mark:  The individual row count is also correct :
+```
+
+Source       |    Row Count
+Business     |    160.6K  ✅
+Users        |    2.2M  ✅
+Check-In     |    140K  ✅
+COVID        |    209K  ✅
+Tips         |    1.2M  ✅
+Review       |    8.6M  ✅
+
+```
+
+****************************************************************************************************************************************************
+Screenshot of `Temperature` and `Precipitation` table after extracting to staging schema has been provided :white_check_mark:
+
+```
+Source          |    Row Count
+Temperature     |    32.1K  ✅
+Precipitation   |    32.9 K  ✅
+```
+
+****************************************************************************************************************************************************
+
+The diagram shows the movement of data from Staging to ODS to DWH to Reporting :white_check_mark:
+
+## Whats done correctly :heavy_check_mark:
+The diagram showing 8 files pointing to the staging database to ODS to DWH is included :white_check_mark:. 
+
+## What requires change :x:
+**After the dimensional modelling in DWH, it should point to the Reporting stage for reports. For examplel :point_down:**
+![Architecture_diagram.jpg](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1621262190/Architecture_diagram.jpg)
+
+****************************************************************************************************************************************************
+SQL queries to transform staging to ODS have been provided ::
+
+**Tip: 💡  ** 
+You could find more about the SQL queries [here](https://docs.snowflake.com/en/sql-reference-commands.html)
+
+****************************************************************************************************************************************************
+
+Nice work  providing the queries that use JSON functions to transform staging data from a single JSON structure into multiple columns for ODS. :white_check_mark:
+
+**Tip: 💡  ** 
+To learn more about SQL functions , click [here](https://docs.snowflake.com/en/sql-reference-functions.html)
+
+****************************************************************************************************************************************************
+
+Great Job !! Size of all the 8 tables has been captured correctly :white_check_mark:
+
+![Screenshot from 2021-05-17 20-24-36.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1621263284/Screenshot_from_2021-05-17_20-24-36.png)
+
+
+
+**For this specification, you need to provide : **
+* ** A table (can be drawn in MS-Word or Excel) with 3 column namely (Raw files, Staging and ODS)**
+* **Each column should record the size of the data in the respective format.**
+* **The table should have 8 rows , one corresponding for each of the  dataset.**
+
+For eg. something like this 
+
+```
+Raw Files                         |    Staging                       |      ODS
+yelp_Business (124MB)(Json)       |  Business (11.8MB)(gz)           |     14.4MB
+yelp_reviews(6.9GB)(Json)         |  Reviews(2.5GB) (gz)             |     2.5GB
+```
+
+****************************************************************************************************************************************************
+Great! ER diagram contains 8 tables, cross foot notations are perfect and it's good to see that you have considered Object datatype for Attributes and Hours column in the Business table in the ODS schema. ✅
+
+**ER Diagram has been included for all the 8 tables. Well done ! :white_check_mark:
+****************************************************************************************************************************************************
+
+SQL queries integrating the dataset is provided :white_check_mark:
+
+****************************************************************************************************************************************************
+The diagram of `star schema` with `dimensions` and `fact` tables has been represented correctly.  :white_check_mark:
+
+
+* **You need to provide a diagram of Star Schema with dimensions and fact tables**.
+* **Star schema should contain one fact table with several independent relationships.**.
+
+**Tip: 💡  ** [Star Schema: Still Relevant Almost 30 years Later?](https://iterationinsights.com/article/star-schema-still-relevant-almost-30-years-later-2/)
+****************************************************************************************************************************************************
+
+* SQL queries  to move the data from ODS to DWH have been provided. :white_check_mark:
+* All the queries are running without the errors :white_check_mark:
+
+****************************************************************************************************************************************************
+
+
+The SQL queries that report business name, temperature, precipitation, and ratings have been provided within the submission. :white_check_mark:
+
+**You need to provide SQL queries that report business name, temperature, precipitation, and ratings.**
+**Tip: 💡 ** This [documentation](https://docs.snowflake.com/en/sql-reference-commands.html) will help you to write SQL queries.
+****************************************************************************************************************************************************
+
+## Hi There !
+You did a great job considering it was your first attempt. I like the fact that you have correctly moved the data from **Staging** to **ODS** to **Data Warehouse**. Most of the people make mistakes while transferring the data from Staging to ODS but you have done it correctly :clap:  You are  close to the appropriate project,however you need to correct some small points before you're all set to go. 
+
+* **Provide a diagram showing the data flow from raw files to staging to ODS to DWH to Reporting**.
+* ** Provide a table showing the size of data in raw, staging and ODS schema**.
+* **Provide SQL query to show how data is integrated**.
+* **Provide a diagram of star schema with fact and dimension tables**.
+* **Provide SQL queries to report the business name, temperature, precipitation and ratings**.
+
+
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+***
+
+**Useful Resources : ** I like you to spend some time going thorough the following posts
+* [**How to set  a pipeline in Snowflake**]( https://calogica.com/sql/snowflake/2019/04/04/snowpipes.html)
+* [**Snowflake vs. Microsoft Azure**](https://dynamicconsultantsgroup.com/blogs/the-new-kid-on-the-block-snowflake-vs-microsoft-azure/)
+
+*** 
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+### Keep learning & stay Udacious
+ :udacious:
+
+
+***********************************************************************************************************************************************
+
+## Congratulations !
+You did a great job.Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project. Few thing I liked about your project:
+* **Data was moved correctly while moving data from Staging to ODS to Data Warehouse. :clap:**
+* **Data architecture diagram, ER diagrams and Star Schema are as per the expectations and the submitted Snow-SQL code is running without errors.** :clap:
+
+Keep it Up !! Wishing you Best of Luck for journey ahead :)
+We look forward to receiving your future project submissions soon . 
+
+***
+### Useful Resources :
+* [**Best practices of Enterprise Data Architecture**]( https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-build-a-data-architecture-to-drive-innovation-today-and-tomorrow)
+* [**Why Data Warehouse Projects Fail**](https://www.timmitchell.net/post/2017/01/10/why-data-warehouse-projects-fail/)
+***
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+### Keep learning & stay Udacious
+ :udacious:

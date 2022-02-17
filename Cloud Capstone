@@ -1,0 +1,234 @@
+### Not applicable.Project has been done using Option 2.
+*****************************************************************************************************************************************
+
+User is able to :
+* Create an item :white_check_mark:
+* Delete an Item :white_check_mark:
+
+
+**Suggestion :** Normal user behaviour will be like to click on the New Task button first without typing the Item name.
+When user does that, an alert message says TODO creation failed. Being a layman he might not get what he is missing.
+You should update the alert message in such a way so that he gets to know what needs to be done. For eg. display the message as Please enter an item name first
+
+* After creating a task with task name, the name is cleared in the code but in the UI it still shows the old name. So when the user clicks New Task button again, it creates a new task with blank string whereas the placeholder shows the task name of previous task. So once a task is created, you need to clear the input text box also. 
+
+
+For this you could you **value** attribute for the **Input** tag and set it to ` this.state.newTodoName` , so that the placeholder has the updated value every time any change is made.
+
+*****************************************************************************************************************************************
+
+### User is able to upload a file :heavy_check_mark:
+
+*****************************************************************************************************************************************
+
+### Application shows items based on user accounts :heavy_check_mark:
+
+*****************************************************************************************************************************************
+
+### User Authentication is implemented :heavy_check_mark:
+
+*****************************************************************************************************************************************
+###  The business logic of the code has been correctly separated from the trivial data access code. :heavy_check_mark:
+
+Good job with separating the code of Lambda functions into multiple classes based on best practices 👏 It helps us to defend from vendor lock-in.
+
+*****************************************************************************************************************************************
+
+**You have used the newer async/await syntax rather than the older promise based syntax! :clap:**
+Here is a good read explaining why async/await is better than promise based syntax : [**Async/Await vs Promises**](https://dev.to/gafi/7-reasons-to-always-use-async-await-over-plain-promises-tutorial-4ej9#:~:text=Async%2Fawait%20makes%20it%20finally,it's%20happening%20inside%20a%20promise.)
+
+*****************************************************************************************************************************************
+
+### All the required resources have been defined in the serverless.yml file! :heavy_check_mark:
+
+
+*****************************************************************************************************************************************
+
+### The permissions have been defined on a per function basis rather than being defined globally. :heavy_check_mark:
+
+
+At the moment most permissions are defined individually for each function. However, as you can see in the screenshot below, there are two permissions that defined under the provider/iamRoleStatements clause. Please move all of them to relevant function to meet this rubric item.
+
+*****************************************************************************************************************************************
+
+Great job by enabling AWS X-Ray distributed tracing. :clap:
+
+*****************************************************************************************************************************************
+### Great work validating the incoming HTTP requests. :heavy_check_mark: 
+This ensures that the user can't create a photo without name :point_down:
+
+Please validate incoming HTTP requests either in Lambda handlers or using request validation in API Gateway. As you can see in the screenshot below, I can create unnamed product items right now
+
+
+*****************************************************************************************************************************************
+
+### The key schema incorporates the 1:M (1 to many) relationship between users and items  :heavy_check_mark:
+*****************************************************************************************************************************************
+
+
+
+`query()` method has been used to fetch the items efficiently instead of scan() :white_check_mark:
+Here is a simple read that compares **query** and **scan** method on some basic metrics :point_down:
+[**Understanding Query and Scan Operations**]( http://techtraits.com/cloud/nosql/2012/06/28/Amazon-DynamoDB-Understanding-Query-and-Scan-operations.html)
+
+*****************************************************************************************************************************************
+
+## Congratulations!
+This a complicated nanodegree, but in the end it teaches us one of the most valuable skills to have in the industry.
+You have really worked hard on this project and the project is the reflection of it. The hard work did pay off and you have passed with flying colors. :rainbow:
+
+Few things which I like about your project :
+* The **Architecture and the Codebase of the application is great** :clap:
+* It has a **decent and effective UI. ** Usually in order to do a lot people end up with badly structured UI. So, great work there. :clap:
+* Use of **inline comments** at important places which makes it easier for a third person to understand your code quickly. :clap:
+
+
+Hope this course was fun and learning was useful.
+Good luck with whatever comes next! :)
+We look forward to receiving your future project submissions soon .
+
+***
+**Resources : **
+* Here is a good read about [Things a Serverless Architect must know](https://aws.amazon.com/blogs/architecture/ten-things-serverless-architects-should-know/). I recommended you to give it a reading for future serverless projects.
+
+***
+**PS: ** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+
+*****************************************************************************************************************************************
+
+
+
+
+## Congratulations !
+This a complicated nanodegree, but in the end it is one of the most valuable skills to have in the industry.
+You have really worked hard on this project and the project is the reflection of it. The hard work did pay off and you have passed with flying colors. :rainbow:
+
+Few things which I like about your project :
+* It has a decent and effective UI. Usually in order to do a lot people end up with badly structured UI. So, great work there. :clap:
+* Use of **inline** comments at important places which makes it easier for a third person to understand your code quickly. :clap:
+
+**Suggestions : **
+* A little touch of color would really make the UI more impactful. For eg. adding different colors to the buttons.
+* You should try to use more **inline** comments wherever possible.It easier for a third person to understand your code quickly and also helps in case the code needs refactoring. You can check the following for the same :point_down:
+[Inline Code Comments](https://developer.joomla.org/coding-standards/inline-code-comments.html#:~:text=The%20goal%20of%20in%20line,a%20complex%20process%2C%20are%20encouraged.)
+* Here is a good read about [Things a Serverless Architect must know](https://aws.amazon.com/blogs/architecture/ten-things-serverless-architects-should-know/). I recommended you to give it a reading for future serverless projects.
+
+Good luck with whatever comes next! :)
+We look forward to receiving your future project submissions soon .
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+
+
+Here is a good read about [Things a Serverless Architect must know](https://aws.amazon.com/blogs/architecture/ten-things-serverless-architects-should-know/). I recommended you to give it a reading for future serverless projects.
+
+
+
+## Hey There !!
+So far so good. You have worked well with the Architecture and the Codebase of the application :clap:
+But still there are some points which needs to be addressed. You need to correct the issue mentioned in the project review in order to pass the specifications.
+
+Hope you make the required changes soon.
+We look forward to receiving your future project submissions soon . ✌
+
+
+** Have a Good Day and Stay Safe ✌ **
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+
+Here is a good read about [Things a Serverless Architect must know](https://aws.amazon.com/blogs/architecture/ten-things-serverless-architects-should-know/). I recommended you to give it a reading for future serverless projects.
+
+
+
+
+## Congratulations
+
+This a complicated nanodegree, but in the end it is one of the most valuable skills to have in the industry.
+**You have really worked hard on this project and the project is the reflection of it.** The hard work did pay off and you have passed with flying colors. :rainbow:
+The project clearly shows **a decent and effective UI.** Usually in order to do a lot people end up with badly structured UI. So, great work there.
+The **architecture and codebase of the application is great**. :clap:
+
+** Suggestion ** :
+* **README** file usually describes what kind of project it is, how it can be useful, how to install and use it.
+Try to update the README file which is **blank right now** It becomes easier for people other than project developers to understand the project and run it with ease 
+  * Do include proper steps to install and run the project so that even a layman can run the project with ease.
+  * Check out the template for README 👉   [README template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+* You should try to use more **inline** comments wherever possible.It easier for a third person to understand your code quickly and also helps in case the code needs refactoring. You can check the following for the same :point_down:
+[Inline Code Comments](https://developer.joomla.org/coding-standards/inline-code-comments.html#:~:text=The%20goal%20of%20in%20line,a%20complex%20process%2C%20are%20encouraged.)
+* Here is a good read about [Things a Serverless Architect must know](https://aws.amazon.com/blogs/architecture/ten-things-serverless-architects-should-know/). I recommended you to give it a reading for future serverless projects.
+
+
+**PS: ** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+Good luck with whatever comes next! :)
+We look forward to receiving your future project submissions soon .
+
+Have a Good Day and Stay Safe ✌
+
+### Keep learning and stay Udacious
+:udacious:
+
+
+
+## Congratulations !
+This a complicated nanodegree, but in the end it is one of the most valuable skills to have in the industry.
+You have really worked hard on this project and the project is the reflection of it. The hard work did pay off and you have passed with flying colors. :rainbow:
+
+Few things which I like about your project :
+* The **Architecture and the Codebase of the application is great** :clap:
+* It has a **decent and effective UI. ** Usually in order to do a lot people end up with badly structured UI. So, great work there. :clap:
+* Use of **inline** comments at important places which makes it easier for a third person to understand your code quickly. :clap:
+
+**Suggestions : **
+* Here is a good read about [Things a Serverless Architect must know](https://aws.amazon.com/blogs/architecture/ten-things-serverless-architects-should-know/). I recommended you to give it a reading for future serverless projects.
+
+
+**PS: ** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+Good luck with whatever comes next! :)
+We look forward to receiving your future project submissions soon .
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+
+
+
+
+
+Hi there!
+
+This was a good start point for this project 👍You did a great job with modeling product items using a DynamoDB 👏🏻
+Please make the below modifications to meet all rubric items
+
+1. Prevent creating no-name product items in your Serverless application by modifying the rules of HTTP request validation.
+2. Move all permissions to relevant functions.
+good luck!
+
+
+
+## Hi There !!
+Your project couldn't be reviewed as it gave the following error on running the client module. :point_down:
+
+![Screenshot from 2021-08-23 13-15-33.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1629704800/Screenshot_from_2021-08-23_13-15-33.png)
+
+**Please ensure that you send a fully working project or update the README instruction for successful build**
+
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+

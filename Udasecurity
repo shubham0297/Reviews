@@ -1,0 +1,247 @@
+Great work separating the project into appropriate modules. The project runs successfully :white_check_mark:
+
+
+Awesome work breaking the project into correct modules :clap: The project is running correctly:star:
+
+********************************************************************************************************************************************
+The functionality is working as expected. Well done :heavy_check_mark:
+
+* If alarm is armed and a sensor becomes activated, put the system into pending alarm status.:white_check_mark:
+* If alarm is armed and a sensor becomes activated and the system is already pending alarm, set the alarm status to alarm on.:white_check_mark:
+* If pending alarm and all sensors are inactive, return to no alarm state.:white_check_mark:
+* If alarm is active, change in sensor state should not affect the alarm state.:white_check_mark:
+* If a sensor is activated while already active and the system is in pending state, change it to alarm state.:white_check_mark:
+* If a sensor is deactivated while already inactive, make no changes to the alarm state.:white_check_mark:
+* If the camera image contains a cat while the system is armed-home, put the system into alarm status.:white_check_mark:
+* If the camera image does not contain a cat, change the status to no alarm as long as the sensors are not active.:white_check_mark:
+* If the system is disarmed, set the status to no alarm.:white_check_mark:
+* If the system is armed, reset all sensors to inactive.:white_check_mark:
+* If the system is armed-home while the camera shows a cat, set the alarm status to alarm.:white_check_mark:
+
+
+*********************************************************************************************************************************************
+You have fixed the `High` priority bugs in the project correctly:white_check_mark: 
+
+You have fixed the `High` priority bugs in the project correctly:clap: Great effort :thumbsup:
+
+
+
+** For this specification, you need to include the `spotbugs.html` in you project submission. As of now, I couldn't find the same in your project submission. Please make sure that you attach the `spotbugs.html` in your next submission**
+
+### NOTE
+Run `mvn site` to generate the report.
+
+*********************************************************************************************************************************************
+
+**This is optional and not implemented :white_check_mark:**
+
+
+*********************************************************************************************************************************************
+
+`Pom.xml` files are setup correctly:white_check_mark:
+
+Missing dependencies were added :white_check_mark:
+
+*********************************************************************************************************************************************
+`mvn compile` is running without any error :white_check_mark:
+
+
+`mvn compile` is running without any error :clap::fire:
+
+
+
+*********************************************************************************************************************************************
+
+executable_jar.png is present in the project:white_check_mark:
+
+
+##  executable_jar.png is missing
+
+**For this specification, you need to provide a screenshot named `executable_jar.png` which shows the application launch by running the jar. **  
+
+**Note 💡 ** : You can run the **`java -jar [yourjarname]`** command to run the jar file .
+
+
+### Sample Screenshot
+
+![jar.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1630224643/jar.png)
+*********************************************************************************************************************************************
+
+`mvn test` is running successfully  :white_check_mark:
+
+
+
+*********************************************************************************************************************************************
+
+Spotbugs was integrated correctly in the project  correctly:white_check_mark:
+
+* **Reporting tag and spotbugs plugin were correctly added in the pom file :white_check_mark:** 
+* **As mentioned previously, you need to include the `spotbugs.html` in your submission  in order to pass this specification ** :x:
+
+**Note 💡 ** : You can run the **`mvn site`** command to generate the same.
+
+** You need to include the `spotbugs.html` in you project submission. As of now, I couldn't find the same in your project submission**
+
+Run `mvn site` to generate the report.
+
+*********************************************************************************************************************************************
+Each module is set up correctly :white_check_mark:
+
+*********************************************************************************************************************************************
+* Each service has its own `module-info.java` :white_check_mark:
+* Service module **requires** the package **exported** by Image service :white_check_mark:
+* Image service doesn't **require** anything from Security service :white_check_mark:
+	
+*********************************************************************************************************************************************
+* Only `data` package has been opened to `com.google.gson`  :white_check_mark:
+* `requires` statements are correctly used  :white_check_mark:
+
+
+![Screenshot from 2021-06-09 08-25-28.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1623207335/Screenshot_from_2021-06-09_08-25-28.png)
+
+
+
+*********************************************************************************************************************************************
+
+
+`SecurityServiceTest` is created and test cases are running without fail :white_check_mark:
+
+
+
+*********************************************************************************************************************************************
+
+Tests cases adequately validate all the requirements listed in the project requirement :white_check_mark:
+
+
+
+*********************************************************************************************************************************************
+
+The coverage of the SecurityService file is completed :white_check_mark:
+
+*********************************************************************************************************************************************
+
+Naming convention is correctly followed as per the instructions mentioned in the classroom :white_check_mark:
+
+
+
+*********************************************************************************************************************************************
+
+At least one **@ParameterizedTest** and the ** @BeforeEach** annotation is used :white_check_mark:
+
+
+*********************************************************************************************************************************************
+* Security service is tested properly :white_check_mark:
+* **@Mock** is used for appropriate Services:white_check_mark:
+
+
+*********************************************************************************************************************************************
+This is optional and not implemented :raised_hands:
+
+
+*********************************************************************************************************************************************
+
+
+## Congratulations !
+This a complicated nanodegree, but in the end it is one of the most valuable skills to have in the industry.
+You have really worked hard on this project and the project is the reflection of it. The hard work did pay off and you have passed with flying colors. :rainbow:
+
+Few things which I like about your project :
+* **The code coverage was well above 90% and every case was successfully tested :clap:**
+* **The naming convention was according to lesson taught in the classroom** :clap:
+
+
+Hope this course was fun and learning was useful.
+ 
+Good luck with whatever comes next! :)
+We look forward to receiving your future project submissions soon .
+***
+**Resources: ** Here are some good posts about Java :
+* Here is a good read about [**Future of Java**](https://stackoverflow.blog/2020/07/30/java-at-25-features-that-made-an-impact-and-a-look-to-the-future/).
+* Some useful [**Tips and Tricks for Beginners**](https://www.javacodegeeks.com/2015/06/java-programming-tips-best-practices-beginners.html)
+***
+**PS: ** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+
+******************************************************************************************************************************
+
+## Hi There !!
+
+You have done a great job considering it was your first attempt. Most of the scenarios were successfully met.  **The application meets all the functional requirements. Few things that I liked about your project** :clap:. 
+
+* **Nice work fixing the functionalities, the app is working fine now :clap:**
+* **The test cases were written correctly, great work on that too :clap:**
+
+You are close to the appropriate project,however you need to correct a small point before you're all set to go. 
+
+* **You need to provide the generated `spotbugs.html` file in order to pass the project.**
+
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+
+***
+**Resources: ** Here are some good posts about Java :
+* Here is a good read about [**Future of Java**](https://stackoverflow.blog/2020/07/30/java-at-25-features-that-made-an-impact-and-a-look-to-the-future/).
+* Some useful [**Tips and Tricks for Beginners**](https://www.javacodegeeks.com/2015/06/java-programming-tips-best-practices-beginners.html)
+
+
+*** 
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+
+******************************************************************************************************************************
+
+## Hi There !!
+You're project couldn't be evaluated as it shows errors on running the project :point_down:
+
+
+
+![Screenshot from 2021-06-23 01-40-47.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1624392873/Screenshot_from_2021-06-23_01-40-47.png)
+
+Please make sure you upload a project that can be run successfully.
+
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+
+**Have a Good Day and Stay Safe** ✌
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+
+********************************************************************************************************************************************
+
+## Congratulations !
+This a complicated nanodegree, but in the end it is one of the most valuable skills to have in the industry.Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project.
+You have really worked hard on this project and the project is the reflection of it. The hard work did pay off and you have passed with flying colors. :rainbow:
+
+Few things which I like about your project :
+* **The code coverage was well above 90% and every case was successfully tested :clap:**
+* **The naming convention was according to lesson taught in the classroom** :clap:
+
+
+Hope this course was fun and learning was useful.
+ 
+Good luck with whatever comes next! :)
+We look forward to receiving your future project submissions soon .
+
+***
+**Resources: ** Here are some good posts about Java :
+* Here is a good read about [**Future of Java**](https://stackoverflow.blog/2020/07/30/java-at-25-features-that-made-an-impact-and-a-look-to-the-future/).
+* Some useful [**Tips and Tricks for Beginners**](https://www.javacodegeeks.com/2015/06/java-programming-tips-best-practices-beginners.html)
+
+***
+**PS: ** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+

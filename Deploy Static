@@ -1,0 +1,264 @@
+**S3 bucket is visible in the AWS Management console. :white_check_mark:**
+
+Here is the official document of [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) . It tells you everything you  need to know about  S3 starting from creating a bucket to security policies.
+
+
+Nice job! I see a S3 bucket specified in the AWS management console. :white_check_mark:
+
+
+
+**You need to include screenshots such that S3 bucket is visible in  the AWS Management console. For eg. :point_down:**
+
+![S3bucket.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626368090/S3bucket.png)
+
+
+Here is the official document of [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) . It tells you everything you  need to know about  S3 starting from creating a bucket to security policies.
+
+
+**************************************************************************************************************************************************
+
+
+Screenshot showing all website files uploaded to the S3 bucket :white_check_mark:
+
+The S3 bucket includes :point_down:
+* **index.html** :white_check_mark:
+* **CSS folder** :white_check_mark:
+* **img folder** :white_check_mark:
+* **vendor folder** :white_check_mark:
+
+You need to include screenshot showing the following files uploaded to the bucket :point_down:
+* **index.html** 
+* **CSS folder** 
+* **img folder** 
+* **vendor folder** 
+
+For eg.
+![S3Files.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626368197/S3Files.png)
+**************************************************************************************************************************************************
+**S3 bucket is configured to support static website hosting. :white_check_mark:**
+
+
+No screenshot is provided showing the configuration to support static website hosting. :x:
+Kindly provided the screenshot similar to the one mentioned below,
+![Screen2022-02-02_13-0913-09-29.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1643787674/Screen2022-02-02_13-0913-09-29.png)
+
+![Staitic.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1560171435/Staitic.PNG)
+
+**************************************************************************************************************************************************
+
+Public accessibility of content of S3 bucket. This allows to access the content of your bucket by any request over the internet  :white_check_mark:
+You can read about **Policies and permissions in IAM**  [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)  
+
+
+
+**You need to include the screenshot for IAM policy for your bucket like this :point_down:**
+![Screen2022-02-02_13-0913-09-29.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1643787735/Screen2022-02-02_13-0913-09-29.png)
+
+![4. IAM_Policy.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1560170753/4._IAM_Policy.PNG)
+
+
+
+**************************************************************************************************************************************************
+
+**CloudFront has been enabled to retrieve and distribute website files. :white_check_mark:**
+
+
+**As of now you have shared different screenshot for CloudFront :point_down:**
+
+
+### **You need to upload the screenshot for CloudFront distribution settings saying `Enabled` under the `State` column . For example :point_down:**
+![CloudFrontDist.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626356418/CloudFrontDist.png)
+**************************************************************************************************************************************************
+Website is accessible publicly through all the 3 endpoints. :white_check_mark:
+
+## CloudFront domain name url
+
+## Website endpoint url
+
+
+## S3-Object url
+
+
+## 1. **You have provided the CloudFront domain name and the website is accessible :heavy_check_mark:**
+
+
+## 2. You also need to also provide the **S3 website-endpoint URL** for the website. :x:
+**It should be something like : **
+### `http://{name}.s3-website.{region}.amazonaws.com/`
+
+
+I have included some resources that might help you troubleshoot :
+* [CloudFront to serve requests for S3 bucket](https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-https-requests-s3/)
+* [Resolving  "CloudFront wasn't able to connect to the origin"](https://aws.amazon.com/premiumsupport/knowledge-center/resolve-cloudfront-connection-error/#:~:text=HTTP%20502%20errors%20from%20CloudFront,aren't%20supported%20by%20CloudFront.&text=The%20custom%20origin%20isn't,settings%20of%20the%20CloudFront%20distribution.)
+
+
+You have provided the CloudFront domain name and the website is accessible :point_down:
+![Screenshot from 2021-07-14 02-50-38.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626211247/Screenshot_from_2021-07-14_02-50-38.png)
+
+## NOTE
+You need to also provide the **S3 website-endpoint URL** for the website.It should be something like :
+`http://{name}.s3-website.ap-northeast-2.amazonaws.com/`
+
+**Though you have attached the screenshot for website in the submission, you still need to provide the CloudFront domain name URL and the website-endpoint  URL in your README file.Please make sure you send these URL in your next submission.**
+
+
+You need to provide the S3 website-endpoint URL, this is required by the review rubric. The URL that you provided is not the correct one. Depending on your Region, your Amazon S3 website endpoint follows one of these two formats. ❌
+* s3-website dash (-) Region ‐ http://bucket-name.s3-website-Region.amazonaws.com
+* s3-website dot (.) Region ‐ http://bucket-name.s3-website.Region.amazonaws.com
+The website-endpoint URL should work without appending /index.html at the end
+
+You should a Cloudfront URL. In this [tutorial](https://aws.amazon.com/cloudfront/getting-started/S3/) you can learn how to make your website to use cloudfront. This makes that the website loads faster.❌
+
+
+**************************************************************************************************************************************************
+
+
+## Congratulations !
+You did a great job.Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project. You have nailed the project  passed with flying colors. :rainbow:
+Its good to see that **you have  provided screenshots for all the milestones and all the three endpoints through which the website could be accessed :clap:**
+
+Kudos on passing the first project .We look forward to receiving your future project submissions soon .
+
+Keep it Up !! Wishing you Best of Luck for journey ahead :)
+
+***
+**Suggestion**
+* It would be good if you update the README file by giving a small project description, so that a layman can quickly get a gist of what the project is all about. - [Sample Template for README file](https://github.com/othneildrew/Best-README-Template)
+***
+**Recommendation**
+* **Security is one of the crucial aspect of any application in an organization. The following video describes how you can [Securely access your Amazon S3 static website](http://youtube.com/watch?v=sf-JWDDw2O4)**
+***
+
+**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+
+******************************************************************************************************************************************
+## Hi There !!
+You have done a great job considering it was your first attempt.
+Its good to see that **you have provided the CloudFront and website-endpoint  urls and the website can be accessed successfully** :clap: 
+You are really close to the appropriate project and just need to make couple of small changes before you're all set to go :
+* **Provide a screenshot showing the Bucket Policy**
+* **Provide a screenshot for CloudFront which shows the `State` as `Enabled` **
+* **Provide the website-endpoint URL**
+
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+***
+**Suggestion**
+* It would be good if you update the README file by giving a small project description, so that a layman can quickly get a gist of what the project is all about. - [Sample Template for README file](https://github.com/othneildrew/Best-README-Template)
+***
+**Recommendation**
+* **Security is one of the crucial aspect of any application in an organization. The following video describes how you can [Securely access your Amazon S3 static website](http://youtube.com/watch?v=sf-JWDDw2O4)**
+***
+**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+********************************************************************************************************************************************
+## Congratulations !
+You have nailed the project in your first attempt and passed with flying colors. :rainbow:
+Its good to see that **you have customised the website a bit and provided all the three endpoints through which the website could be accessed :clap:**
+
+Kudos on passing the first project .We look forward to receiving your future project submissions soon .
+
+Keep it Up !! Wishing you Best of Luck for journey ahead :)
+
+***
+**Suggestion**
+* It would be good if you update the README file by giving a small project description, so that a layman can quickly get a gist of what the project is all about. - [Sample Template for README file](https://github.com/othneildrew/Best-README-Template)
+***
+**Recommendation**
+* **Security is one of the crucial aspect of any application in an organization. The following video describes how you can [Securely access your Amazon S3 static website](http://youtube.com/watch?v=sf-JWDDw2O4)**
+***
+
+**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+
+
+**************************************************************************************************************************************************
+
+
+
+
+## Congratulations !
+You have nailed the project in your first attempt and passed with flying colors. :rainbow:
+We look forward to receiving your future project submissions soon .
+
+Keep it Up !! Wishing you Best of Luck for journey ahead :)
+
+PS : Good to see a proper README file as well as project snapshots :clap: It would be good if you update the README file by giving a small project description, so that a layman can quickly get a gist of what the project is all about.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+
+**************************************************************************************************************************************************
+
+
+ Its good to see that **you have provided all the required screenshots and the website is accessible through all the three endpoints :clap:**
+
+**************************************************************************************************************************************************
+
+## Hi There !!
+You have done a great job considering it was your first attempt.I really like how you have combined all the screenshot into a pdf which saves a lot of time while reviewing the project :clap:. You are really close to the appropriate project and just need to make a small change (**include screenshot showing all the files in the S3 bucket**) before you are all set to go.
+
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+
+PS : Good to see a proper README file as well as project snapshots :clap: It would be good if you update the README file by giving a small project description, so that a layman can quickly get a gist of what the project is all about.
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+
+
+**README** file usually describes what kind of project it is, how it can be useful, how to install and use it.
+Try to update the README file by including some points such as Requirements,Installation, deployment etc. Check out the template for README 👉   https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
+It will become easier for people other than project developers to understand the project and run it with ease. 
+
+***************************************************************************************************************************
+## Congratulations !
+You have nailed the project in your first attempt and passed with flying colors. :rainbow:
+Its good to see that you have **provided the screenshot for every milestone and ensured that the site is application from all the different endpoints :clap:**
+
+Kudos on passing the first project .We look forward to receiving your future project submissions soon .
+
+Keep it Up !! Wishing you Best of Luck for journey ahead :)
+***
+** Suggestion **
+
+* It would be good if you update the README file by giving a small project description, so that a layman can quickly get a gist of what the project is all about. - [Sample Template for README file](https://github.com/othneildrew/Best-README-Template)
+***
+** Useful Resources:** 
+
+* **Security is one of the crucial aspect of any application in an organization. The following video describes how you can Securely access your Amazon S3 static website](https://www.youtube.com/watch?v=sf-JWDDw2O4)**
+***
+
+**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+Have a Good Day and Stay Safe ✌
+
+### Keep learning and stay Udacious
+:udacious:
+
+
+**Useful Resources**
+* **This following article explains CI/CD in detail.** - [Continuous Integration Continuous Deployment (CI/CD](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment) - 
+* **Here is the official documentation of AutoScaling groups ** - [AWS : AutoScaling:AutoScalingGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html)   
+***

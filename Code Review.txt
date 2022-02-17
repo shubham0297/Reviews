@@ -1,0 +1,393 @@
+I am a dedicated and empathetic person who loves to provide solution to someone whenever they are stuck. I been providing support as mentor for Udacity for over 3 years now, which gives me the right experience too. While responding to student queries I try to answer in such a way that the answer is accurate, clear and thorough so that the student feels a connect. 
+
+
+
+1. Lang :- 
+
+The `lang` attribute specifies the natural language of the content of a web page.
+Its always a best practice to use it. Good to see that you have used it. :thumbsup:
+
+
+The `lang` attribute specifies the natural language of the content of a web page.
+Its always a best practice to use it. Try to include it in your application before next submission :thumbsup:
+eg. :point_down:
+![Lang Attribute.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1528761527/Lang_Attribute.PNG)
+
+
+
+Again +1 for using the ** lang attribute **:+1:
+
+
+
+
+
+2.	Service Worker
+
+Nice work registering the service worker :+1:
+
+Great work....offline availability works smoothly. Everything is being cached properly ..:clap: 
+
+Service worker works like a charm. :clap: 
+Majority of the people face issue in service worker.Its good to see that you have done it neatly in your first attempt. :star2: 😃
+
+
+It great to see that you have got the **Service Worker ** working in your very first attempt where most of the people struggle.  Fantastic work. :clap: :clap:
+
+
+Great work caching all the required files. :thumbsup: 
+Offline availability works perfectly :clap:
+
+
+
+One of the best practices includes : **Comments**. 
+Though everything is inch-perfect here,you should always try to use inline comments in your codes.Even if not everywhere, try using it before a function definition ( like ** Installation of service worker **)
+**Why comments ?**
+* People other than project developer get an idea about what the code is doing. 
+* It also helps save time in case of debugging.
+
+
+One of the best practices includes : **Comments**. 
+I really appreciate that you have used the inline comments in your code. :clap:
+**Why comments ?**
+* People other than project developer get an idea about what the code is doing. 
+* It also helps save time in case of debugging.
+
+
+There is a problem with your fetch function. It doesn't clone the request and hence when we return to the visited page, it shows the error. 
+I recommend you the go through the following link and skip to the **Cache and return requests** part.  Check the second fetch function under that heading and try to understand how the function is working.
+Replace the CACHE_NAME with staticCacheName and hopefully the offline availability specification would be met. :point_down:
+* [**Service Worker**](https://developers.google.com/web/fundamentals/primers/service-workers/)
+
+
+
+There are few changes to be made following which the service worker will work perfectly.
+* **STEP -1 ** :  There is a problem with your fetch function. It doesn't clone the request and hence when we return to the visited page, it shows the error. 
+I recommend you the go through the following link and skip to the **Cache and return requests** part.  Check the second fetch function under that heading and try to understand how the function is working.
+Replace the CACHE_NAME with staticCacheName and follow step two. :point_down:
+ * [**Service Worker**](https://developers.google.com/web/fundamentals/primers/service-workers/)
+* **STEP-2** : There is a scope issue related to the registration of the service worker. Once you are done with step -1 , you will need to do following two things :
+ * Move the **sw.js** file to the root directory (where html files are present).
+ * After completing the above step, you will need to change the path in **main.js** file while registering the service worker. Change it for `'/js/sw.js'` to `'sw.js'`
+
+
+* After following **STEP-1** and **first part of STEP-2** (in code review for **sw.js**) , you will need to change the path from ` 'js/sw.js' ` to ` 'sw.js' `.
+* Once it is done, hopefully the Offline Availability specification would be met.	
+
+
+Service Worker  -   https://developers.google.com/web/fundamentals/codelabs/offline/
+
+
+
+
+
+
+3.	Alt Tag (Main.js)
+
+The alt attribute provides alternative information for an image if a user for some reason cannot view it. Great work associating `alt` attribute with every image tag.  :collision:
+
+Fantastic work including `alt` attribute. :sparkles:
+
++1 for adding alt tag for images on the main page :+1:
+
+You need to include the **alternate** text for images on the restaurant- detail page.
+For eg. :point_down:
+![Alt Text.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1528840657/Alt_Text.PNG)
+
+
+You need to include the **alternate** text for images on the main-page.
+For eg. :point_down:
+![Alt Text Main.js.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1528842702/Alt_Text_Main.js.PNG)
+
+
+
+
+You need to include the **alternate** text for images in restaurant-details page as you did for the main page. For that you'll have to add the `alt` attribute to the image.
+For eg. :point_down:
+
+![Alt Text.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1528840657/Alt_Text.PNG)
+
+
+Nice working including the alt tag for the images :star2: It would be good if the alternate text is little bit more descriptive say something like alt = 'Picture of ' + restaurant name,   so that user has a clear idea of what the image was.
+
+
+
+Nice working including the alt tag for the images but :
+* Your alt tag should be descriptive. If the image couldn't be loaded due to some reason then screen reader would read the alternate text. So it should be not be left as blank.
+* If say images are not loaded then user won't be able to get a clear idea of the image as currently the text is same for all the restaurants(empty)
+* Use something like alt = 'Picture of ' + restaurant name , so that user has a clear idea of what the image was.
+ 
+
+You should not using the alt tag here :
+* It will show the same alternate text for every image in restaurant-details page ( which is `ambience picture of restaurant`) .
+* Your alt tag should be descriptive. If the image couldn't be loaded due to some reason then screen reader would read the alternate text. Now if the text is same for all the restaurants, the user won't get a clear idea. 
+* Use the alt tag in **restaurant_info.js** file. Check the code review for it. Use something like alt = 'Picture of ' + restaurant.name , so that user has a clear idea of what the image was.
+
+
+4.	Aria-Label and Role
+
+You need to include the **aria-label** and **role** attribute for map element 
+For eg. :point_down:
+![Map-Label.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1528760180/Map-Label.PNG)
+
+
+Must be inside a <nav> tag and must have **aria-roles** property set.
+eg. :point_down:
+![bread.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1533305057/bread.PNG)
+
+
+Check out the following links to read more about **aria roles ** and   ** aria label attribute** :point down:
+1.  [**Aria-Roles**](http://www.webteacher.ws/2010/10/14/aria-roles-101/) 
+2.  [**Aria-Label**](https://www.w3.org/TR/WCAG20-TECHS/ARIA14.html)
+
+
+
+
+### Awesome Job !! :star:
+You have included both the **aria-label** as well as the **role attribute** for map element.
+Well Done !! :clap:
+
+
+Again +1 for including both the **aria-label** and the **role** attribute :star:
+
+
+
+
+### Perfect !!
+Great to see that you have included the breadcrumb element inside **nav tag**  and set both the **aria-label** and **role** attribute for the **Breadcrumb** element . Most of the people usually forget to add one of the two. Well Done !! :+1:
+
+
+Great to see that you have included both the **aria-label** and **role** attribute for the **Breadcrumb** elements. Most of the people usually forget to add one of the two. Well Done !! :+1:
+You should include the Breadcrumb inside the **<nav> ** so that is justifies the role = navigation . For eg. 👇
+![bread.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1533305057/bread.PNG)
+
+
+
+
+
++1 for including `aria-label` for breadcrumb. :thumbsup:
+
+
+Awesome work on writing appropriate role for element map :star:
+You are just left with including Aria Label.
+eg. <div id="map" aria-label="location" role="application"></div>
+You must check following link : https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute
+
+
+Great work on writing appropriate **role** for map element 
+It would be great if you also include **aria-label** attribute.
+eg. 👇
+![Map-Label.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1528760180/Map-Label.PNG)
+
+
+Great work on writing appropriate **aria-label ** for element map
+It would be great if you also include **role** attribute.
+eg. 👇
+![Map-Label.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1528760180/Map-Label.PNG)
+
+
+Nice work including the **Breadcrumb** inside a **<nav> tag** and setting the **aria-label** attribute for it.  :clap: 
+It would be perfect if you also use the **role attribute**. For eg. :point_down:
+![bread.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1533305057/bread.PNG)
+
+Nice work including the **aria-label** attribute for the **Breadcrumb** elements.  :clap:
+You should include the Breadcrumb inside the **<nav> **  and also use the **role attribute**. For eg. :point_down:
+![bread.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1533305057/bread.PNG)
+
+
+
+
+Nice work including the **role** attribute for the **Breadcrumb** elements.  :clap:
+You should include the Breadcrumb inside the **<nav> ** so that is justifies the role = navigation  and also use the **aria-label attribute**. For eg. :point_down:
+![bread.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1533305057/bread.PNG)
+
+
+5.	README
+
+README file is one of the crucial aspect of any project.It becomes easier for people other than project developers to understand the project and run it with ease.People often tend to skip the main points about  Installation and Deployment of project in the README.
+Great to see that you have included all the required points :clap: 
+
+
+
+This is the best README file ever. :star: Contains all the points about the project.
+People often tend to skip the main points about  Installation and Deployment of project in the README.
+Great to see that you have included all the required points :clap: 
+
+* **README** file usually describes what kind of project it is, how it can be useful, how to install and use it.
+Try to update the README file as there is little more to do in this project as compared to the Stage one project.
+It will become easier for people other than project developers to understand the project and run it with ease
+* Do include proper steps to install and run the project so that even a layman can run the project with ease
+
+**README** file usually describes what kind of project it is, how it can be useful, how to install and use it.
+Try to update the README file as there is little more to do in this project as compared to the Stage one project.
+
+
+**README** file usually describes what kind of project it is, how it can be useful, how to install and use it.
+Try to update the README file by including some points such as Requirements,Installation, deployment etc. Check out the template for README 👉   https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
+It will become easier for people other than project developers to understand the project and run it with ease. 
+
+
+Nice and short README file. :star:
+README file usually describes what kind of project it is, how it can be useful, how to install and use it.
+Try to update the README file by inclusing more points such as **Installation and Deployment**
+It will become easier for people other than project developers to understand the project and run it with ease. ✌
+
+
+Nice README file :thumbsup: :star2:
+**README** file usually describes what kind of project it is, how it can be useful, how to install and use it. It becomes easier for people other than project developers to understand the project and run it with ease. 
+
+
+
+6.	Semantics
+
+h1 is already used in Restaurant Reviews. So , use h2 here to make this webpage fully structured.
+Heading Order
+https://dequeuniversity.com/rules/axe/2.2/heading-order
+
+
+The restaurant's name has a semantic mistake because it has **<h1>** tag and the website's title (**Restaurant Reviews**) that has a higher semantic importance also has **<h1>** tag . Therefore, the restaurant's name needs to have an header tag that has lower importance like **<h2>** or **<h3>**.
+
+
+Nice work ..changing the header tag to h2 .
+It is semantically correct as Restaurant Reviews is in h1 tag...so restaurant-name should be in a header tag which has lower importance than h1.
+Great work :clap:
+
+
+Nice work ..changing the `header` tag to **h2** . Now semantically it is correct . :clap: 
+
+
+
+In fillReviewsHTML(res_info.js) :- (const title = h2)  
+
+
+Once you correct **restaurant-name** to <h2> in **`restaurant.html` **, you will also need to correct the **Reviews** heading  to <h3> or <h4> otherwise both  **restaurant-name** and ** Reviews** will have same `header tag (<h2>)`  , but **restaurant-name** has higher semantic importance. 
+Therefore, the title "Reviews" need to have an `header` tag that has lower importance like <h3> or <h4>.
+
+In short header tags should be in decreasing order in order to be semantically correct. For eg.
+* Restaurant Reviews (h1)
+* restaurant-name (h2)
+* Reviews (h3)
+
+
+c
+
+Nice work changing the header tag to **h3** which of lower importance that **h2** (used for restaurant name). It is semantically correct. Generally people forget to do that. Well done !! :clap:
+
+
+The title "Reviews" is semantically incorrect because it has **<h2>** tag and the `restaurant-name` that has a higher semantic importance has **<h2>** tag . Therefore, the title "Reviews" need to have a header tag that has lower importance like <h3> or <h4>.
+
+In short header tags should be in decreasing order in order to be semantically correct. For eg.
+* Restaurant Reviews (h1)
+* restaurant-name (h2)
+* reviews (h3)
+
+
+
+
+The title "Reviews" in restaurant.html have a semantic mistake because it has <h2> and the restaurant's title that has a higher semantic importance should be <h2>. Therefore, the title "Reviews" need to have an h tag that has lower importance like <h3> or <h4>.
+
+
+
+
+
+
+
+
+
+
+7.	CSS
+
+Good work working with breakpoints. :thumbsup:
+
+
+The breadcrumb element currently using a limited space. Due to this, on small screen devices , it splits into two lines , due to small width of the container. Use **relative** width instead.
+Change it to **max-width:100%**. In this way , it occupies the 100% width of the screen size available.
+
+## Current Behaviour 
+![1.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1528841062/1.png)
+
+## Expected Behaviour
+
+![2.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1528841075/2.png)
+
+
+
+You need to include **<meta> tag** in order to overcome the  small font size problem described in project review :point_down:
+
+![Meta Tag.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1538531624/Meta_Tag.PNG)
+
+
+
+
+
+
+
+Nice to see that you have included the **Comments** before each function begins. :+1:
+It gives an idea to people other than developer what the code is about and makes the debugging process easy(if required).  
+
+9.  Tab Index
+
+Good to see that you have use **tabindex** for maintaining the focus. :+1:
+
+
+* It always a best practice to use **Relative values** for properties like % or em rather than **Absolute Values** (hard coded values like px). 
+* Try using ** max-width:100% ** to utilize the blank spaces on either side of the restaurant list on main page as well as the restaurant detail page.
+
+   
+
+* Use **flex-direction : row** to use the blank space on either side of the restaurant list on the page. ( To display the list of restaurant horizontally instead of vertical)
+* On doing so, some of the restaurants will overshoot the parent container. For that you will need to use the **wrap** property ie. flex-wrap:wrap.
+
+* You should either remove this property which will cause parent class (filter-option) to adjust it's height according to the total height of it's child class.
+* Or you could set the value of height property which is greater than the combined height of it's child classes.
+
+
+******************************************************************************************************************
+Before reserving a room, check if the reservation exists in the list of reservations available. If it does, warn the user that no room is free for the chosen range and present them a list of available rooms.
+
+If there are no available rooms, display recommended rooms instead.
+
+
+
+
+Use `switch` statement instead of `if-else` blocks
+
+
+You should use this class to interact with the models. The application flow should be like
+`Main Menu -->  HotelResource/ Admin Resource ---->  Reservation Service/ Customer Service  ----> Models (Room/Customer/Reservation)`
+
+As of now, your application flow is 
+`Main Menu -->  HotelResource/ Admin Resource --->  Models (Room/Customer/Reservation)`
+
+
+Great job overriding  the `toString` method :clap:
+
+
+As of now the  Admin is able to add one room at a time. You can put all of your code inside a loop and keep adding the rooms to **`rooms`** list.
+Once the admin decides to exit you can pass this `rooms` list to the `Admin Resource` add method. 
+
+This way admin can add multiple rooms at once without going to the Admin menu again and again.
+
+**Customer email is correctly validated. Well done ! :clap:** 
+
+**Good job creating a singleton object :clap:**
+
+**The date check logic is correctly implemented for overlapping dates :clap:**
+
+If we have no available rooms between the given checkIn and checkOut dates,** we need to perform another search by adding 7 to the checkIn and checkOut date.** If we get some available rooms, we should display it with some custom message else inform the user that no rooms are available
+
+### TODO
+* After line 138 (Informing the user that no rooms are available for the entered checkIn and checkOut date) , make a search for recommended room.
+* Add 7 to both the entered dates. You can refer to this link for reference - [**How to add days to Date object**](https://beginnersbook.com/2017/10/java-add-days-to-date/)
+* You can create a new method or use the existing findRooms() method with the new checkIn and checkOut dates, to find the recommended rooms.
+
+
+**You are passing the original checkInDate and checkOutDate to the function.You need to  add 7 to both the dates before passing it to the findRecommendedRooms () method**.
+
+**You can refer to this link for reference - [How to add days to Date object](https://beginnersbook.com/2017/10/java-add-days-to-date/)**
+
+
+
+**As mentioned in the `HotelResouce` class, you could reuse the `findRooms` method instead of this one as the main motive of the function is to find available rooms between 2 given dates. Only difference between is that in Recommended room we need to add 7 to the given Check-In and Check-Out date, before passing it to the function.** 
+
+For comparing dates you could refer to any of these methods --> Comparing Dates (https://www.geeksforgeeks.org/compare-dates-in-java)
+I recommend using method 2 ie. .before() and .after() method.

@@ -1,0 +1,345 @@
+Application correctly returns :
+* 200 status code :white_check_mark:
+*  JSON response with the message: `“OK - healthy”`  on hitting the **/heathz** endpoint :white_check_mark:
+
+
+***
+## Suggestion
+So far, we have used a hardcoded message to report the application state e.g. `OK - healthy`. In a real case scenario, the health check endpoint is dynamic, reflecting if the application is capable of handling requests.
+
+You can try to extend the /healthz endpoint to **return a 500 HTTP ERROR - unhealthy error if the connection to the database fails or if the required posts table does not exist.** 
+
+![Dynamic Health Check.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1636276090/Dynamic_Health_Check.png)
+
+### Note 
+To validate your endpoint, try deleting the database.db file and check if the endpoint is returning a 500 error.
+
+****************************************************************************************************************************************************
+Application correctly returns :
+* 200 status code :white_check_mark:
+* **Amount of posts (post_count)** and **number of database  connections  (db_connection_count)** :white_check_mark:
+
+
+****************************************************************************************************************************************************
+
+
+Well done!  Logs have been correctly recorded :white_check_mark:
+
+
+## Whats done correctly :heavy_check_mark:
+Great work recording the following events to STDOUT & STDERR :
+* Accessing an article :white_check_mark:
+* Access "About Us" page :white_check_mark:
+* A new article is created  :white_check_mark:
+* 404 pages when a non-existing articles are accessed :white_check_mark:
+
+## What requires change 
+
+* **Logs have been captured at the DEBUG level. However, the specification requires us to record the logs to both `STDOUT & STDERR`. **
+* The STDOUT uses `sys.stdout` and the STDEER uses the `sys.stderr`. To get an idea about the same, you can take a look at the code given below :point_down:
+
+```
+# set logger to handle STDOUT and STDERR 
+ stdout_handler =  # stdout handler 
+ stderr_handler =  # stderr handler 
+ handlers = [stderr_handler, stdout_handler]
+# format output
+ format_output = # formating output here
+
+ logging.basicConfig(format=format_output, level=logging.DEBUG, handlers=handlers)
+
+```
+* When the application encounters an **ERROR**, the logs should reflect the same and show it as error. However, in the current application, when existing the **non-existing article**, the logs capture it as a successful event and is captured at DEBUG level instead of ERROR level :point_down:
+
+***
+**Useful Resources**
+
+* Here is a good blog about [**Introduction to Python Logging**](https://rmcomplexity.com/article/2020/12/01/introduction-to-python-logging.html)
+* [**Python Logging Guide – Best Practices**](https://coralogix.com/blog/python-logging-best-practices-tips/)
+
+
+
+
+## REQUIRES CHANGE
+
+As mentioned in the specification- **You need to add logs to the application by recording the following events to STDOUT & STDERR: ** 
+* Access an article
+* 404 pages when a non-existing articles are accessed
+* Access "About Us" page
+* A new article is created
+
+When recording the log, you also need to make sure that - 
+* **Python generic logs are recorded at DEBUG level**
+* **Each logline should have a timestamp**
+
+### NOTE
+**Once you make the required changes, make sure to update the `docker_commands` file by pasting the updated logs**
+
+***
+As of now,  I can see only one log - when accessing the metric :point_down:
+
+![2021-08-26_18-09.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1629981606/2021-08-26_18-09.png)
+
+***
+* Here is a good blog about [**Introduction to Python Logging**](https://rmcomplexity.com/article/2020/12/01/introduction-to-python-logging.html)
+* [**Python Logging Guide – Best Practices**](https://coralogix.com/blog/python-logging-best-practices-tips/)
+
+
+
+
+**The ERROR message is recorded on every event starting from beginning. As soon as we land on the home page or access any page, the logs record the ERROR which is not correct. This can be seen below :point_down:
+
+![Screenshot from 2021-07-06 15-02-50.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1625564052/Screenshot_from_2021-07-06_15-02-50.png)
+
+Please ensure that the ERROR message is recorded only in case of actual error. For eg. on Accessing a non-existent article id.
+
+****************************************************************************************************************************************************
+Dockerfile is present in the project directory :heavy_check_mark:
+* Base version is set to 2.7 :white_check_mark:
+* Application has been exported to port 3111 :white_check_mark:
+* Install packages defined in the requirements.txt file :white_check_mark:
+* Database is initialized with the pre-defined posts in the init_db.py file :white_check_mark:
+
+****************************************************************************************************************************************************
+
+
+### Docker image was successfully built using the docker commands :heavy_check_mark:
+
+
+****************************************************************************************************************************************************
+
+
+* The docker image was executed locally :white_check_mark:
+* `docker-run-local` screenshot was provided :white_check_mark: 
+* All the commands and logs are  placed  in `docker_command` file :white_check_mark: 
+
+
+
+****************************************************************************************************************************************************
+
+### 1. Screenshot for `ci-github-actions` is provided :heavy_check_mark:
+### 2. Screenshot for `ci-dockerhub` is provided :heavy_check_mark:
+
+
+**The Github build and push was successful. I could verify the same :point_down:**
+
+
+****************************************************************************************************************************************************
+### Screenshot for `kubectl get no` was provided :heavy_check_mark:
+
+****************************************************************************************************************************************************
+### 1. All the 3 manifests (namespace, deploy and service ) are correctly constructed :heavy_check_mark:
+###  2. Great job at ensuring that Kubernetes declarative manifests are applied using kubectl command and ensuring that the screenshot shows the expected output. :heavy_check_mark:
+
+***
+### Additional Resources
+* It is always advisable to run [**kube-manifest-lint**](https://pypi.org/project/kube-manifest-lint/) after you've created your manifests, to iron out any issues
+* You might find the article useful for further learning [**kubectl Cheat Sheet**](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+****************************************************************************************************************************************************
+
+### 1. Screenshot for `kubernetes-declarative-manifests`was provided :heavy_check_mark:
+### 2. Namespace, deployment and service resources are all in RUNNING status :heavy_check_mark:
+
+
+* Screenshot for `kubernetes-declarative-manifests`was provided :white_check_mark:
+
+However, as can be seen below the status is not correct and the two of the Pods are not **Ready** :point_down:
+
+![Screenshot from 2021-07-06 15-21-59.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1625565201/Screenshot_from_2021-07-06_15-21-59.png)
+
+
+
+**Please ensure that all the pods are in `RUNNING` status and are available **
+**Note : ** You can use `kubectl describe` command to get a detailed info about the pod  
+
+****************************************************************************************************************************************************
+
+### Chart.yaml  :heavy_check_mark:
+* apiVersion: v1 :white_check_mark:
+* name: techtrends :white_check_mark: 
+* version: 1.0.0 :white_check_mark:
+
+### Values.yaml :heavy_check_mark:
+* Namespace: sandbox :white_check_mark:
+* ClusterIP service exposing port “4111” and target port “3111” using “TCP” protocol :white_check_mark:
+* Image “techtrends:latest” with pull policy set to “IfNotPresent” :white_check_mark:
+* Replicas: 1 :white_check_mark:
+* Resources requests of CPU 250m and memory 64Mi; and limits of CPU 500m and memory 128Mi :white_check_mark:
+* Container port: “3111” :white_check_mark:
+* Liveness and readiness probes checking on “/healthz” path on port “3111” :white_check_mark:
+
+
+****************************************************************************************************************************************************
+
+### values-staging.yaml :heavy_check_mark:
+* Namespace: staging :white_check_mark:
+* Service port set to “5111” :white_check_mark:
+* Replicas: 3 :white_check_mark:
+* Resources requests of CPU 300m and memory 90Mi; and limits of CPU 500m and memory 128Mi :white_check_mark:
+
+### values-prod.yaml :heavy_check_mark:
+* Namespace: prod :white_check_mark:
+* Service port set to “7111” :white_check_mark:
+* Image pull policy: “Always” :white_check_mark:
+* Replicas: 5 :white_check_mark:
+* Resources requests of CPU 350m and memory 128Mi; and limits of CPU 500m and memory 256Mi :white_check_mark:
+
+*** 
+### Additional Resource
+[**Creating and managing Kubernetes workloads using Helm**](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+
+****************************************************************************************************************************************************
+
+### 1. ArgoCD was successfully installed  and exposed through NodePort service :heavy_check_mark:
+### 2. Screenshot for `argocd-ui`was provided :heavy_check_mark:
+
+***
+### Additional Reading
+* [**Argo CD - Declarative GitOps CD for Kubernetes**](https://argo-cd.readthedocs.io/en/stable/getting_started/)
+* [**Getting started with ArgoCD on Kubernetes**](https://tanzu.vmware.com/developer/guides/argocd-gs/)
+****************************************************************************************************************************************************
+
+Helm chart have been used :white_check_mark:
+
+
+### helm-techtrends-staging.yaml :heavy_check_mark:
+* Name: techtrends-staging :white_check_mark:
+* Reference values file: values-staging.yaml :white_check_mark:
+
+### helm-techtrends-prod.yaml :heavy_check_mark:
+* Name: techtrends-prod :white_check_mark:
+* Reference values file: values-prod.yaml :white_check_mark:
+
+****************************************************************************************************************************************************
+
+### 1. Application was successfully deployed using the ArgoCD :heavy_check_mark:
+### 2. Screenshot for `argocd-techtrends-staging`was provided :heavy_check_mark:
+### 3. Screenshot for `argocd-techtrends-prod`was provided :heavy_check_mark:
+
+****************************************************************************************************************************************************
+
+## Hi Gage !!
+You have done a great job considering it was your first attempt.**You have worked really well  with Docker, Github Actions, Helm and ArgoCD**  :clap: However, there is a small change required in order for you to pass this project successfully :
+* **You need to capture the logs to `STDOUT` and `STDERR` and capture the log header as `ERROR` in case the user tries to access a non-existing article**
+
+
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+
+***
+
+**Useful Resources : **
+* [**Kubernetes RollingOut Strategies**](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy)
+* [**ImagePullBackOff / ErrImagePull - Causes and Solution**](https://cloud.google.com/kubernetes-engine/docs/troubleshooting#ImagePullBackOff)
+
+***
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+****************************************************************************************************************
+## Hi !!
+You have done a great job considering it was your first attempt.**You have worked really well  with Docker, Github Actions, Helm and ArgoCD**  :clap: However, there are few changes required in order for you to pass this project successfully :
+* The application logs the **ERROR** message without even the ERROR occurring. This needs to be fixed**
+* **The screenshot for `kubectl get all -n sandbox` shows the pods in Error status and not Running. This needs fixing as well**
+
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+
+***
+**Useful Resources : **
+* [**Kubernetes RollingOut Strategies**](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy)
+* [**ImagePullBackOff / ErrImagePull - Causes and Solution**](https://cloud.google.com/kubernetes-engine/docs/troubleshooting#ImagePullBackOff)
+***
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+****************************************************************************************************************************************************
+
+
+## Hi !!
+You have done a great job.**You have worked really well  with Docker, Github Actions, Helm and ArgoCD**  :clap: However, there are few changes required in order for you to pass this project successfully :
+* The application logs the **ERROR** message without even the ERROR occurring. This needs to be fixed**
+* **The screenshot for `kubectl get all -n sandbox` shows the pods in Error status and not Running. This needs fixing as well**
+
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+ 
+***
+**Useful Resources : **
+* [**Kubernetes RollingOut Strategies**](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy)
+* [**ImagePullBackOff / ErrImagePull - Causes and Solution**](https://cloud.google.com/kubernetes-engine/docs/troubleshooting#ImagePullBackOff)
+***
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+**********************************************************************************************************************************
+
+## Congratulations !!
+You have done a great job.Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project.**You have worked really well  with Docker, Github Actions, Helm and ArgoCD**. :clap: 
+This is the most complicated project of the degree, but in the end teaches some of the most valuable skills to have in the industry. You have really worked hard on this project and the project is the reflection of it. The hard work did pay off and you have passed with flying colors. :rainbow: 
+
+I hope this project was fun. Take a small break and prepare for the next battle.
+We look forward to receiving your future project submissions soon .
+Keep it Up !! Wishing you Best of Luck for journey ahead :)
+ 
+***
+**Useful Resources : **
+* [**Kubernetes RollingOut Strategies**](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy)
+* [**ImagePullBackOff / ErrImagePull - Causes and Solution**](https://cloud.google.com/kubernetes-engine/docs/troubleshooting#ImagePullBackOff)
+***
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+**************************************************************************************************************************
+
+## Congratulations Rithvik  !!
+You did an excellent work job. Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project.**Its good to see that you have shared all the relevant files and screenshots**. :clap: 
+You have really worked hard on this project and the project is the reflection of it. The hard work did pay off and you have passed with flying colors. :rainbow: 
+
+I hope this project was fun. Take a small break and prepare for the next battle.
+We look forward to receiving your future project submissions soon .
+Keep it Up !! Wishing you Best of Luck for journey ahead :)
+ 
+***
+**Useful Resources : **
+* [**Managing Resources for Containers**](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
+* [**What’s the Difference Between Continuous Integration, Continuous Deployment and Continuous Delivery?**](https://semaphoreci.com/blog/2017/07/27/what-is-the-difference-between-continuous-integration-continuous-deployment-and-continuous-delivery.html)
+***
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+******************************************************************************************************************
+
+
+**Great job making the connection count as Global variable :clap: **
+
+**Great work capturing the logs at `DEBUG level`. However you need to capture the events to `STDERR` and `STDOUT` as mentioned in the project review**
+
+**Since this block of the function means the article is non-existent, therefore instead of `app.logger.info`, you should use `app.logger.error` **
+
+**Good to see that you have captured the log at correct level** :clap:
+
+Good to see that you have used parameterized value throughout the YAML and not hard coded anything  :clap:
+
+
+"C:\Program Files\Docker\Docker\DockerCli.exe" -SwitchDaemon

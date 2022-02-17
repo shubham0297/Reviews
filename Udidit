@@ -1,0 +1,393 @@
+Code is syntax highlighted :white_check_mark:
+
+Your code has the **appropriate syntax highlighting**, making it especially readable and easy on the eye. :white_check_mark:
+
+* [Mark Up - Highlighter](http://markup.su/highlighter/)
+* [SQL formatter](http://www.dpriver.com/pp/sqlformat.htm)
+
+
+
+To make your code easy to read - easier on the eye, it needs to have some syntax highlighting, a way that would make it less clumsy to read. You currently have your DDL code formatted in a single colour, but that is a little less than the desired code formatting. Your DML code on the other hand, does not appear to have any formatting at all.
+
+
+### Your Code 
+
+### Syntax Highlighting Example
+![Syntax highlighting.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1615639233/Syntax_highlighting.png)
+
+You can use any of the following online formatter for this purpose :point_down:
+* [Prettifier](https://www.prettifier.net/sql/)
+* [Code Beautify](https://codebeautify.org/sqlformatter)
+
+*****************************************************************************************************************
+
+Query is indented and split into multiple lines :white_check_mark:
+
+Nice work here! Your code is properly indented at the **appropriate places and multi-lined at the appropriate lengths, making it clean and even more readable.**  :white_check_mark:
+
+SQL queries are easier to read if they are indented. You can indent your queries using a number of tools available online, for example :point_down: 
+[Indent SQL](https://poorsql.com/)
+
+
+
+SQL queries are easier to read if they are indented. Currently your queries are not indented :point_down:
+
+### Your Code
+
+
+![Screenshot from 2021-03-26 10-25-38.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1616734541/Screenshot_from_2021-03-26_10-25-38.png)
+
+### Indentation Example
+```
+INSERT INTO "comments" (
+    "text_content"
+    ,"post_id"
+    ,"user_id"
+    )
+SELECT bc.text_content
+    ,posts.id
+    ,users.id
+FROM bad_comments bc
+JOIN users ON bc.username = users.username
+JOIN posts ON posts.user_id = users.id;
+```
+
+You can indent your queries using a number of tools available online, for example :point_down: 
+[Indent SQL](https://poorsql.com/)
+
+[Indent SQL](https://www.dpriver.com/pp/sqlformat.htm)
+
+*****************************************************************************************************************
+Flaws in existing schema are mentioned  :white_check_mark:
+
+Amazing job going above and beyond, you had covered every issue with the original data schema! ✌
+
+* By using a “\d+” query, it looks like the schema has no constraints whatsoever.
+* “upvotes” and “downvotes” columns have a TEXT data type. This sounds inappropriate as we are not expecting it to be a long text or paragraph but a number. It would make more sense for it to be an INT. This would cover both positive and negative numbers. I would opt for INT rather than SMALLINT as sometimes posts/comments can become very un/popular and get thousands and thousands of votes. If the feedback leans heavily on either side, the SMALLINT might not be enough.
+* The “bad_posts” table shows several columns that should really be split into a separate table, e.g. “Users”, “Topics”, “Votes”.
+
+*****************************************************************************************************************
+DDL queries run without any errors.
+All the tables were successfully created :point_down:
+
+
+Excellent! Your code **runs without errors when copied, pasted, and executed 'as-is'.** Making sure your code runs without errors, reduces the number of round-trips that you'll have to make to get your project reviewed. :white_check_mark:
+
+*****************************************************************************************************************
+All required fields are present in the data model :white_check_mark:
+
+
+Good job, for creating audit fields ( like `last_login` ) in all the tables. The addition of those fields will answer all the features and queries that are outlined in the guidelines.  :white_check_mark:
+
+Important auditing fields are missing in some tables where are required  to answer all the features and queries outlined in the document. For example, you need to add an additional field with some TIMESTAMP type so as to answer the following queries :
+
+```
+2.a
+- List all users who haven’t logged-in in the last year.
+2.b
+- List all users who haven’t created any post.
+```
+
+
+*****************************************************************************************************************
+Data model is in normalised form :white_check_mark:
+
+Nice work creating a completely normalized data model 👏 This a tough work! While it didn't really relate to this project, don't forget that there are some times when you might not want to fully normalize your data.
+
+
+Good work for **designing your schema to conform to first, second, and third normal forms.** This is a true demonstration that you very much grasped the import of the lessons. Well done!
+
+*****************************************************************************************************************
+Appropriate constraints (PRIMARY KEY, FOREIGN KEY and NOT NULL) are used where applicable. :white_check_mark:
+
+Nice job! You have created the **appropriate references between tables, thereby enforcing referential integrity.** This will prevent non-existing IDs from being inserted in related tables. :white_check_mark:
+
+**Usually the foreign keys should not NOT allow NULLs, but if it has the constraint `ON DELETE SET NULL` then it can **
+
+**The foreign keys that **do not ** have the constraint `ON DELETE SET NULL` need to have the constraint `NOT NULL`**
+For eg. `post_id` in comments table is a foreign key. It doesn't have the constraint **ON DELETE SET NULL**, so it needs to have NOT NULL constraint so that **it doesn't allow any non-existent IDs to be inserted in related tables.**
+
+In short,  foreign key columns cannot have `ON DELETE SET NULL` and `NOT NULL` at the same time. But in case where it has  `ON DELETE CASCADE`, it will need to have NOT NULL in addition, for ALL tables.
+
+Please make this change
+
+
+### Recommendation:
+Some foreign key fields are important to the tables in which they are defined, and hence it is important to constrain them as **NOT NULL**. Essentially, **most foreign key fields or columns should NOT allow NULLs, EXCEPT those ones with `ON DELETE SET NULL` action set on them ** , to prevent violating the **NOT NULL** constraint. Note that these foreign-key columns do not apply to just one table; it applies to ALL tables.
+
+This means that the only thing required here is to add a NOT NULL constraint to the foreign key constraints, except ONLY those that have ON DELETE SET NULL.
+
+Meaning also that, foreign key columns can have ON **DELETE SET NULL**, but without an addition of **NOT NULL**. In other cases where they have instead ON **DELETE CASCADE**, note that these will still need to have **NOT NULL** in addition, for ALL tables, not just the posts table.
+
+Kindly make these changes.
+
+*****************************************************************************************************************
+Great work 👏 in implementing the above-mentioned feature. It will be good practice and the best way to extract the results much faster if the indexes are added to all the tables.
+
+Do you know that you can also create [Multiple Indexes](https://www.postgresqltutorial.com/postgresql-indexes/postgresql-multicolumn-indexes)?
+``` SQL
+CREATE INDEX "last_login" ON "users" (
+"last_login"
+,"username" VARCHAR_PATTERN_OPS
+);
+```
+
+## **Revision of Indexes Needed:**
+Some of the queries for the guidelines below may not run optimised. I understand that this may not be as straightforward, and I very much acknowledge the effort that you are putting into this. Well done!
+Now problem is with identifying which columns need the indexes, and so let us take these guidelines one after the other:
+
+### **j. List all the top-level comments (those that don’t have a parent comment) for a given post.**
+So the question here is that, how do you find the comments that do not have a parent? The way is that if a comment has a parent, then the parent's id is stored in the `"parent_comment_id"` column, which you created. If that column is `null` at anytime, then we know that it does not have a parent. Here, we identify that, finding comments without parents revolves around the `"parent_comment_id"` column, and hence, `"parent_comment_id"` needs the index.
+
+***
+### **k. List all the direct children of a parent comment.**
+Same principle goes this here too. If we're listing the direct children of comment "A", then we will find all comments having their `"parent_comment_id"` column having the id of comment A. Here also, we identify that finding the direct children of comment A revolves around the `"parent_comment_id"` column, and hence, `"parent_comment_id"` needs the index. **Note, however that, you would not need to create another index on this column once you have created it earlier on in respect of the first query.**
+***
+### **l. Compute the score of a post, defined as the difference between the number of upvotes and the number of downvotes.**
+In computing the difference between the upvotes and downvotes, we would rely only on `vote` column as you have created, by counting the number of 1s and -1s and then finding their difference. Here, we identify that the computation revolves around the `votes` column, and hence, it needs the index.
+
+
+
+**Kindly make these changes accordingly, by creating indexes on the most appropriate columns, as identified above.**
+Great work maintaining appropriate indexes are present :white_check_mark:
+Here is a good read to explaining database indexes :point_right: [**Database Indexes**](https://www.essentialsql.com/what-is-a-database-index/)
+
+### 
+Note:
+Indexes have a natural toll on INSERT queries, because fields will need to be checked against those indexes. Following this, the more indexes you add to your table, the slower your INSERT queries may execute. Hence, only add queries that are absolutely necessary, and the rule of thumb is not to add more than five (5) indexes per table. If you find your indexes heading for five, you may need to rethink some of them.
+
+*****************************************************************************************************************
+* Each username has to be unique :white_check_mark:
+* Usernames can be composed of at most 25 characters  :white_check_mark:
+* Usernames can’t be empty :white_check_mark:
+
+
+*****************************************************************************************************************
+
+* Topic names have to be unique.:white_check_mark:
+* The topic’s name is at most 30 characters :white_check_mark:
+* The topic’s name can’t be empty :white_check_mark:
+* Topics can have an optional description of at most 500 characters :white_check_mark:
+
+
+*****************************************************************************************************************
+
+* Posts have a required title of at most 100 characters :white_check_mark:
+* The title of a post can’t be empty.  :white_check_mark:
+* Posts should contain either a URL or a text content, but not both. :white_check_mark:
+* If a topic gets deleted, all the posts associated with it should be automatically deleted too. :white_check_mark:
+* If the user who created the post gets deleted, then the post will remain, but it will become dissociated from that user. :white_check_mark:
+
+
+**Since you have to make a change suggested before (setting NOT NULL constraint for  foreign key that don't have the constraint ON DELETE SET NULL) , this specification will be passed once you make the required change.**
+
+*****************************************************************************************************************
+
+* A comment’s text content can’t be empty.  :white_check_mark:
+* Contrary to the current linear comments, the new structure should allow comment threads at arbitrary levels. :white_check_mark:
+* If a post gets deleted, all comments associated with it should be automatically deleted too. :white_check_mark:
+* If the user who created the comment gets deleted, then the comment will remain, but it will become dissociated from that user. :white_check_mark:
+* If a comment gets deleted, then all its descendants in the thread structure should be automatically deleted too. :white_check_mark:
+
+
+**Since you have to make a change suggested before (setting NOT NULL constraint for  foreign key that don't have the constraint ON DELETE SET NULL) , this specification will be passed once you make the required change.**
+*****************************************************************************************************************
+
+
+* A user can only cast one vote on a given post. :white_check_mark:
+* If the user who cast a vote gets deleted, then all their votes will remain, but will become dissociated from the user. :white_check_mark:
+* If a post gets deleted, then all the votes for that post should be automatically deleted too. :white_check_mark:
+
+
+**Since you have to make a change suggested before (setting NOT NULL constraint for  foreign key that don't have the constraint ON DELETE SET NULL) , this specification will be passed once you make the required change.**
+
+*****************************************************************************************************************
+
+All the right IDs are associated together. Nice job migrating the data correctly :white_check_mark:
+
+Excellent work! Your code** ensures that related IDs belong together during migration**, especially with the use of **appropriate JOINS**. :white_check_mark:
+
+11077 users
+89 topics
+50000 posts
+100000 comments
+249799 upvotes
+249911 downvotess
+
+*****************************************************************************************************************
+
+DML runs without error  :white_check_mark:
+
+Good! Your schema takes into **account table dependencies**, and hence, **maintains the appropriate execution order for migrating data.** :white_check_mark:
+
+
+*****************************************************************************************************************
+
+## Congratulations !
+You have nailed the project in your first attempt and passed with flying colors. :rainbow:
+Great Work. We look forward to receiving your future project submissions soon .
+
+Keep it Up !! Wishing you Best of Luck for journey ahead :)
+
+### Keep learning and Stay Udacious
+:udacious:
+
+*****************************************************************************************************************
+## Hey There !!
+You have done a fantastic job and are done with the functional aspect of the project. Just need to make a small change which is required in order for you to complete this nanodegree.
+
+Hope you make the required change soon.
+We look forward to receiving your future project submissions. ✌
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+
+*****************************************************************************************************************
+
+## Congratulations !
+Commendable Job. You have really worked hard on this project and the project is the reflection of it. :clap:
+Making the required changes and submitting the project in such a short span of time shows your dedication towards it. The hard work did pay off and you have passed this project with flying colors. :rainbow: 
+
+
+Great Work. We look forward to receiving your future project submissions soon .
+Keep it Up !! Wishing you Best of Luck for journey ahead :)
+
+Do take a look at this post to understand [Normalization](https://www.edureka.co/blog/normalization-in-sql/) as it is really helpful when it comes to organisational data.
+
+**Have a Good Day/Night and Stay Safe ✌**
+
+### Keep learning and Stay Udacious
+:udacious:
+
+
+
+Your code is **orderly and readable ** - applying **syntax highlighting** and **multi-lining** made this beautiful. You also demonstrated good DDL: from creating unique constraints that also create useful indexes, to adding enough audit columns. Excellent!
+
+****
+**Resources:**
+Here are a few useful resources to help you with further enhancing our database design skills, and may also help with revising your submission:
+* [Creating INDEXES](https://www.postgresql.org/docs/9.1/sql-createindex.html)
+* [Characteristics of UNIQUE constraints](https://www.techonthenet.com/postgresql/unique.php)
+* [Joins Between Tables](https://www.postgresql.org/docs/8.3/tutorial-join.html)
+
+*******************************************************************************************************************************************
+Tip: If you are interested in knowing better about Postgres, you are encouraged to go through this [exercise](https://pgexercises.com/) and [some performance tip](https://thoughtbot.com/blog/advanced-postgres-performance-tips)
+
+*******************************************************************************************************************************************
+
+
+## Hi There !
+You did a commendable job considering it was your first attempt. You have really worked hard on this project and the project is the reflection of it. 
+Your code is **orderly and readable ** - applying **syntax highlighting** and **multi-lining** made this beautiful. You also demonstrated **good DDL: from creating unique constraints that also create useful indexes, to adding enough audit columns.** Excellent! :clap:
+
+You are very close to the appropriate project,however you need to correct couple of small issues :
+* **One of the flaws is not fully correct. Please try to find some other flaw  which is not present is the earlier schema but having it in new schema would help us in some or the other way** 
+
+* **Set `NOT NULL` constraint for all the foreign keys that don't have the constraint `ON DELETE SET NULL`**
+
+Hope you make the required change soon.We look forward to receiving your future project submissions .
+
+***
+**Useful Resources:**
+Here are a few useful resources to help you with further enhancing our database design skills, and may also help with revising your submission:
+* [10 best database design practices](https://medium.com/quick-code/10-best-database-design-practices-1f10f3441730)
+* [Creating INDEXES](https://www.postgresql.org/docs/9.1/sql-createindex.html)
+* [Joins Between Tables](https://www.postgresql.org/docs/8.3/tutorial-join.html)
+
+***
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+
+**Have a Good Day/Night and Stay Safe ✌**
+
+### Keep learning and Stay Udacious
+:udacious:
+*******************************************************************************************************************************************
+
+## Congratulations !
+You have done a commendable job considering it was your first attempt. 
+Your code is **orderly and readable ** - applying **syntax highlighting** and **multi-lining** made this beautiful. You also demonstrated **good DDL: from creating unique constraints that also create useful indexes, to adding enough audit columns.** Excellent!
+
+You have really worked hard on this project and the project is the reflection of it. :clap:  The hard work did pay off and you have passed this project with flying colors. :rainbow: 
+
+
+Great Work. We look forward to receiving your future project submissions soon .
+Keep it Up !! Wishing you Best of Luck for journey ahead :)
+
+***
+**Resources:**
+Here are a few useful resources to help you with further enhancing our database design skills, and may also help with revising your submission:
+* [10 best database design practices](https://medium.com/quick-code/10-best-database-design-practices-1f10f3441730)
+* [Creating INDEXES](https://www.postgresql.org/docs/9.1/sql-createindex.html)
+* [Characteristics of UNIQUE constraints](https://www.techonthenet.com/postgresql/unique.php)
+* [Joins Between Tables](https://www.postgresql.org/docs/8.3/tutorial-join.html)
+
+***
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+***
+
+**Have a Good Day/Night and Stay Safe ✌**
+
+### Keep learning and Stay Udacious
+:udacious:
+
+************************************************************************************************************************************************
+## Congratulations !
+Kudos on completing all the requirements of the Udiddit, A Social News Aggregator (Part I) project, and earning a new milestone.Making the required changes and submitting the project in such a short span of time shows your dedication towards it.Your work reveals how much you have grasped already, by demonstrating **good DDL and DML skills ** :clap:
+
+You have really worked hard on this project and the project is the reflection of it.The hard work did pay off and you have passed this project with flying colors. :rainbow: 
+
+
+Great Work. We look forward to receiving your future project submissions soon .
+Keep it Up !! Wishing you Best of Luck for journey ahead :)
+
+***
+**Resources:**
+Here are a few useful resources to help you with further enhancing our database design skills:
+
+* [10 best database design practices](https://medium.com/quick-code/10-best-database-design-practices-1f10f3441730)
+* [Database design best practices](https://its.unl.edu/bestpractices/database-design)
+
+***
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+***
+
+**Have a Good Day/Night and Stay Safe ✌**
+
+### Keep learning and Stay Udacious
+:udacious:
+
+
+
+
+[Postgres constraints documentation](https://www.postgresql.org/docs/9.6/ddl-constraints.html) - You can read about the all the constraints in  this documentation
+***********************************************************************************************************************************************
+
+
+## Hi There !
+
+Your project couldn't be reviewed due to `PLAGIARISM`. The project is the copy of a project of another student. Here are few instances that show clearly show plagarism.
+
+### Example 1 - Original Code
+
+
+### Example 1 - Your Code
+
+***
+### Example 2 - Original Code
+
+
+### Example 2 - Your Code
+
+***
+**You have broken [**UDACITY Honor Code**](https://www.udacity.com/legal/en-us/honor-code) . UDACITY takes plagiarism very seriously. This may lead to cancellation of nanodegree and your certifications can be revoked. Please make sure you make and submit your own project now.**
+
+Hope you make the required change soon.
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:

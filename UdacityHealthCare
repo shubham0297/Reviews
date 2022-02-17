@@ -1,0 +1,109 @@
+7 findings have been identified correctly and each finding has :
+* Title :white_check_mark:
+* Detailed explanation :white_check_mark:
+* Regulation(s) associated with the issue :white_check_mark:
+* Recommendations :white_check_mark:
+
+
+****************************************************************************************************************************************************
+
+**Recommendations** were provided for each of the following identified issue :
+* Data not adequately protected
+* Profiling an user
+* Doctor able to download patient info to unprotected devices
+* Limiting the data exposed to Analytics team
+* Missing data in export
+* Data export not available to customers after their account is deleted
+* Data not properly encrypted
+
+****************************************************************************************************************************************************
+
+**Data is not properly anonymized**
+```
+To ensure you meet a minimum of 2-anonymity, you need make sure that for each unique entry in the database there is at least 1 other row that has  same values. In simpler terms it means, for every row there should be atleast 1 more having the same values for all the columns
+```
+
+** The data has not been anonymized properly. When we anonymize data, we do suppress or generalize the data, but we do not `add` or `modify (the correctness of it)` the original data  ** . For eg.
+
+![Screenshot from 2021-07-07 04-26-50.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1625612564/Screenshot_from_2021-07-07_04-26-50.png)
+
+1. There are two columns having the same header **Name**.
+2. You have added an extra column **City** to the dataset and removed the original **ZipCode** Column
+3. The **Age** is indirectly represented as birth year. This data is not correct as if you calculate the age for row 12 in the above screenshot, it comes out to be 11 but there was no such age in the original data set. This means that the correctness of data is questioned.
+   
+K-Anonymity is explained wonderfully on Wikipedia. You can check the example to understand what does k-Anonymity mean, you do we generalize and suppress the dataset.  :point_right:  [**K-Anonymity**](https://en.wikipedia.org/wiki/K-anonymity)
+
+
+
+
+**Data has been correctly anonymized by using Generalization and Suppression techniques. For each unique entry in the data set there is at least 1 other row that is the same. ** :heavy_check_mark:
+
+
+**Special appreciation for anonymizing age using Generalization :point_down:**
+![Screenshot from 2021-07-07 21-18-04.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1625673000/Screenshot_from_2021-07-07_21-18-04.png)
+****************************************************************************************************************************************************
+
+
+**Privacy Assessment document is submitted in the submission** :white_check_mark:
+
+****************************************************************************************************************************************************
+**Excel Sheet with Anonymized data is present in the submission ** :white_check_mark:
+
+
+
+****************************************************************************************************************************************************
+
+
+## Hi Nicolas !!
+You have done a great job considering it was your first attempt. Here are couple of things which I liked about your project :
+* **Finding more than 6 privacy concerns in the application was really commendable** :clap: 
+*  **Keeping the Age, Gender and Disease usable in the anonymized dataset** :clap:
+
+You are very close to the appropriate project,however you need to correct a small points before you're all set to go. 
+* **You need to anonymize the data correct such that :**
+  * For every unique row, there is atleast 1 more row with exact same values
+  * The data in the anonymized dataset is correct and matches with the original dataset. 
+
+
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+
+***
+**Useful Resouces** :
+* Here is a good read explaining about Data Generalization - [Understanding Data Generalization](https://www.privitar.com/blog/data-generalization-advanced-de-identification/)
+* [K-Anonymity: Everything You Need to Know](https://www.immuta.com/articles/k-anonymity-everything-you-need-to-know-2021-guide/) - This blog briefly explains the key points about K-Anonymity.  What it is ? How it prevents privacy attacks ?  and how do we implement it?
+*** 
+
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+****************************************************************************************************************************************************
+## Congratulations !!
+You have done a great job and the project in your first attempt. The hard work did pay off and you have passed with flying colors. :rainbow:
+
+Here are couple of things which I liked about your project :
+* **Finding more than 6 privacy concerns in the application was really commendable** :clap: 
+*  **Keeping the Age, Gender and Disease usable in the anonymized dataset** :clap:
+
+Keep it Up !! Wishing you Best of Luck for journey ahead :)
+We look forward to receiving your future project submissions soon . 
+
+***
+**Useful Resouces** :
+* Here is a good read explaining about Data Generalization - [Understanding Data Generalization](https://www.privitar.com/blog/data-generalization-advanced-de-identification/)
+* [K-Anonymity: Everything You Need to Know](https://www.immuta.com/articles/k-anonymity-everything-you-need-to-know-2021-guide/) - This blog briefly explains the key points about K-Anonymity.  What it is ? How it prevents privacy attacks ?  and how do we implement it?
+*** 
+
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+

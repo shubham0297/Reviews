@@ -1,0 +1,195 @@
+* Link to the repository has been provided :white_check_mark:
+* CI tool to build the application :white_check_mark:
+
+
+The project needs to be hosted at github and the link should be provided with the submission.
+At the moment I can't find the link neither in the Student Notes nor in any README file
+**Note:** You need to explicitly mention the link to github repo in the README file or Student notes while submitting. By submitting the project through Github , reviewers don't get the link to your Github repo.
+*********************************************************************************************************************************************************
+The README file includes introduction how to setup and deploy the project :white_check_mark:
+
+
+*********************************************************************************************************************************************************
+
+
+Application has been successfully built and deployed using Travis CI :white_check_mark:
+
+*********************************************************************************************************************************************************
+* Dockerfile is present  for creating docker image :white_check_mark:
+* Docker image is successfully built :white_check_mark:
+
+
+********************************************************************************************************************************************************
+
+Images for the application are available on DockerHub :white_check_mark:
+
+********************************************************************************************************************************************************
+Application can be successfully started on a local system :white_check_mark:
+
+********************************************************************************************************************************************************
+
+Project can be deployed to a kubernetes cluster :white_check_mark:
+
+*********************************************************************************************************************************************************
+New version of the application can be deployed without downtime :white_check_mark:
+
+
+You can learn about [rollout updates](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/) to see how to implement updates without downtimes.
+
+*********************************************************************************************************************************************************
+New version of the application can be deployed without downtime :white_check_mark:
+
+
+
+*********************************************************************************************************************************************************
+Two versions of the same app can run at the same and service traffic :white_check_mark:
+
+*********************************************************************************************************************************************************
+The application is monitored by Amazon CloudWatch :white_check_mark:
+
+I need to be able to see that the application is monitored by Amazon Cloudwatch and the only way I can do that is if you provide a screenshot with your submission. Please do so in your next submission.
+
+
+
+*********************************************************************************************************************************************************
+
+
+## Congratulations ! :star2: :sparkles:
+You have nailed the project in your first attempt and passed with flying colors. :rainbow:
+We look forward to receiving your future project submissions soon .
+
+Keep it Up !! Wishing you Best of Luck for journey ahead :thumbsup:
+
+### **Keep learning and stay Udacious**
+:udacious:
+
+
+
+
+## Hi!!
+This is the most complicated project of the degree, but in the end it is one of the most valuable skills to have in the industry.You have done a fantastic job and are done with the functional aspect of the project. Just need to make couple of small changes which are required in order for you to complete this nanodegree.
+
+Its good to see you included the screenshot for every milestone in your project. :clap:
+Also while sumitting the github link, make sure you submit the link of the project to reviewed and not all the other project. The current submission had multiple folders each have different project.
+Hope you make the required change soon.
+We look forward to receiving your future project submissions.
+
+**Have a Good Day/Night and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+
+
+
+
+## Congratulations!
+This is the most complicated project of the degree, but in the end it is one of the most valuable skills to have in the industry.
+Making the required changes and submitting back the project in such a short span of time reflects your dedication towards it. Finally the hard work paid off and you have passed the project with flying colors. :rainbow:
+We look forward to receiving your future project submissions soon .
+
+Wishing you Best of Luck for the journey ahead :thumbsup:
+
+PS : Its good to see you included the screenshot for every milestone in your project.
+
+** Have a Good Day/Night and Stay Safe ✌ **
+
+### Keep learning and stay Udacious
+:udacious:
+
+
+## Congratulations  !
+This is a complicated nanodegree, but in the end it is one of the most valuable skills to have in the industry.
+You project is the reflection of hard work and time you have spent on it. The hard work did pay off and you have passed the nanodegree with flying colors. :rainbow:
+
+Good luck with whatever comes next! :)
+We look forward to receiving your future project submissions soon .
+
+PS : Its good to see you included the screenshot for every milestone in your project.
+
+** Have a Good Day/Night and Stay Safe ✌ **
+
+### Keep learning and stay Udacious
+:udacious:
+
+## Hey There !!
+This is the most complicated project of the degree, but in the end it is one of the most valuable skills to have in the industry.You have done a fantastic job and are done with the functional aspect of the project. Just need to make a small change which is required in order for you to complete this nanodegree.
+
+Hope you make the required change soon.
+We look forward to receiving your future project submissions. ✌
+
+PS : Its good to see you included the screenshot for every milestone in your project.
+
+### Keep learning and stay Udacious
+:udacious:
+
+
+## Hi !!
+This is a complicated nanodegree, but in the end it is one of the most valuable skills to have in the industry.
+You are off to a phenomenal start here. :clap: The codebase looks fantastic and once the issue mentioned is ironed out all the functionality would absolutely work!
+
+Hope you make the required change soon.
+We look forward to receiving your future project submissions.
+
+
+**Have a Good Day/Night and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+
+
+
+## Congratulations!
+This is the most complicated project of the degree, but in the end it is one of the most valuable skills to have in the industry.
+Making the required changes and submitting back the project in such a short span of time reflects your dedication towards it. Finally the hard work paid off and you have passed the project with flying colors. :rainbow:
+
+We look forward to receiving your future project submissions soon .
+
+Wishing you Best of Luck for the journey ahead :thumbsup:
+
+PS : Its good to see you included the screenshot for every milestone in your project. Here are some good reads about Kubernetes in case you might want to read more :point_down:
+* [Kubernetes vs Docker](https://www.sumologic.com/blog/kubernetes-vs-docker/)
+* [Kubernetes and Future](https://www.redhat.com/en/blog/kubernetes-future-what-does-future-look)
+
+** Have a Good Day/Night and Stay Safe ✌ **
+
+### Keep learning and stay Udacious
+:udacious:
+
+
+
+
+User is able to :
+* Create an item. :white_check_mark:
+* Delete an item. :white_check_mark:
+* Complete an item :white_check_mark:
+
+User is able to upload a file :white_check_mark:
+
+
+Different items are displayed for different user accounts :white_check_mark:
+
+
+User Authentication is implemented :white_check_mark:
+
+
+
+The business logic of the code has been correctly separated from the trivial data access code!:white_check_mark:
+
+You have used the newer async/await syntax rather than the older promise based syntax! :clap:
+
+All the required resources have been defined in the serverless.yml file! :white_check_mark:
+
+The permissions have been defined on a per function basis rather than being defined globally! 
+
+The application has plenty of logs and also distributed tracing has been enabled! :white_check_mark:
+
+The key schema looks good! :white_check_mark:
+
+
+
+
+
+Async construct has been used instead of callbacks :white_check_mark:
+
+`query()` method has been used to fetch the items instead of `scan()` :white_check_mark:
+

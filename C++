@@ -1,0 +1,392 @@
+### **README includes instructions for building/running the project. :heavy_check_mark:**
+You might wonder why README is so important ?  :point_right: [All About README](https://www.makeareadme.com/)
+
+************************************************************************************************************
+
+### README gives the description of the project :heavy_check_mark:
+
+**README** file usually describes :
+* Instructions for building/running the project. (mandatory)
+* Description of your project.
+* Expected behavior or output of the program. 
+* Components used in the project.
+
+Please update your README file by including some more information about the changes you have made instead of using the starter README file. You could briefly tell about the things like :
+* The file structure. What does each class do 
+* Explain about different kind of food items or the wall
+* How does the game start and end
+
+**************************************************************************************************************
+
+### README indicates which rubric points are addressed. :heavy_check_mark:
+
+It would be good if you update your README by indicating where in the code (i.e. files and line numbers) that the rubric points are addressed.
+
+You need to update your README by indicating where in the code (i.e. files and line numbers) a particular rubric point is addressed.
+**You need to update your README by indicating where in the code (i.e. files and line numbers) a particular rubric point is addressed before some of the Rubric points are evaluated as this is a mandatory requirement**
+
+************************************************************************************************************
+
+### **Project compiles and runs without errors :heavy_check_mark:**
+
+This specification can be checked only when you update the README file by mentioning all the rubric points covered in the project.
+As mentioned before,this specification would be checked once you update the README file by mentioning all the rubric points covered in the project
+
+************************************************************************************************************
+### 1. **Multiple control structures are used in different files in the project :heavy_check_mark:**
+### 2. **Project code is clearly organized into functions.** :heavy_check_mark:
+
+
+************************************************************************************************************
+### **Not applicable**
+
+************************************************************************************************************
+### Projects reads data from external file and processes the data  :heavy_check_mark:
+### Projects reads data from external file and writes data to a file :heavy_check_mark:
+### Projects reads,processes and write the data to an external file  :heavy_check_mark:
+************************************************************************************************************
+
+
+### Suggestion
+* You can allow users to enter their names and save it in a text file with their scores, so you can get the top score.
+* You can capture the the date too.
+* Check this [link](http://tutorialspoint.com/cplusplus/cpp_date_time.htm) for more information about how you could do that
+ 
+
+### **Projects accepts user input :heavy_check_mark:**
+
+************************************************************************************************************
+### **Not applicable**
+
+*************************************************************************************************************
+Project follows the OOP structure and has various classes with class attributes and methods :white_check_mark:
+
+### Suggestion 
+It looks good if you **separate your header files from your implementation files ie. keep header files in a separate directory and implementation in different**. That way the code looks more organized :point_down:
+
+### Your structure
+
+### Organized Structure
+![screenshot (2).png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1610091467/screenshot__2_.png)
+
+
+************************************************************************************************************
+
+### Access specifiers have been used for class data members :heavy_check_mark:
+
+************************************************************************************************************
+### Class members are initialized through member initialization lists. :heavy_check_mark:
+
+************************************************************************************************************
+
+### Class member functions have logical names :heavy_check_mark:
+### Class member functions  document their effects through their names :heavy_check_mark:
+### All the member functions have logical names :heavy_check_mark:
+
+************************************************************************************************************
+
+### Encapsulation and data hiding is present :heavy_check_mark:
+
+   ###  **Not applicable**
+
+************************************************************************************************************
+### Logical Inheritance/ Composition :heavy_check_mark:
+You can read more about [**Inheritance**](https://www.geeksforgeeks.org/inheritance-in-c/#Why%20and%20when%20to%20use%20inheritance?) - ** Why and when to use inheritance ?**. 
+
+
+I would suggest you to read more about [**Inheritance**](https://www.geeksforgeeks.org/inheritance-in-c/#Why%20and%20when%20to%20use%20inheritance?) - ** Why and when to use inheritance ?**. 
+
+************************************************************************************************************
+### Overloaded function is present :white_check_mark:
+
+************************************************************************************************************
+
+### Virtual base class member function is overridden by derived class member function :heavy_check_mark:
+
+************************************************************************************************************
+
+### Function with generic template is defined :heavy_check_mark:
+
+************************************************************************************************************
+
+   ###  **Not applicable**
+
+************************************************************************************************************
+
+### Functions use pass-by-reference in the project code. :heavy_check_mark:
+
+************************************************************************************************************
+### Destructor is used for unmanaged dynamically allocated memory :heavy_check_mark:
+
+************************************************************************************************************
+
+### RAII pattern is followed :heavy_check_mark:
+
+************************************************************************************************************
+
+### Rule of five is followed :heavy_check_mark:
+
+************************************************************************************************************
+
+### Copying of object is avoided by using move semantics :heavy_check_mark:
+
+************************************************************************************************************
+### Smart pointer `unique_ptr` has been  used instead of traditional raw pointers:heavy_check_mark:
+###  Smart pointer `unique_ptr` and `shared_ptr` have been used instead of traditional raw pointers :heavy_check_mark:
+
+************************************************************************************************************
+
+   ###  **Not applicable**
+
+************************************************************************************************************
+### Multi-threading has been used :heavy_check_mark:
+
+************************************************************************************************************
+### Promise and future is used for passing the data :heavy_check_mark:
+
+************************************************************************************************************
+
+### `std::lock_guard<std::mutex>` has been used for shared data protection :heavy_check_mark:
+### `std::lock_guard<std::mutex>` and `std::unique_lock<std::mutex>` have been used for shared data protection :white_check_mark:
+
+************************************************************************************************************
+### `std::condition_variable` has been used for thread synchronization :heavy_check_mark:
+
+
+************************************************************************************************
+## Congratulations !
+Commendable Job. You have really worked hard on this project to give it such a good user experience.The hard work did pay off and you have passed this nanodegree with flying colors. :white_check_mark:
+
+* Firstly, its great to see that you have implemented** different food types (Grow, Shrink and Speed) which makes your project unique** :clap:
+* Secondly, its good to see that you have **maintained a proper README file containing all the information from detailed project description to steps to install and run the project successfully. :clap:**
+* Last but not the least I really like that you have used **Inline comments** which makes it really easy for others to understand the code as well as for ourselves if later we have to refactor or change the code. :clap:
+
+Hope this course was fun and learning was useful.
+Good luck with whatever comes next! :)
+We look forward to receiving your future project submissions soon .
+***
+**Suggestion**
+ * Though the project requires minimum of 5 rubric points (that have been addressed) in order to pass the project, it would be great if you could take the application to next level by implementing the concepts of **Memory Management ** and **Concurrency** to make the project complete in all sense.You can start by understanding the basics of [Multi-Threading](https://www.tutorialcup.com/cplusplus/multithreading.htm)
+***
+** Recommendations : **
+* Check out this [link](https://www.geeksforgeeks.org/c-tricks-competitive-programming-c-11/) to know some useful  **C++ tricks ** for competitive programming.
+* Follow this [link](http://cplusplus.bordoon.com/cplusplusadvice.html) to  learn some **advanced C++ techniques.**
+***
+
+
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+**Have a Good Day/Night and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+***************************************************************************************************
+
+## Congratulations !
+Commendable Job. You have really worked hard on this project to give it such a good user experience.The hard work did pay off and you have passed this nanodegree with flying colors. :white_check_mark:
+
+* Firstly, its great to see that you have chosen** multiple points covering each section which makes this project outshine other projects where people tend to cover points just from OOP section. :clap:**
+* Secondly, its good to see that you have **maintained a proper README file containing all the information from detailed project description to steps to install and run the project successfully. :clap:**
+* Last but not the least I really like that you have used **Inline comments** which makes it really easy for others to understand the code as well as for ourselves if later we have to refactor or change the code. :clap:
+
+Hope this course was fun and learning was useful.
+Good luck with whatever comes next! :)
+We look forward to receiving your future project submissions soon .
+
+
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+**Have a Good Day/Night and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+
+***************************************************************************************************
+
+
+
+## Congratulations !
+Commendable Job. You have really worked hard on this project to give it such a good user experience.
+Making the required changes and submitting the project in such a short span of time shows your dedication towards it. The hard work did pay off and you have passed this nanodegree with flying colors. :white_check_mark:
+
+* Firstly, its great to see that you have chosen ** multiple points covering each section ** which makes this project outshine other projects where people tend to cover points just from OOP section. :clap:
+* Secondly, its good to see that you have maintained **a proper README file containing all the information from detailed project description to steps to install and run the project successfully.** :clap:
+
+Good luck with whatever comes next! :)
+We look forward to receiving your future project submissions soon .
+
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day/Night and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+
+
+**Suggestion : **
+* It would be great if you could also implement **Concurrency** in your application to make it complete in all sense. You can start by understanding the basics of [Multi-Threading](https://www.tutorialcup.com/cplusplus/multithreading.htm)
+
+
+* Try using **Inline Comments** in your code which makes it really easy for others to understand the code as well as for ourselves if later we have to refactor or change the code.
+
+** Recommendations : ** I'd like to share some extra reading to improve your learning journey at Udacity:
+* Check out this [link](https://www.geeksforgeeks.org/c-tricks-competitive-programming-c-11/) to know some useful  **C++ tricks ** for competitive programming.
+* Follow this [link](http://cplusplus.bordoon.com/cplusplusadvice.html) to  learn some **advanced C++ techniques.**
+
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+
+
+## Hi There !!
+You have really worked hard on this project to give it such a good user experience.
+
+* Firstly,I really applaud the concept of using **two snakes** (however I couldn't test the other one, but kudos for the idea) :clap:
+* Secondly, I really like that you have used **Inline comments** which makes it really easy for others to understand the code as well as for ourselves if later we have to refactor or change the code. :clap:
+
+Though the project requires minimum of 5 rubric points (that have been addressed) in order to pass the project, you still need to **update the README file** as told in the project review for some of the specification to be checked.
+All the rubric point from the following sections are **mandatory** :
+* **README**
+* **Compiling and Testing**
+
+** Recommendations : ** I'd like to share some extra reading to improve your learning journey at Udacity:
+* Check out this [link](https://www.informit.com/articles/article.aspx?p=1712962) to know about C++ tricks for competitive programming.
+* Follow this [link](http://cplusplus.bordoon.com/cplusplusadvice.html) to  learn some advanced C++ techniques.
+
+Hope you make the required changes soon.
+We look forward to receiving your future project submissions soon. 
+
+
+** Have a Good Day and Stay Safe ✌ **
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+
+
+
+* Though the project requires minimum of 5 rubric points (that have been addressed) in order to pass the project, it would be great if you could take the application to next level by implementing the concepts of **Memory Management ** and **Concurrency** to make the project complete in all sense.
+
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+
+## Hi There !!
+You have really worked hard on this project to give it such a good user experience. I really applaud the concept of using different color food items for controlling the speed of the snake :clap:
+
+However you need to update the README file as told in the project review for some of the specification to be checked. Following are some of the blogs which mention the importance of a README file in project and also how to write one :
+* [About README](https://www.makeareadme.com/)
+* [Meaningful README file](https://blog.bitsrc.io/how-to-write-beautiful-and-meaningful-readme-md-for-your-next-project-897045e3f991)
+
+As mentioned in project review, you don't need to cover each and every point but can cover only the points related to your project like describing project, build instructions, expected input and output and the rubric points covered in the project.
+
+Hope you make the required changes soon.
+We look forward to receiving your future project submissions soon. 
+
+
+** Have a Good Day and Stay Safe ✌ **
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+
+## Hi There !!
+You have really worked hard on this project to give it such a good user experience. I really applaud the concept of using different color food items for controlling the speed of the snake :clap:
+
+However you need to update the README file as told in the project review for some of the specification to be checked. Following are some of the blogs which mention the importance of a README file in project and also how to write one :
+* [About README](https://www.makeareadme.com/)
+* [Meaningful README file](https://blog.bitsrc.io/how-to-write-beautiful-and-meaningful-readme-md-for-your-next-project-897045e3f991)
+
+As mentioned in project review, you don't need to cover each and every point but can cover only the points related to your project like describing project, build instructions, expected input and output and the rubric points covered in the project.
+
+Hope you make the required changes soon.
+We look forward to receiving your future project submissions soon. 
+
+
+** Have a Good Day and Stay Safe ✌ **
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+
+
+I worked as an intern in ST Microelectronics in HR operations team. My domain was Datawarehousing and the responsibilites included :
+1. Checking if all the jobs ran on time and report if any job failed.
+2. Writing new functions and procedures based on user requirement in different packages.
+3. Implementing key techniques like Partitioning in Oracle to improve the performance and faster report generation.
+
+Working as a Full Stack Developer in Verizon India for IT Team in the domain of Fraud Detection.
+Responsibilites include :
+1. Developing new screens based on User Requirements in Angular.
+2. Writing the API for the new screens created.
+3. Deploying the code to various enviroments and  test End to End before delivering it for QA and end users.
+
+
+Hi Randal !
+
+It can be seen that you have accepted the answer to the question. In case you have any other doubts, feel free to search or post a new question on .
+
+Thanks !
+
+
+
+As confirmed,  the answer has been marked as accepted. In case you have any other doubts, feel free to search or post a new question on .
+
+Thanks !
+
+
+No technical statements were made. Hence passing this specification as technically there are 0 incorrect statements.
+
+
+
+### NOTE 
+Many a times **Food is not placed on screen** as can be seen below :point_down:
+
+* This is a common issue and it turns out that this issue was brought up on the project Github repo [here](https://github.com/udacity/CppND-Capstone-Snake-Game/issues/3)  and a solution has been proposed [here](https://github.com/udacity/CppND-Capstone-Snake-Game/pull/10)
+
+* Check the above repositories  to understand and fix the issue so as to ensure that a food is always placed inside the grid.
+
+### Suggestion 
+It looks good if you **separate your header files from your implementation files ie. keep header files in a separate directory and implementation in different**. That way the code looks more organized :point_down:
+
+### Your structure
+![Screenshot from 2021-01-08 12-53-04.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1610091418/Screenshot_from_2021-01-08_12-53-04.png)
+
+### Organized Structure
+![screenshot (2).png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1610091467/screenshot__2_.png)
+
+***********************************************************************************************************************
+
+## Hi There !!
+Your project couldn't be reviewed due to the **build error**.
+Following the instructions mentioned in the README file lead to the following error. :point_down:
+
+Please make sure that you send a fully working project or provide the instructions to solve the same in the README file itself. 
+
+Hope you make the required changes soon.
+We look forward to receiving your future project submissions soon. 
+
+
+** Have a Good Day and Stay Safe ✌ **
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+
+
+
+************************************************************************************************************************
+## Hi There !!
+Your project couldn't be reviewed as one of the mandatory specification is not fulfilled. 
+**You need to update your README by indicating where in the code (i.e. files and line numbers) a particular rubric point is addressed before some of the Rubric points are evaluated as this is a mandatory requirement**
+
+Hope you make the required changes soon.
+We look forward to receiving your future project submissions soon. 
+
+
+** Have a Good Day and Stay Safe ✌ **
+
+### Keep Learning and Stay Udacious
+:udacious:
+

@@ -1,0 +1,204 @@
+python3 -m pip uninstall werkzeug
+
+python3 -m pip install werkzeug==0.16.0
+
+
+**All test cases passed successfully :heavy_check_mark:**
+
+
+##### **REQUIRES CHANGE**
+### 1. Balloting Test :heavy_check_mark:
+**All the tests (14/14) passed successfully :white_check_mark:**
+![Screenshot from 2021-07-17 03-00-11.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626474076/Screenshot_from_2021-07-17_03-00-11.png)
+
+### 2. Registry Test  :heavy_check_mark:
+**All the tests (4/4) passed successfully :white_check_mark:**
+![Screenshot from 2021-07-17 03-02-27.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626472887/Screenshot_from_2021-07-17_03-02-27.png)
+
+### 3. Minimization Test :x:
+**All the 3 tests are failing here :point_down:**
+![Screenshot from 2021-07-17 03-23-04.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626472805/Screenshot_from_2021-07-17_03-23-04.png)
+
+
+### 4. Privacy Sanity Test :x:
+** 3 out of the 4 tests are failing here :point_down:**
+![Screenshot from 2021-07-17 03-21-13.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626472858/Screenshot_from_2021-07-17_03-21-13.png)
+
+***
+## CAUSE OF ERROR
+
+* **As can be seen in the error message, the `gen_salt_or_pepper()` is not defined in the `Voter` object** :point_down:
+![Screenshot from 2021-07-17 03-36-01.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626473176/Screenshot_from_2021-07-17_03-36-01.png)
+
+
+* **This happened because the name of the method  in `secret_registry` is `gen_salt()` whereas the method name in `Voter` object is  `gen_salt_or_pepper()` . Please use the same name in Voter object too**
+![gen_salt() method.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626473775/gen_salt___method.png)
+
+
+**You can read more about Name error here - [Name Error](https://www.educba.com/python-nameerror/)**
+********************************************************************************************************************************
+
+**All test cases passed successfully :heavy_check_mark:**
+
+**As mentioned above,  2 of the 4 tests are failing. Please make sure all the tests run successfully :point_down:**
+* **Balloting Test (14/14) ** :white_check_mark: 
+* ** Minimization Test (0/3) ** :x:
+* **Privacy Sanity Test (1/4) ** :x:
+* **Registry Test (4/4)** :white_check_mark:
+
+
+### NOTE
+Before next submission, please follow these steps to ensure everything is correct :
+* `cd backend`
+* run `pytest` command 
+* All 24 test cases should pass
+********************************************************************************************************************************
+**All test cases passed successfully :heavy_check_mark:**
+
+**As mentioned above,  2 of the 4 tests are failing. Please make sure all the tests run successfully :point_down:**
+* **Balloting Test (14/14) ** :white_check_mark: 
+* ** Minimization Test (0/3) ** :x:
+* **Privacy Sanity Test (1/4) ** :x:
+* **Registry Test (4/4)** :white_check_mark:
+
+
+### NOTE
+Before next submission, please follow these steps to ensure everything is correct :
+* `cd backend`
+* run `pytest` command 
+* All 24 test cases should pass
+********************************************************************************************************************************
+## Well done !!
+
+* **`MinimalVoter` class has been used to store the national ID and name :heavy_check_mark:**
+*  **Mapping between the `ballot_id`  and `national_id` has been removed :heavy_check_mark: **
+
+
+
+* **The implementation of voter name and ID encryption and decryption is fantastic - well done there**. The issue arises where you're not actually storing these in the store; you're storing the plaintext values for the name, and the national ID, which makes this not really privacy protective because if the database is compromised, all that information is exposed to an attacker. The `MinimalVoter` class is the recommended class to do this with.
+
+* Also there's a mapping between `ballot_id` (or `ballot_number`) to `national_id`, This could easily be reversed to map from national_id to ballot_id with a range request. This mapping has no concept of the vote (good), but is has the comment stored with it, which clearly could undermine the secrecy of the ballot. The comments shouldn't be associated with the national ID in any way.
+
+* Also, because of the way they're stored, a nefarious actor could tell if two different ballots are associated with the same voter. **To solve the ballot problem, consider how you could embed information about the voter into the ballot number, such that when the voter casts the ballot, you can verify that the ballot number belongs to them. Whatever this method is would also have to not leak the personal information of the voter, or any internal identifiers of the voter.**
+
+**Hint 💡 :** You could remove the `voter_national_id` from the ballots table  as  information about the voter is already embedded in the ballot number while generating the ballot number.
+
+********************************************************************************************************************************
+The following sensitive data  is sanitized correctly :
+*  **`Phone numbers`** :white_check_mark:
+* **`Email addresses`**  :white_check_mark:
+* **`First name`**  :white_check_mark:
+* **`Last  name`**   :white_check_mark:
+* **`National ID`**  :white_check_mark:
+********************************************************************************************************************************
+**Great work informing the user about : **
+* ** How their data will be used** and 
+* **Warning about not entering the PII field** in the free-text field :white_check_mark: 
+
+![Screenshot from 2021-07-17 05-11-41.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626479067/Screenshot_from_2021-07-17_05-11-41.png)
+
+
+### Suggestion 
+It would look good if you keep all the  information point either above or below (preferable) the free-text field.
+
+********************************************************************************************************************************
+## Well Done !
+**The document analyzes all the 7 Privacy by Design principles for submitted code as well as provides the recommendations for future privacy improvements ** :white_check_mark:
+********************************************************************************************************************************
+## Hi There !!
+
+You have done a great job considering it was your first attempt. This is the a complicated project of the nanodegree, but in the end it teaches us the most valuable skills to have in the industry. **I like the fact how you have embedded the information about the voter into the ballot number itseld** :clap:. You are close to the appropriate project,however you need to correct some points before you're all set to go. 
+* ** Make sure that all the test cases of `Minimization Test` and `Privacy Sanity Test` run successfully.**
+* **Use `MinimalVoter` class to store the encrypted name and national ID in the data store**.
+* **Make sure that there is no connection/mapping between the `national id` of a voter and the `comments`**.
+
+
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+
+***
+### Useful Readings
+* Here is good blog which tells about merits of using salts or peppers while hashing, in order to prevent dictionary attacks.
+[**"Hashing PII Does not protect privacy**](https://www.johndcook.com/blog/2019/07/20/hashing-pii-does-not-protect-privacy/)
+* [**Homomorphic Encryption**](https://venturebeat.com/2020/01/16/meet-the-new-twist-on-data-encryption-that-promises-better-privacy-and-security-for-ai/)  - A type of encryption that permits select mathematical operations to be performed on encrypted values - without anything ever being decrypted.
+
+*** 
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+***************************************************************************************************************************************
+## Congratulations !!
+This a complicated project in this nanodegree, but in the end it is provides most valuable skills to have in the industry.Its good to see that you have **provided all the relevant screenshots and in-depth details in the self evaluation document. ** :clap:	
+You have really worked hard on this project and the project is the reflection of it. The hard work did pay off and you have passed with flying colors. :rainbow:
+
+### Useful Readings
+* Here is good blog which tells about merits of using salts or peppers while hashing, in order to prevent dictionary attacks.
+[**"Hashing PII Does not protect privacy**](https://www.johndcook.com/blog/2019/07/20/hashing-pii-does-not-protect-privacy/)
+* [**Homomorphic Encryption**](https://venturebeat.com/2020/01/16/meet-the-new-twist-on-data-encryption-that-promises-better-privacy-and-security-for-ai/)  - A type of encryption that permits select mathematical operations to be performed on encrypted values - without anything ever being decrypted.
+
+Good luck with whatever comes next! :)
+We look forward to receiving your future project submissions soon .
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+
+
+
+*****************************************************************************************************************************************
+
+## Hi There !!
+
+Your project couldn't be reviewed due to missing files :
+* **privacy-by-design self-evaluation document is not completed**
+* **The following screenshots are missing :**
+  *  **zero_state screenshot**
+  * **after_voting screenshot**
+
+Please ensure that you send all the files before we can evaluate your project.
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+
+***
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+************************************************************************************************************************************************
+
+## Congratulations !!
+You did an amazing job. Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project.Its good to see that you have **provided all the relevant screenshots and in-depth details in the self evaluation document. ** :clap:	
+You have really worked hard on this project and the project is the reflection of it. The hard work did pay off and you have passed with flying colors. :rainbow:
+
+### Useful Readings
+* Here is good blog which tells aboutabout techniques used for data minimization, and selective re-identification of sensitive data, with the real-world backdrop of the COVID-19 pandemic. Also goes into topics about tracking and identifying sensitive data. 
+[**"Beyond anonymisation**](https://blog.palantir.com/beyond-anonymisation-palantir-explained-3-46d9924df953/)
+
+Good luck with whatever comes next! :)
+We look forward to receiving your future project submissions soon .
+***
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep learning and stay Udacious
+:udacious:
+************************************************************************************************************************************************
+
+**This function name doesn't exist in the `secret-registry`. You need to rename it to - `gen_salt()`**
+
+**Please use `MinimalVoter` class to obfuscate the national id , first name and last name  before storing it in the store**
+
+## Perfect!!
+Well done embedding the voter information in the ballot itself. :clap:
+
+The `voter_national_id` and `voter_comments` shouldn't be mapped/connected in any way as it could undermine the ballot secrecy. Please make sure to remove the mapping somehow. Hint was already suggested in the project review.
+
+
+
