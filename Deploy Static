@@ -1,4 +1,4 @@
-**S3 bucket is visible in the AWS Management console. :white_check_mark:**
+###  **S3 bucket is visible in the AWS Management console. :heavy_check_mark:**
 
 Here is the official document of [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) . It tells you everything you  need to know about  S3 starting from creating a bucket to security policies.
 
@@ -18,7 +18,7 @@ Here is the official document of [Amazon S3](https://docs.aws.amazon.com/AmazonS
 **************************************************************************************************************************************************
 
 
-Screenshot showing all website files uploaded to the S3 bucket :white_check_mark:
+### Screenshot showing all website files uploaded to the S3 bucket :white_check_mark:
 
 The S3 bucket includes :point_down:
 * **index.html** :white_check_mark:
@@ -35,7 +35,7 @@ You need to include screenshot showing the following files uploaded to the bucke
 For eg.
 ![S3Files.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626368197/S3Files.png)
 **************************************************************************************************************************************************
-**S3 bucket is configured to support static website hosting. :white_check_mark:**
+### **S3 bucket is configured to support static website hosting. :heavy_check_mark:**
 
 
 No screenshot is provided showing the configuration to support static website hosting. :x:
@@ -46,7 +46,7 @@ Kindly provided the screenshot similar to the one mentioned below,
 
 **************************************************************************************************************************************************
 
-Public accessibility of content of S3 bucket. This allows to access the content of your bucket by any request over the internet  :white_check_mark:
+###  Public accessibility of content of S3 bucket. This allows to access the content of your bucket by any request over the internet  :heavy_check_mark:
 You can read about **Policies and permissions in IAM**  [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)  
 
 
@@ -60,7 +60,7 @@ You can read about **Policies and permissions in IAM**  [here](https://docs.aws.
 
 **************************************************************************************************************************************************
 
-**CloudFront has been enabled to retrieve and distribute website files. :white_check_mark:**
+###  **CloudFront has been enabled to retrieve and distribute website files. :heavy_check_mark:**
 
 
 **As of now you have shared different screenshot for CloudFront :point_down:**
@@ -69,14 +69,14 @@ You can read about **Policies and permissions in IAM**  [here](https://docs.aws.
 ### **You need to upload the screenshot for CloudFront distribution settings saying `Enabled` under the `State` column . For example :point_down:**
 ![CloudFrontDist.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626356418/CloudFrontDist.png)
 **************************************************************************************************************************************************
-Website is accessible publicly through all the 3 endpoints. :white_check_mark:
+## Website is accessible publicly through all the 3 endpoints. :white_check_mark:
 
-## CloudFront domain name url
+### CloudFront domain name url
 
-## Website endpoint url
+### Website endpoint url
 
 
-## S3-Object url
+### S3-Object url
 
 
 ## 1. **You have provided the CloudFront domain name and the website is accessible :heavy_check_mark:**

@@ -1,3 +1,6 @@
+**This specification was already passed in the previous submission**
+
+
 ### 1. Professional tone is used throughout the Eol :heavy_check_mark:
 ### 2. The expression of interest is not long :heavy_check_mark: 
 
@@ -6,8 +9,8 @@
 1. [**Writing Letter Of Interest**](https://au.indeed.com/career-advice/resumes-cover-letters/how-to-write-an-expression-of-interest) - You can go through this article to see how to write a Letter of Interest and see some examples as well.
 
 
-## 1. Professional tone is used throughout the Eol :heavy_check_mark:
-## 2. The expression of interest is quite long :x: 
+### 1. Professional tone is used throughout the Eol :heavy_check_mark:
+### 2. The expression of interest is quite long :x: 
 **Expression of Interests are short messages sent to the client to express interest in the client's project. I would recommend going through the introduction of EoIs in the classroom lecture here -** [**Introduction of Eols**](https://classroom.udacity.com/nanodegrees/nd083/parts/e01cbb55-3c1f-4682-9b70-f46c3c0d94e2/modules/73e443ba-5287-431c-a57d-53060e87c06e/lessons/3438ba01-e07c-4523-8de5-5e3d6d74876f/concepts/8dc56338-1268-4990-9fe5-02a0a316b420?contentVersion=1.0.0&contentLocale=en-us) .
 
 **Note 💡 **
@@ -170,6 +173,10 @@ I would recommend you to go through this link to understand the terminologies of
 ### Additional Resource
 **You can read more about the terminologies of Trello Board here - ** [**Getting Started With Trello Board**](https://blog.trello.com/trello-board-best-practices)
 
+**You can read more about the adding checklist to action card here - ** [**Adding checklists to cards**](https://help.trello.com/article/737-adding-checklists-to-cards#:~:text=Add%20Checklists%20via%20the%20%22Add,checklist%20from%20the%20card%20back.)
+
+
+
 **Please make sure that at least 3 (or preferably all ) action cards have a `Due Date` , `Description` (atleast  a sentence long) and `Checklist` (with  at least 2 items in it) . You can take a look at a following action card to get an idea how an ideal action card looks like :point_down:**
 ![2022-01-17_05-03.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1642376017/2022-01-17_05-03.png)
 
@@ -275,7 +282,7 @@ Bank: Dummy Bank**
 
 
 ### 1. The invoice lists the accepted mode of payment :x:
-**Your client should also know how he should pay you for the invoice you sent to him. For this, you need to  mention the mode of payment by which you wish the money to be transferred. For eg. Paypal, Bank Transfer, Payooner etc.**
+**Your client should also know how he should pay you for the invoice you sent to him. For this, you need to  mention the mode of payment by which you wish the money to be transferred. For eg. Paypal, Bank Transfer, Payoneer etc.**
 
 ### 2. Payment details are missing from your included invoice. :x:
 **Once you tell the accepted mode of payment, you also need to provide some dummy details in the invoice.  For example:**
@@ -292,7 +299,7 @@ Bank: Dummy Bank
 A/C: 1234567ED12
 Bank: Dummy Bank
 or in case of paypal maybe you could provide the email related to the paypal account
-
+***
 **Note 💡 : It is often recommended to keep at least 2 modes of payment. This is recommended so that on an unlucky day, if one payment mode fails to work, the client would have an alternate way to transfer the amount** 
 
 
@@ -309,9 +316,10 @@ You are very close to the appropriate project, however, you need to correct coup
 * **EOI should also include the positive impact of your proposed solution on client's business**
 * **Trello board doesn't have logical milestone and action cards**
 * **Please provide the correct link to your Trello board (not the  invitation link, but the board link)   **
-* **Make sure at least 3(or preferably all) action cards have a `Due Date`, `Description` (at least 1 sentence long) and `Checklist` (with at least 2 checklist items)**
 * **You need to have overall 5 milestone columns in your Trello board out of which 3 should be - `Development`, `Review` and ` Payment`**
 * **The Milestone columns and Action Cards need to be logical so that it makes sense. `Milestone` are the different phases in which a project may be divided and `Action cards` are the tasks that are performed in each milestone to achieve that milestone**
+* **Make sure at least 3(or preferably all) action cards have a `Due Date`, `Description` (at least 1 sentence long) 
+and `Checklist` (with at least 2 checklist items)**
 * **The service breakdown in the invoice requires change. It should be more descriptive**
 * **Provide some dummy details for the accepted mode of payments in the invoice template**
 * **Provide some accepted modes of payment with dummy details for each of the mode in the invoice template.**
