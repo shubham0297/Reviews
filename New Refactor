@@ -19,13 +19,15 @@ Great work deploying the project to kubernetes cluster :clap:
 
 ### `/feed` and `/user` backends are separated into independent projects. :heavy_check_mark:
 
-Backend is separated into two services, feed and user.
-
 As these services are standalone, it is unavoidable to repeat some code between them. This is one of the trade-offs of [**microservice architecture**](https://microservices.io/patterns/microservices.html)(You can read about it more over here). But considering the bigger picture, it is more beneficial for a company to repeat code, in order to decouple services which makes it easier to manage these services among different teams. Good job !
+
+
+
+Backend is separated into two services, feed and user.
 
 *************************************************************************************************************************
 
-Dockerfile present for 
+Dockerfile is present for 
 * Frontend :white_check_mark:
 * Backend (feed as well as user) :white_check_mark:
 * Reverse Proxy :white_check_mark:
@@ -55,11 +57,11 @@ You can even use that IP to test your app. But making this change and updating t
  Thanks for providing the Service-1.png, Service-2.png, and Service-3.png screenshots. According to these screenshots, I can confirm that you have deployed the cluster to AWS. However, as you can see in the screenshots below, the endpoints for the frontend and load balancer are still the cluster IPs. You should change the type of both of them to load-balancer, which will make AWS grant them publically reachable IP addresses. Now, your cluster is inaccessible from the outside.
 
 
-** For this specification you need to provide the screenshot of the following commands **
-1.  `kubectl get pods`
+### ** For this specification you need to provide the screenshot of the following commands **
+### 1.  `kubectl get pods`
 **This is required to verify that all the pods are in **Running** status.
 
-2.  `kubectl describe services`
+### 2.  `kubectl describe services`
 This is required to see all the running services and ensure that none of them expose any sensitive strings such as database passwords.
 
 
@@ -77,8 +79,8 @@ name: POSTGRES_PASSWORD
 
 
 *************************************************************************************************************************
-## Services have replicas :heavy_check_mark:
-## Autoscaling has been configured :heavy_check_mark:
+### 1. Services have replicas :heavy_check_mark:
+### 2. Autoscaling has been configured :heavy_check_mark:
 Here are some common ways of Autoscaling your application :point_right: [Kuberenetes Autoscaling](https://www.stackrox.com/post/2020/05/kubernetes-autoscaling-explained/)
 
 Great work with including the HPA in your submission, however, the **HPA does not work correctly at the moment**. As you can see in the screenshot below, there is an error because **Kubernetes can not show the CPU load of the pod.**
@@ -96,14 +98,22 @@ You can see how hpa is implemented also on the [kubernetes website](http://kuber
 ### 2. Autoscaling has been configured :x:
 Great work with including the HPA in your submission, however, the **HPA does not work correctly at the moment**. As you can see in the screenshot below, there is an error because **Kubernetes can not show the CPU load of the pod.**
 The **current value unknown means the pod won't be able to autoscale**.
+***
+### Suggestion
+* You can see how hpa is implemented also on the [kubernetes website](http://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/).
 
-You can see how hpa is implemented also on the [kubernetes website](http://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/).
-
-You will also need to deploy a metrics server, without it the metrics data won't be collected. If you are having trouble implementing it, please create a question so we can help you.
+* You will also need to deploy a metrics server, without it the metrics data won't be collected. If you are having trouble implementing it, please create a question so we can help you.
 
 *************************************************************************************************************************
-### Logging details have been attached for `backend` :heavy_check_mark:
+### Logging details have been attached for `backend pod` showing the user  activity :heavy_check_mark:
 
+
+
+
+**Though the logs have been attached for the backend pods, the idea of this specification is to see some user activity such as login, image upload etc. As of now, the screenshots just shows the service booting up. :point_down:**
+![Screen2022-03-26_18-2618-26-55.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1648299573/Screen2022-03-26_18-2618-26-55.png)
+ 
+**Please make sure you capture some user activity**
 
 Excellent, you have shared the backend logs, additionally I need to be able to see is logs of the backend pod so I can see the user activity such as login, image upload etc. At the moment, only the initial log of service booting up is shared.
 
@@ -111,6 +121,7 @@ This is a small detail, but since I do not have access to your AWS account, this
 
 ## Screenshot Missing :x:
 **Please provide screenshot of `kubectl logs {pod_name}` to show logging details of one of the backend API pod. **
+![Screen2022-03-12_12-5112-51-38.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1647069712/Screen2022-03-12_12-5112-51-38.png)
 *************************************************************************************************************************
  
  
@@ -243,6 +254,31 @@ We look forward to receiving your future project submissions. ✌
 * **Provide screenshot for `kubectl log {pod_name}` for one of the backend-pod**
 
 
+## Congratulations  !!
+
+You did an excellent work. Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project. :clap: Finally all the specifications are met.
+You have really worked hard on this project and the project is the reflection of it. The hard work did pay off and you have passed with flying colors. :rainbow:
+
+
+Good luck with whatever comes next! :)
+We look forward to receiving your future project submissions soon .
+
+***
+**Recommedations**
+
+* Here is a good read about the [Future of Kubernetes](https://www.redhat.com/en/blog/kubernetes-future-what-does-future-look)
+* [Kubernetes: Everything you need to know](https://enterprisersproject.com/article/2020/4/kubernetes-everything-you-need-know)
+***
+
+**PS :**   If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+
+**Have a Good Day and Stay Safe ✌ **
+### Keep learning and stay Udacious
+:udacious:
+
+
 
 HPA rubric item is missing. At the moment the cpu load can not be read, which means the pods will not autoscale. And make sure to increase the load on the pod in order to trigger the auto scale (how to do that is covered in the [walkthrough](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/) I linked), which will be visible via describe hpa command at the deployment pods property. You will need to install a [metrics server](https://github.com/kubernetes-sigs/metrics-server), otherwise the there is no data for HPA to work with. If you have any questions about this, you can always create a question on the knowledge platform, so we can have a conversation about it and debug the issue.
 
@@ -251,3 +287,5 @@ HPA rubric item is missing. At the moment the cpu load can not be read, which me
 
 
 
+
+I found a solution related to "kubectl describe hpa" not working in https://aws.amazon.com/vi/premiumsupport/knowledge-center/eks-metrics-server-pod-autoscaler/. It looks like I missed setup and run metric server.

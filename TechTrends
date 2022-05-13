@@ -1,7 +1,6 @@
-Application correctly returns :
-* 200 status code :white_check_mark:
-*  JSON response with the message: `“OK - healthy”`  on hitting the **/heathz** endpoint :white_check_mark:
-
+### Application correctly returns :
+* **200 status code :white_check_mark:**
+*  **JSON response with the message: `“OK - healthy”`  on hitting the **/heathz** endpoint :white_check_mark:**
 
 ***
 ## Suggestion
@@ -15,10 +14,9 @@ You can try to extend the /healthz endpoint to **return a 500 HTTP ERROR - unhea
 To validate your endpoint, try deleting the database.db file and check if the endpoint is returning a 500 error.
 
 ****************************************************************************************************************************************************
-Application correctly returns :
-* 200 status code :white_check_mark:
+### Application correctly returns :
+* **200 status code :white_check_mark:**
 * **Amount of posts (post_count)** and **number of database  connections  (db_connection_count)** :white_check_mark:
-
 
 ****************************************************************************************************************************************************
 
@@ -27,11 +25,11 @@ Well done!  Logs have been correctly recorded :white_check_mark:
 
 
 ## Whats done correctly :heavy_check_mark:
-Great work recording the following events to STDOUT & STDERR :
-* Accessing an article :white_check_mark:
-* Access "About Us" page :white_check_mark:
-* A new article is created  :white_check_mark:
-* 404 pages when a non-existing articles are accessed :white_check_mark:
+### Great work recording the following events to STDOUT & STDERR :
+* **Accessing an article :white_check_mark:**
+* **Access "About Us" page :white_check_mark:**
+* **A new article is created  :white_check_mark:**
+* **404 pages when a non-existing articles are accessed :white_check_mark:**
 
 ## What requires change 
 
@@ -94,11 +92,11 @@ As of now,  I can see only one log - when accessing the metric :point_down:
 Please ensure that the ERROR message is recorded only in case of actual error. For eg. on Accessing a non-existent article id.
 
 ****************************************************************************************************************************************************
-Dockerfile is present in the project directory :heavy_check_mark:
-* Base version is set to 2.7 :white_check_mark:
-* Application has been exported to port 3111 :white_check_mark:
-* Install packages defined in the requirements.txt file :white_check_mark:
-* Database is initialized with the pre-defined posts in the init_db.py file :white_check_mark:
+### Dockerfile is present in the project directory :heavy_check_mark:
+* **Base version is set to 2.7 :white_check_mark:**
+* **Application has been exported to port 3111 :white_check_mark:**
+* **Install packages defined in the requirements.txt file :white_check_mark:**
+* **Database is initialized with the pre-defined posts in the init_db.py file :white_check_mark:**
 
 ****************************************************************************************************************************************************
 
@@ -109,10 +107,9 @@ Dockerfile is present in the project directory :heavy_check_mark:
 ****************************************************************************************************************************************************
 
 
-* The docker image was executed locally :white_check_mark:
-* `docker-run-local` screenshot was provided :white_check_mark: 
-* All the commands and logs are  placed  in `docker_command` file :white_check_mark: 
-
+### 1. The docker image was executed locally :white_check_mark:
+### 2.  `docker-run-local` screenshot was provided :white_check_mark: 
+### 3.  All the commands and logs are  placed  in `docker_command` file :white_check_mark: 
 
 
 ****************************************************************************************************************************************************
@@ -155,34 +152,34 @@ However, as can be seen below the status is not correct and the two of the Pods 
 ****************************************************************************************************************************************************
 
 ### Chart.yaml  :heavy_check_mark:
-* apiVersion: v1 :white_check_mark:
-* name: techtrends :white_check_mark: 
-* version: 1.0.0 :white_check_mark:
+* **apiVersion: v1 :white_check_mark:**
+* **name: techtrends :white_check_mark: **
+* **version: 1.0.0 :white_check_mark:**
 
 ### Values.yaml :heavy_check_mark:
-* Namespace: sandbox :white_check_mark:
-* ClusterIP service exposing port “4111” and target port “3111” using “TCP” protocol :white_check_mark:
-* Image “techtrends:latest” with pull policy set to “IfNotPresent” :white_check_mark:
-* Replicas: 1 :white_check_mark:
-* Resources requests of CPU 250m and memory 64Mi; and limits of CPU 500m and memory 128Mi :white_check_mark:
-* Container port: “3111” :white_check_mark:
-* Liveness and readiness probes checking on “/healthz” path on port “3111” :white_check_mark:
+* **Namespace: sandbox :white_check_mark:**
+* **ClusterIP service exposing port “4111” and target port “3111” using “TCP” protocol :white_check_mark:**
+* **Image “techtrends:latest” with pull policy set to “IfNotPresent” :white_check_mark:**
+* **Replicas: 1 :white_check_mark:**
+* **Resources requests of CPU 250m and memory 64Mi; and limits of CPU 500m and memory 128Mi :white_check_mark:**
+* **Container port: “3111” :white_check_mark:**
+* **Liveness and readiness probes checking on “/healthz” path on port “3111” :white_check_mark:**
 
 
 ****************************************************************************************************************************************************
 
 ### values-staging.yaml :heavy_check_mark:
-* Namespace: staging :white_check_mark:
-* Service port set to “5111” :white_check_mark:
-* Replicas: 3 :white_check_mark:
-* Resources requests of CPU 300m and memory 90Mi; and limits of CPU 500m and memory 128Mi :white_check_mark:
+* **Namespace: staging :white_check_mark:**
+* **Service port set to “5111” :white_check_mark:**
+* **Replicas: 3 :white_check_mark:**
+* **Resources requests of CPU 300m and memory 90Mi; and limits of CPU 500m and memory 128Mi :white_check_mark:**
 
 ### values-prod.yaml :heavy_check_mark:
-* Namespace: prod :white_check_mark:
-* Service port set to “7111” :white_check_mark:
-* Image pull policy: “Always” :white_check_mark:
-* Replicas: 5 :white_check_mark:
-* Resources requests of CPU 350m and memory 128Mi; and limits of CPU 500m and memory 256Mi :white_check_mark:
+* **Namespace: prod :white_check_mark:**
+* **Service port set to “7111” :white_check_mark:**
+* **Image pull policy: “Always” :white_check_mark:**
+* **Replicas: 5 :white_check_mark:**
+* **Resources requests of CPU 350m and memory 128Mi; and limits of CPU 500m and memory 256Mi :white_check_mark:**
 
 *** 
 ### Additional Resource
@@ -203,12 +200,12 @@ Helm chart have been used :white_check_mark:
 
 
 ### helm-techtrends-staging.yaml :heavy_check_mark:
-* Name: techtrends-staging :white_check_mark:
-* Reference values file: values-staging.yaml :white_check_mark:
+* **Name: techtrends-staging :white_check_mark:**
+* **Reference values file: values-staging.yaml :white_check_mark:**
 
 ### helm-techtrends-prod.yaml :heavy_check_mark:
-* Name: techtrends-prod :white_check_mark:
-* Reference values file: values-prod.yaml :white_check_mark:
+* **Name: techtrends-prod :white_check_mark:**
+* **Reference values file: values-prod.yaml :white_check_mark:**
 
 ****************************************************************************************************************************************************
 

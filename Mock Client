@@ -2,12 +2,14 @@
 
 
 ### 1. Professional tone is used throughout the Eol :heavy_check_mark:
-### 2. The expression of interest is not long :heavy_check_mark: 
+### 2. The expression of interest is within the word limits :heavy_check_mark: 
 
 ***
 ### Useful resources
 1. [**Writing Letter Of Interest**](https://au.indeed.com/career-advice/resumes-cover-letters/how-to-write-an-expression-of-interest) - You can go through this article to see how to write a Letter of Interest and see some examples as well.
 
+
+**As mentioned in the rubric point, the EoI should be between 200-300 words. As of now your EoI is of 124 words. Please make sure it is within the range **
 
 ### 1. Professional tone is used throughout the Eol :heavy_check_mark:
 ### 2. The expression of interest is quite long :x: 
@@ -52,7 +54,7 @@ You may refer to this post to check some [**JavaScript Libraries or Framework**]
 * **You need to provide a solution as to how you will solve the client's problem. **
 * **If you look at the project listing document, it says that the client is `not sure about which JavaScript library to use`. So, what client expects in the Expression of Interest is something related to the JavaScript libraries.**
 ![2022-01-27_19-28.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1643291891/2022-01-27_19-28.png)
-* **You have mentioned that you have 1 year of experience in HTML,CSS and Javascript but you haven't provided any solid solution**. 
+* **You have mentioned that you have 1 year of experience in HTML,CSS and Javascript but you haven't provided any solid solution (any library or tool that you would be using to work on client's problem)**. 
 * **You need to research about some of the JavaScript libraries and mention why do you think we should use it.**
 ***
 ### Additional Resource
@@ -60,7 +62,28 @@ You may refer to this post to check some [**JavaScript Libraries or Framework**]
 
 
 
-## 1. EOL identifies potential client's need :x:
+* **You need to provide a solution as to how you will solve the client's problem. **
+* **If you look at the project listing document, it says that the client is `looking for you help in migrating the data with tool of your choice`. So, what client expects in the Expression of Interest is something related to the `some tool to migrate data, organise data or create report`.**
+
+![Screen2022-04-16_18-3018-30-20.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1650114062/Screen2022-04-16_18-3018-30-20.png)
+* **You have mentioned that you have 1 year of experience in data analysis using python but you haven't provided any solid solution (any library or tool that you would be using to work on client's problem)**. 
+* **You need to research about some of the tools or libraries and mention why do you think we should use it.**
+***
+### Additional Resource
+You may refer to this post to check some [**Data Visualization Tools**](https://blog.panoply.io/top-25-reporting-tools-and-how-to-choose-the-best-option).
+
+
+
+### 1. EOL identifies potential client's need :heavy_check_mark:
+### 2. EOL provides the solution to client's problem :x: 
+* **You need to provide a solution as to how you will solve the client's problem. **
+* **If you look at the project listing document, it says that the client is `not sure about the tool they will be using for audience segmentation, custom email creation, and call-to-action development. `. So, what client expects in the Expression of Interest is something related to the the tool which can perform these functionalities.**
+![Screen2022-04-19_18-4118-41-40.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1650373977/Screen2022-04-19_18-4118-41-40.png)
+* **You have mentioned that you have 2 years of experience in digital marketing but you haven't provided any solid solution (any library or tool that you would be using to work on client's problem)**. 
+* **You need to research about some of the tools and mention why do you think we should use it.**
+
+
+### 1. EOL identifies potential client's need :x:
 **You need to start the Eol by  acknowledging the client’s problem/need. Look at the sample Eol given below to see how the freelancer has acknowledged the client's need :point_down:**
    
 ![Re-iterating Client Need.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1630020230/Re-iterating_Client_Need.png)
@@ -85,10 +108,19 @@ You may refer to this post to check some [**JavaScript Libraries or Framework**]
 * **In this specification, you are expected to tell how your proposed solution will positively impact the client's business like (cost efficiency, speed efficiency, revenue generation etc.). This is your chance to stand-out amongst other freelancer. If you are able to convince that your solution will positively impact their business, there are high chances the client will select you to achieve his request**
 
 
-* **For eg. if your proposed solution is using the `React` library, then you should be able to tell how React is going to help in terms the client. This should be related to business aspect. For instance, it would increase the site's performance and therefore have more userbase**
+* **For eg. if your proposed solution is using the `React` library, then you should be able to tell how React is going to help the client. This should be related to business aspect. For instance, it would increase the site's performance and therefore have more userbase**
 
 
 * **Currently you have mentioned, that you will be using `ReactJs` and what it does. But there will be thousands of developers who will be using `React`. So, it becomes important to somehow convince the client about your solution. This can be done by connecting the technical solution (using `React` and its advantages) to the business aspect like revenue, increased user, high availability of website etc.**
+
+
+* **For eg. your proposed solution is using the `Microsoft Power BI` library, then you should be able to tell how `Microsoft Power BI` is going to help the client. This should be related to business aspect. For instance, how will `Microsoft Power BI` help the client's 'Insurance business'.**
+
+### Suggestion
+**I good way to do this is to use the following format : **
+```
+By using  X tool  Y can be acheived resulting in Z (Here Z can be the business value for the insure company. For eg. revenue, profit, cost/time saving etc)
+ ```
 
 
 
@@ -101,6 +133,18 @@ You may refer to this post to check some [**JavaScript Libraries or Framework**]
 
 
 **This specification would be tested, once you implement the change suggested in  the previous point**.
+
+* **For eg. if your proposed solution is using the `XYZ` plugin/function, then you should be able to tell how that  plugin/function is going to help the client. This should be related to business aspect. **
+
+
+* **For eg. if your proposed solution is using the `MailChimp`, then you should be able to tell how that  `MailChimp` is going to help the client. This should be related to business aspect. **
+***
+### Suggestion
+**I good way to do this is to use the following format : **
+```
+By using  X tool  Y can be acheived resulting in Z (Here Z can be the business value for the insure company. For eg. revenue, profit, cost/time saving etc)
+ ```
+
 
 ************************************************************************************************************************************************
 ### 1. Screenshot of Trello board has been included in the doc file :heavy_check_mark:
@@ -135,14 +179,14 @@ You may refer to this post to check some [**JavaScript Libraries or Framework**]
 **You need to make the Trello board `PUBLIC` and send the url of the board so that anyone with the link can view your Trello board. As of now, you have provided the `Invitation Link`, which asks a user to sign up to Trello and join your board. :point_down:**
 
 
-**Please ensure that you send the board url that land on your Trello board without asking the user to sign up**
+**Please ensure that you send the board url that land on your Trello board without asking the user to sign up/sign in**
 
 
 ### This specification would be tested once you makes the changes suggested in the previous specification.
 
 ************************************************************************************************************************************************
 ### 1. Trello board should have overall 5 columns :x:
-**I can see that your Trello board has 6 milestone columns. You can remove the unwanted milestone**
+**I can see that your Trello board has only 3 milestone columns. Please add two more milestone columns in order to have a total of 5**
 
 ### Trello boards includes the following 3 columns :
 *  **Development**  :white_check_mark:
@@ -177,7 +221,7 @@ I would recommend you to go through this link to understand the terminologies of
 
 
 
-**Please make sure that at least 3 (or preferably all ) action cards have a `Due Date` , `Description` (atleast  a sentence long) and `Checklist` (with  at least 2 items in it) . You can take a look at a following action card to get an idea how an ideal action card looks like :point_down:**
+**Please make sure that  all the action cards have a `Due Date` , `Description` (atleast  a sentence long) and `Checklist` (with  at least 2 items in it) . You can take a look at a following action card to get an idea how an ideal action card looks like :point_down:**
 ![2022-01-17_05-03.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1642376017/2022-01-17_05-03.png)
 
 
@@ -202,7 +246,7 @@ I would recommend you to go through this link to understand the terminologies of
 This part will be checked once you make the changes in the Trello Board and add logical action cards. For eg. one action card under development milestone column can be Home Page PSD conversion to custom code with checklists as HTML code to Home Page, CSS for Home Page etc.  
 
 * **Try to give logical names to the action cards such that a person viewing your Trello Board can look at the name of the card and get an idea about what will be done in that particular card**
-* **The project listing requires you to convert 10 PSD to custom code, so you can imagine a real word website and  think abut different pages it has. For eg. instead of naming  action cards as `javascript` , `development` etc you can name the cards as  `Welcome Page HTML`, `About US Page Code` etc. These make more sense and can be easily moved from one milestone to other based on their status on completion. Lets say if `Welcome Page` is 50% development, it could be under development milestone. Once it is fully developed, it can me moved to Review milestone.**
+* **The project listing requires you to convert 10 PSD to custom code, so you can imagine a real word website and  think abut different pages it has. For eg. instead of naming  action cards as `javascript` , `development` etc you can name the cards as  `Welcome Page HTML`, `About US Page Code` etc. These make more sense and can be easily moved from one milestone to other based on their status on completion. Lets say if `Welcome Page` is 50% developed, it could be under development milestone. Once it is fully developed, it can me moved to Review milestone.**
 * You can take a look at a following action card to get an idea how an ideal action card looks like :point_down:
 ![Screenshot from 2022-01-19 19-16-43.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1642600010/Screenshot_from_2022-01-19_19-16-43.png)
 ***
@@ -250,12 +294,18 @@ Also, the order of milestone is important. In real world scenario, payment is th
 
 I would recommend you to change the service names and description to keep it more professional so that client is satisfied and clears the invoice without any questions. 
 
+
+### Suggestion
+* **You can write a service like `Development`, `Testing` etc and then provide in the description section mention what all you did as a part of the service **
+OR
+* **You can also provide individual services like `Home Page Development`, `About Us Page` and then provide a line of description on what all you did in this service.**
+
 ************************************************************************************************************************************************
 ### The invoice includes a payment deadline with reasonable time gap between generated date and due date.:heavy_check_mark:
 
 
 ***
-### Suggestion:
+### Suggestion 💡
 **I would suggest you to keep at least 2 weeks gap between the `Date issued` and `Date due`. This is recommended as the invoice has to be validated and goes through various steps before it is cleared and payment is made. This process may take couple of weeks, so it is a good practice to give at least 2 weeks or month gap between the two dates**
 
 
@@ -283,25 +333,28 @@ Bank: Dummy Bank**
 
 ### 1. The invoice lists the accepted mode of payment :x:
 **Your client should also know how he should pay you for the invoice you sent to him. For this, you need to  mention the mode of payment by which you wish the money to be transferred. For eg. Paypal, Bank Transfer, Payoneer etc.**
-
+***
 ### 2. Payment details are missing from your included invoice. :x:
 **Once you tell the accepted mode of payment, you also need to provide some dummy details in the invoice.  For example:**
 A/C: 12879EG998234
 Bank: Dummy Bank
+In case of paypal/payoneer - you could provide the email related to the paypal/payoneer account (For eg. abcd@gmail.com)
+
 ***
-**Note 💡 : It is often recommended to keep at least 2 modes of payment. This is recommended so that on an unlucky day, if one payment mode fails to work, the client would have an alternate way to transfer the amount** 
+### Suggestion 💡
+**It is often recommended to keep at least 2 modes of payment. This is recommended so that on an unlucky day, if one payment mode fails to work, the client would have an alternate way to transfer the amount** 
 
 
 
 ### 1. The invoice lists the accepted mode of payment :heavy_check_mark:
+***
 ### 2. Payment details are missing from your included invoice. :x:
 **You need to provide some dummy details in the invoice.  For example:**
-A/C: 1234567ED12
-Bank: Dummy Bank
-or in case of paypal maybe you could provide the email related to the paypal account
+A/C: 0005678RH22
+Bank: Bank of Astonia (Dummy Bank)
+In case of paypal/payoneer - you could provide the email related to the paypal/payoneer account (For eg. abcd@gmail.com)
 ***
 **Note 💡 : It is often recommended to keep at least 2 modes of payment. This is recommended so that on an unlucky day, if one payment mode fails to work, the client would have an alternate way to transfer the amount** 
-
 
 
 ************************************************************************************************************************************************
@@ -310,16 +363,16 @@ You did an amazing job considering it was your first attempt. Its really good to
 
 You are very close to the appropriate project, however, you need to correct couple of small points before you're all set to go.
 
-* **Try to keep the EOI short and concise**
+* **EOI should be between 200-300 words**
 * **You need to start the EOI by acknowledging the client's requirement**
 * **You need to propose a proper solution (this can be any specific tool/library/technique/skillset etc. )  to the client's problem **
 * **EOI should also include the positive impact of your proposed solution on client's business**
 * **Trello board doesn't have logical milestone and action cards**
 * **Please provide the correct link to your Trello board (not the  invitation link, but the board link)   **
+* **Please provide the correct link to your Trello board that lands on your board without asking the users to sign in or sign up  **
 * **You need to have overall 5 milestone columns in your Trello board out of which 3 should be - `Development`, `Review` and ` Payment`**
 * **The Milestone columns and Action Cards need to be logical so that it makes sense. `Milestone` are the different phases in which a project may be divided and `Action cards` are the tasks that are performed in each milestone to achieve that milestone**
-* **Make sure at least 3(or preferably all) action cards have a `Due Date`, `Description` (at least 1 sentence long) 
-and `Checklist` (with at least 2 checklist items)**
+* **Make sure at least 3(or preferably all) action cards have a `Due Date`, `Description` (at least 1 sentence long) and `Checklist` (with at least 2 checklist items)**
 * **The service breakdown in the invoice requires change. It should be more descriptive**
 * **Provide some dummy details for the accepted mode of payments in the invoice template**
 * **Provide some accepted modes of payment with dummy details for each of the mode in the invoice template.**
@@ -347,7 +400,7 @@ Making the required changes and submitting the project in such a short span of t
 ************************************************************************************************************************************************
 
 ## Congratulations !!
-You have done a great job. Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project. :clap: I like the fact that **you understood the concepts told in the classroom and previous reviews well. The EOL, Trello board and the Invoice are good to go for a real world project**. The hard work did pay off and you have passed the project with flying colors. :rainbow:
+You did an excellent work. Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project. :clap: I like the fact that **you understood the concepts told in the classroom and previous reviews well. The EOL, Trello board and the Invoice are good to go for a real world project**. The hard work did pay off and you have passed the project with flying colors. :rainbow:
 
 Its time to **conquer the freelancing marketplaces :trophy:**
 

@@ -7,18 +7,20 @@ Nice job! I see a S3 bucket specified in the AWS management console. :white_chec
 
 
 
-**You need to include screenshots such that S3 bucket is visible in  the AWS Management console. For eg. :point_down:**
+### **You need to include screenshots such that S3 bucket is visible in  the AWS Management console. For eg. :point_down:**
 
-![S3bucket.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626368090/S3bucket.png)
 
+![Screen2022-05-06_11-2511-25-51.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1651816622/Screen2022-05-06_11-2511-25-51.png)
 
 Here is the official document of [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) . It tells you everything you  need to know about  S3 starting from creating a bucket to security policies.
+
+![S3bucket.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626368090/S3bucket.png)
 
 
 **************************************************************************************************************************************************
 
 
-### Screenshot showing all website files uploaded to the S3 bucket :white_check_mark:
+### Screenshot showing all website files uploaded to the S3 bucket :heavy_check_mark:
 
 The S3 bucket includes :point_down:
 * **index.html** :white_check_mark:
@@ -33,13 +35,15 @@ You need to include screenshot showing the following files uploaded to the bucke
 * **vendor folder** 
 
 For eg.
-![S3Files.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626368197/S3Files.png)
+![Screen2022-05-06_19-3819-38-14.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1651846106/Screen2022-05-06_19-3819-38-14.png)
 **************************************************************************************************************************************************
 ### **S3 bucket is configured to support static website hosting. :heavy_check_mark:**
 
 
-No screenshot is provided showing the configuration to support static website hosting. :x:
-Kindly provided the screenshot similar to the one mentioned below,
+### No screenshot is provided showing the configuration to support static website hosting. :x:
+**Kindly provide the screenshot similar to the one mentioned below,**
+![Screen2022-05-06_11-3111-31-04.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1651816875/Screen2022-05-06_11-3111-31-04.png)
+
 ![Screen2022-02-02_13-0913-09-29.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1643787674/Screen2022-02-02_13-0913-09-29.png)
 
 ![Staitic.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1560171435/Staitic.PNG)
@@ -47,12 +51,15 @@ Kindly provided the screenshot similar to the one mentioned below,
 **************************************************************************************************************************************************
 
 ###  Public accessibility of content of S3 bucket. This allows to access the content of your bucket by any request over the internet  :heavy_check_mark:
+
 You can read about **Policies and permissions in IAM**  [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)  
 
 
 
-**You need to include the screenshot for IAM policy for your bucket like this :point_down:**
-![Screen2022-02-02_13-0913-09-29.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1643787735/Screen2022-02-02_13-0913-09-29.png)
+### **You need to include the screenshot for IAM policy for your bucket like this :point_down:**
+![Screen2022-05-06_13-4013-40-36.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1651824646/Screen2022-05-06_13-4013-40-36.png)
+
+![Screen2022-03-19_19-2719-27-43.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1647698304/Screen2022-03-19_19-2719-27-43.png)
 
 ![4. IAM_Policy.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1560170753/4._IAM_Policy.PNG)
 
@@ -67,23 +74,31 @@ You can read about **Policies and permissions in IAM**  [here](https://docs.aws.
 
 
 ### **You need to upload the screenshot for CloudFront distribution settings saying `Enabled` under the `State` column . For example :point_down:**
-![CloudFrontDist.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626356418/CloudFrontDist.png)
+![Screen2022-03-29_18-0718-07-34.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1648557462/Screen2022-03-29_18-0718-07-34.png)
+
+
+**We know that you have done everything correctly (as the website is correctly accessible through the CloudFront domain name URL). However, as per the rubric - **
+
+**```The screenshot should say `Enabled` under the `State` column" ```**
+
+** So, please attach the expected screenshot in order to pass the specification.**
 **************************************************************************************************************************************************
-## Website is accessible publicly through all the 3 endpoints. :white_check_mark:
+## Website is accessible publicly through all the 3 endpoints. :heavy_check_mark:
 
-### CloudFront domain name url
+### 1. CloudFront domain name url :white_check_mark:
 
-### Website endpoint url
+***
+### 2. Website endpoint url :white_check_mark:
 
-
-### S3-Object url
+***
+### 3. S3-Object url :white_check_mark:
 
 
 ## 1. **You have provided the CloudFront domain name and the website is accessible :heavy_check_mark:**
 
 
-## 2. You also need to also provide the **S3 website-endpoint URL** for the website. :x:
-**It should be something like : **
+## 2. 
+**You also need to  provide the `S3 website-endpoint URL` for the website in the README file.It should be something like : **
 ### `http://{name}.s3-website.{region}.amazonaws.com/`
 
 
@@ -126,7 +141,7 @@ Keep it Up !! Wishing you Best of Luck for journey ahead :)
 * It would be good if you update the README file by giving a small project description, so that a layman can quickly get a gist of what the project is all about. - [Sample Template for README file](https://github.com/othneildrew/Best-README-Template)
 ***
 **Recommendation**
-* **Security is one of the crucial aspect of any application in an organization. The following video describes how you can [Securely access your Amazon S3 static website](http://youtube.com/watch?v=sf-JWDDw2O4)**
+* **Security is one of the crucial aspect of any application in an organization. The following video describes how you can [Securely access your Amazon S3 static website](https://www.youtube.com/watch?v=xFzJw6wJ8eY)**
 ***
 
 **PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
@@ -142,9 +157,13 @@ Keep it Up !! Wishing you Best of Luck for journey ahead :)
 You have done a great job considering it was your first attempt.
 Its good to see that **you have provided the CloudFront and website-endpoint  urls and the website can be accessed successfully** :clap: 
 You are really close to the appropriate project and just need to make couple of small changes before you're all set to go :
+* **Provide a screenshot showing the S3 bucket in the AWS Manamgement Console**
+* **Provide a screenshot showing that static website hosting has been configured on S3 bucket**
 * **Provide a screenshot showing the Bucket Policy**
 * **Provide a screenshot for CloudFront which shows the `State` as `Enabled` **
 * **Provide the website-endpoint URL**
+* **Make sure that the website is reachable through all the endpoints**
+
 
 Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
 ***
@@ -152,7 +171,7 @@ Hope you make the required changes soon. We look forward to receiving your futur
 * It would be good if you update the README file by giving a small project description, so that a layman can quickly get a gist of what the project is all about. - [Sample Template for README file](https://github.com/othneildrew/Best-README-Template)
 ***
 **Recommendation**
-* **Security is one of the crucial aspect of any application in an organization. The following video describes how you can [Securely access your Amazon S3 static website](http://youtube.com/watch?v=sf-JWDDw2O4)**
+* **Security is one of the crucial aspect of any application in an organization. The following video describes how you can [Securely access your Amazon S3 static website](https://www.youtube.com/watch?v=xFzJw6wJ8eY)**
 ***
 **PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
 
@@ -176,7 +195,7 @@ Keep it Up !! Wishing you Best of Luck for journey ahead :)
 * It would be good if you update the README file by giving a small project description, so that a layman can quickly get a gist of what the project is all about. - [Sample Template for README file](https://github.com/othneildrew/Best-README-Template)
 ***
 **Recommendation**
-* **Security is one of the crucial aspect of any application in an organization. The following video describes how you can [Securely access your Amazon S3 static website](http://youtube.com/watch?v=sf-JWDDw2O4)**
+* **Security is one of the crucial aspect of any application in an organization. The following video describes how you can [Securely access your Amazon S3 static website](https://www.youtube.com/watch?v=xFzJw6wJ8eY)**
 ***
 
 **PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
@@ -262,3 +281,5 @@ Have a Good Day and Stay Safe ✌
 * **This following article explains CI/CD in detail.** - [Continuous Integration Continuous Deployment (CI/CD](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment) - 
 * **Here is the official documentation of AutoScaling groups ** - [AWS : AutoScaling:AutoScalingGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html)   
 ***
+
+### Great work providing both the URLs :clap:

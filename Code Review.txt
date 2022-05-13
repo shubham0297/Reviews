@@ -387,7 +387,7 @@ If we have no available rooms between the given checkIn and checkOut dates,** we
 
 
 
-**As mentioned in the `HotelResouce` class, you could reuse the `findRooms` method instead of this one as the main motive of the function is to find available rooms between 2 given dates. Only difference between is that in Recommended room we need to add 7 to the given Check-In and Check-Out date, before passing it to the function.** 
+**As mentioned in the `HotelResource` class, you could reuse the `findRooms` method instead of this one as the main motive of the function is to find available rooms between 2 given dates. Only difference between is that in Recommended room we need to add 7 to the given Check-In and Check-Out date, before passing it to the function.** 
 
 For comparing dates you could refer to any of these methods --> Comparing Dates (https://www.geeksforgeeks.org/compare-dates-in-java)
 I recommend using method 2 ie. .before() and .after() method.

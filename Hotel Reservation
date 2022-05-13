@@ -1,8 +1,7 @@
-**This specification was already passed in the previous submission**
+### **This specification was already passed in the previous submission**
 
 
-
-`IRoom interface` has been implemented by the `Room` class correctly. :white_check_mark:
+### `IRoom interface` has been implemented by the `Room` class correctly. :white_check_mark:
 
 
 Great job meeting this rubric item. It is a good design principle to program to an interface
@@ -13,32 +12,39 @@ Imagine that in the future the hotel adds a PremiumRoom. No problems will arise 
 
 
 ********************************************************************************************************************************************
-`FreeRoom` class extends the `Room` class. Though the FreeRoom class hasn't been really used but inheriting the Room class promotes the code reuse and ensures that there is no redundant code.:white_check_mark:
+### `FreeRoom` class extends the `Room` class. :heavy_check_mark:
+**Though the FreeRoom class hasn't been really used but inheriting the Room class promotes the code reuse and ensures that there is no redundant code. ** :white_check_mark:
 
 Inheritance promotes code reuse and discourages redundancy. Good job adding an extends relationship between Room and FreeRoom
 
 
 ********************************************************************************************************************************************
-Great work encapsulating the data in all the model classes. Using appropriate access specifiers to ensure that the variables are accessible through the `getter` method .:white_check_mark:
+### Data encapsulation is present :heavy_check_mark:
+**Great work encapsulating the data in all the model classes. Using appropriate access specifiers to ensure that the variables are accessible through the `getter` method. ** :white_check_mark:
+
 
 Good job using data encapsulation in your models. Declaring 'private' variables and only exposing them via dedicated APIs reduces security concerns that may arise as a result of excess data exposure.
 
 
 ********************************************************************************************************************************************
-`toString()` method has been overridden in all the model classes. :white_check_mark:
+### `toString()` method has been overridden in all the model classes. :white_check_mark:
 
 Sometimes, we need better object descriptions when we print them to any output stream. Overriding the toString method to provide custom data is necessary in such cases. Good job meeting this requirement.
 
 
 ********************************************************************************************************************************************
-`equals` and `hashcode` methods have been overridden for `Customer` and `Room` class :white_check_mark:
+### `equals` and `hashcode` methods have been overridden for `Customer` and `Room` class :white_check_mark:
 
 Most of the students miss this specification in their first submission. Its great to see that you didn't :clap:
 
-You need to override `equals` and `hashcode` methods  for atleast one of the model classes ( `Room`, `Customer`, `Reservation` ) .
-As of now, you haven't done the same.
-[Why to Override equals(Object) and hashCode() method ?](https://www.geeksforgeeks.org/override-equalsobject-hashcode-method/)
 
+###   `equals` and `hashcode` have been overridden :x:
+
+**You need to override `equals` and `hashcode` methods  for atleast one of the model classes ( `Room`, `Customer`, `Reservation` ) . As of now, you haven't done the same. **
+***
+
+**Addtional Resources**:
+* [Why to Override equals(Object) and hashCode() method ?](https://www.geeksforgeeks.org/override-equalsobject-hashcode-method/)
 
 Some developers overlook this but you are obviously not one of them. Bravo!! I once spent two hours figuring why duplicate objects were added to my Set and I later found out that I had committed these!!
 
@@ -46,7 +52,12 @@ The default equals() and hashcode() methods in the Objectclass do not provide un
 
 ********************************************************************************************************************************************
 
-Access modifiers ( `public`, `private` and `final` ) have been used correctly. :white_check_mark:
+### Access modifiers  have been used correctly. :heavy_check_mark:
+
+* **`public` access specifier has been used :white_check_mark: **
+* **`private` access specifier has been used :white_check_mark: **
+* **`final` access specifier has been used :white_check_mark:**
+
 
 * Access modifiers `public` and `private` have been used correctly. :white_check_mark:
 * You also need to use ` final ` in some of the data model class. :x:
@@ -67,14 +78,15 @@ You can read about the final variable here :point_right: [**Final Variable**](ht
 
 
 
-## Collection has been used :heavy_check_mark:
+### 1. Collection has been used :heavy_check_mark:
 
-HashMap has been used to store the Room, Customer and Reservation data. :white_check_mark:
+**HashMap has been used to store the Room, Customer and Reservation data. :white_check_mark:**
 
 
-## Duplicate Reservations not allowed :heavy_check_mark:
-The application correctly handles **duplicate  room scenario**. Same room can be booked only once for a given date range, as can be seen below :white_check_mark:
+### 2. Duplicate Reservations not allowed :heavy_check_mark:
+**The application correctly handles `duplicate  room scenario`. Same room can be booked only once for a given date range, as can be seen below :white_check_mark:**
 
+![1.gif](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1651229283/1.gif)
 
 ********************************************************************************************************************************************
 
@@ -109,9 +121,10 @@ You can see more about this requirement  [**HERE**](https://classroom.udacity.co
 ********************************************************************************************************************************************
 
 
-Good job using static references to create singletons in your application.
-
-[You can read more about Singletons in Java here](https://www.baeldung.com/java-singleton#:~:text=For%20example%2C%20singletons%20are%20often,configuration%20for%20the%20test%20environment.)
+### Good job using static references to create singletons in your application. :heavy_check_mark:
+***
+**Additional Resources**
+* [You can read more about Singletons in Java here](https://www.baeldung.com/java-singleton#:~:text=For%20example%2C%20singletons%20are%20often,configuration%20for%20the%20test%20environment.)
 
 **You need to create static references to create singletons in your application for the following classes :**
 **1. Admin Resource **
@@ -147,36 +160,38 @@ You can create a method without any identifier and call this method in some othe
 ********************************************************************************************************************************************
 
 
-
-Great job validating customer emails. We really do not want to end up storing strings that are not valid emails as emails.:white_check_mark:
-
-********************************************************************************************************************************************
-Application contains the enumeration class `RoomType` :white_check_mark:
-
-You can read more about Java Enums here: [**Enums**](https://www.w3schools.com/java/java_enums.asp)
+### Email Validation is present :heavy_check_mark:
+**Great job validating customer emails. We really do not want to end up storing strings that are not valid emails as emails.:white_check_mark:**
 
 ********************************************************************************************************************************************
-Date objects have been used for check-in date and check-out date. :white_check_mark:
 
-It is always important to use the correct types to represent data in our applications. Good job using Date objects for date and check-out date.
+### **Application contains the enumeration class `RoomType` :heavy_check_mark:**
+***
+### Additional Resources
+* **You can read more about Java Enums here: **[**Enums**](https://www.w3schools.com/java/java_enums.asp)
+
+********************************************************************************************************************************************
+### **Date objects have been used for check-in date and check-out date. :heavy_check_mark:**
+
+**It is always important to use the correct types to represent data in our applications. Good job using Date objects for date and check-out date.**
 
 
 ********************************************************************************************************************************************
-Exceptions have been correctly validated   using the `try` and `catch` blocks :white_check_mark:
+### **Exceptions have been correctly validated using the `try` and `catch` blocks :heavy_check_mark:**
 
-Exception handling is very important. Sometimes, we need to know when errors occur and trigger necessary actions/alerts. Other times, we just need to make sure that exceptions/errors don't block other tasks from being executed. There are many reasons why we need to provide good exception handling mechanisms.
+**Exception handling is very important. Sometimes, we need to know when errors occur and trigger necessary actions/alerts. Other times, we just need to make sure that exceptions/errors don't block other tasks from being executed. There are many reasons why we need to provide good exception handling mechanisms.**
 
 Great job meeting this requirement.
 ********************************************************************************************************************************************
 
 
-Different datatypes have been used to store the data :white_check_mark:
+### **Different datatypes have been used to store the data :heavy_check_mark:**
 
 ********************************************************************************************************************************************
-`switch` statement has been used to handle the user input flow instead of the traditional if-else statements. :white_check_mark:
+### **`switch` statement has been used to handle the user input flow instead of the traditional if-else statements. :heavy_check_mark:**
 
 
-switch statements are sometimes more expressive than if-else statements. Great job meeting this requirement.
+**switch statements are sometimes more expressive than if-else statements. Great job meeting this requirement.**
 
 You have used traditional if--else statements for user input flow. In order to meet this specification, you need to use the **switch** statement.  You can read more about switch statements here : [**Switch statements**](https://www.javatpoint.com/java-switch)
 ********************************************************************************************************************************************
@@ -265,6 +280,7 @@ Keep it Up !! Wishing you Best of Luck for journey ahead :)
 :udacious:
 
 ************************************************************************************************************************************
+https://knowledge.udacity.com/questions/624174#624187
 
 **The submission is plagiarzied which can be seen from the images attached below :point_down:**
 The submission is **PLAGIARIZED** only from the source mentioned in the project review :point_down:
@@ -285,6 +301,7 @@ Your project couldn't be reviewed due to **`PLAGIARISM`**. The project is the co
 
 ***
 **You have broken UDACITY Honor Code . UDACITY takes plagiarism very seriously. This may lead to cancellation of nanodegree and your certifications can be revoked. Please make sure you make and submit your own project now.**
+[**Consequences of PLAGIARISM**](https://udacity.zendesk.com/hc/en-us/articles/360001455151-Consequences-of-submitting-plagiarized-work)
 
 Hope you make the required change soon.
 
@@ -338,3 +355,5 @@ Help the student search for the correct solution on Knowledge, if anyone has sim
 
 
 I hope to achieve a basic and fundamental knowledge about Machine Learning and try to utilize it with my existing FullStack development skills. During the college, i got interested in Java and Frontend  Development. Over the time I took many courses with Udacity (Free and Paid) to improve my skill set. I was provided with the opportunity to become a mentor for Mobile Web Specialist course which primarily focused on the frontend development . I accepted the opportunity,passed it and  provided support to a lot of students. By the end of college, I got an opportunity to work with a leading American telecommunication organization as Full-Stack Developer where I was exposed to Angular, React and Springboot. It made me even more interested into development. Since then I try to learn and share as much knowledge as I can and hope to do same by applying in this program.
+
+830.7

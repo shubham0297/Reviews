@@ -1,19 +1,22 @@
-### Not applicable.Project has been done using Option 2.
+### Not applicable. Project has been done using Option 2.
 *****************************************************************************************************************************************
 
-User is able to :
-* Create an item :white_check_mark:
-* Delete an Item :white_check_mark:
+### User is able to :
+* **Create an item** :white_check_mark:
+* **Delete an Item** :white_check_mark:
+***
+### Suggeston
+1.  Normal user behaviour will be like to click on the New Task button first without typing the Item name.
+When user does that, an alert message says `TODO creation failed`. Being a layman he might not get what he is missing.
+You should update the alert message in such a way so that he gets to know what needs to be done. For eg. display the message as Please enter an item name first.
 
-
-**Suggestion :** Normal user behaviour will be like to click on the New Task button first without typing the Item name.
-When user does that, an alert message says TODO creation failed. Being a layman he might not get what he is missing.
-You should update the alert message in such a way so that he gets to know what needs to be done. For eg. display the message as Please enter an item name first
-
-* After creating a task with task name, the name is cleared in the code but in the UI it still shows the old name. So when the user clicks New Task button again, it creates a new task with blank string whereas the placeholder shows the task name of previous task. So once a task is created, you need to clear the input text box also. 
+2. After creating a task with task name, the name is cleared in the code but in the UI it still shows the old name. So when the user clicks New Task button again, it creates a new task with blank string whereas the placeholder shows the task name of previous task. So once a task is created, you need to clear the input text box also. 
 
 
 For this you could you **value** attribute for the **Input** tag and set it to ` this.state.newTodoName` , so that the placeholder has the updated value every time any change is made.
+
+1. After creating a item with item name, the name is cleared in the code but in the UI it still shows the old name. So when the user clicks `New Food Item`  button again, it  gives the alert message (which might confuse the user as the placeholder shows the item name) So once a task is created, you it would be good if you clear the input text box also. 
+
 
 *****************************************************************************************************************************************
 
@@ -34,7 +37,7 @@ Good job with separating the code of Lambda functions into multiple classes base
 
 *****************************************************************************************************************************************
 
-**You have used the newer async/await syntax rather than the older promise based syntax! :clap:**
+### **You have used the newer async/await syntax rather than the older promise based syntax! :clap:**
 Here is a good read explaining why async/await is better than promise based syntax : [**Async/Await vs Promises**](https://dev.to/gafi/7-reasons-to-always-use-async-await-over-plain-promises-tutorial-4ej9#:~:text=Async%2Fawait%20makes%20it%20finally,it's%20happening%20inside%20a%20promise.)
 
 *****************************************************************************************************************************************
@@ -51,11 +54,11 @@ At the moment most permissions are defined individually for each function. Howev
 
 *****************************************************************************************************************************************
 
-Great job by enabling AWS X-Ray distributed tracing. :clap:
+### Great job by enabling AWS X-Ray distributed tracing. :clap:
 
 *****************************************************************************************************************************************
 ### Great work validating the incoming HTTP requests. :heavy_check_mark: 
-This ensures that the user can't create a photo without name :point_down:
+**This ensures that the user can't create a photo without name :point_down:**
 
 Please validate incoming HTTP requests either in Lambda handlers or using request validation in API Gateway. As you can see in the screenshot below, I can create unnamed product items right now
 
@@ -67,7 +70,7 @@ Please validate incoming HTTP requests either in Lambda handlers or using reques
 
 
 
-`query()` method has been used to fetch the items efficiently instead of scan() :white_check_mark:
+### `query()` method has been used to fetch the items efficiently instead of scan() :white_check_mark:
 Here is a simple read that compares **query** and **scan** method on some basic metrics :point_down:
 [**Understanding Query and Scan Operations**]( http://techtraits.com/cloud/nosql/2012/06/28/Amazon-DynamoDB-Understanding-Query-and-Scan-operations.html)
 
