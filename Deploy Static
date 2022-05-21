@@ -41,10 +41,16 @@ For eg.
 
 
 ### No screenshot is provided showing the configuration to support static website hosting. :x:
-**Kindly provide the screenshot similar to the one mentioned below,**
+***
+### Your Screenshot
+**You have taken the screenshot before saving the configuration. Please make sure you take the screenshot after saving the configuration :point_down:**
+
+***
+### Expected Screenshot
+**Kindly provide the screenshot similar to the one mentioned below :point_down:**
+
 ![Screen2022-05-06_11-3111-31-04.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1651816875/Screen2022-05-06_11-3111-31-04.png)
 
-![Screen2022-02-02_13-0913-09-29.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1643787674/Screen2022-02-02_13-0913-09-29.png)
 
 ![Staitic.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1560171435/Staitic.PNG)
 
@@ -52,6 +58,7 @@ For eg.
 
 ###  Public accessibility of content of S3 bucket. This allows to access the content of your bucket by any request over the internet  :heavy_check_mark:
 
+***
 You can read about **Policies and permissions in IAM**  [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)  
 
 
@@ -73,17 +80,24 @@ You can read about **Policies and permissions in IAM**  [here](https://docs.aws.
 **As of now you have shared different screenshot for CloudFront :point_down:**
 
 
-### **You need to upload the screenshot for CloudFront distribution settings saying `Enabled` under the `State` column . For example :point_down:**
+### **You need to upload the screenshot for CloudFront distribution settings saying `Enabled` under the `State` column . **
+***
+### Your Screenshot
+
+***
+### Expected Screenshot
 ![Screen2022-03-29_18-0718-07-34.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1648557462/Screen2022-03-29_18-0718-07-34.png)
 
 
+***
+### Note 💡
 **We know that you have done everything correctly (as the website is correctly accessible through the CloudFront domain name URL). However, as per the rubric - **
-
-**```The screenshot should say `Enabled` under the `State` column" ```**
-
+```
+The screenshot should say `Enabled` under the `State` column
+```
 ** So, please attach the expected screenshot in order to pass the specification.**
 **************************************************************************************************************************************************
-## Website is accessible publicly through all the 3 endpoints. :heavy_check_mark:
+## Website is accessible publicly through both the  endpoints. :heavy_check_mark:
 
 ### 1. CloudFront domain name url :white_check_mark:
 
@@ -97,9 +111,16 @@ You can read about **Policies and permissions in IAM**  [here](https://docs.aws.
 ## 1. **You have provided the CloudFront domain name and the website is accessible :heavy_check_mark:**
 
 
-## 2. 
+### 2. Website endpoint url :white_check_mark:
 **You also need to  provide the `S3 website-endpoint URL` for the website in the README file.It should be something like : **
 ### `http://{name}.s3-website.{region}.amazonaws.com/`
+
+
+
+**The website is not accessible through the CloudFront domain name. :point_down:**
+![Screen2022-05-20_20-0420-04-14.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1653057632/Screen2022-05-20_20-0420-04-14.png)
+* **The site should be accessible with just the CloudFront domain name URL. As of now, the website is accessible when we append `index.html` at the end. You should ensure that the Default Root Object from the CloudFront Distribution should be set to index.html so that whenever the user hits the CloudFront Domain name URL, it renders the index.html page**
+* **Please ensure that website can be accessed without appending the object name at the end ie. index.html**
 
 
 I have included some resources that might help you troubleshoot :
@@ -129,8 +150,8 @@ You should a Cloudfront URL. In this [tutorial](https://aws.amazon.com/cloudfron
 
 
 ## Congratulations !
-You did a great job.Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project. You have nailed the project  passed with flying colors. :rainbow:
-Its good to see that **you have  provided screenshots for all the milestones and all the three endpoints through which the website could be accessed :clap:**
+You have done an excellent work.Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project. You have nailed the project and  passed with flying colors. :rainbow:
+Its good to see that **you have  provided screenshots for all the milestones and both the endpoints through which the website could be accessed :clap:**
 
 Kudos on passing the first project .We look forward to receiving your future project submissions soon .
 
@@ -158,6 +179,7 @@ You have done a great job considering it was your first attempt.
 Its good to see that **you have provided the CloudFront and website-endpoint  urls and the website can be accessed successfully** :clap: 
 You are really close to the appropriate project and just need to make couple of small changes before you're all set to go :
 * **Provide a screenshot showing the S3 bucket in the AWS Manamgement Console**
+* **Provide a expected screenshot showing all the files (3 folders and index.html file) in the S3 bucket**
 * **Provide a screenshot showing that static website hosting has been configured on S3 bucket**
 * **Provide a screenshot showing the Bucket Policy**
 * **Provide a screenshot for CloudFront which shows the `State` as `Enabled` **
@@ -173,7 +195,7 @@ Hope you make the required changes soon. We look forward to receiving your futur
 **Recommendation**
 * **Security is one of the crucial aspect of any application in an organization. The following video describes how you can [Securely access your Amazon S3 static website](https://www.youtube.com/watch?v=xFzJw6wJ8eY)**
 ***
-**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
 
 
 **Have a Good Day and Stay Safe ✌**
@@ -184,7 +206,7 @@ Hope you make the required changes soon. We look forward to receiving your futur
 ********************************************************************************************************************************************
 ## Congratulations !
 You have nailed the project in your first attempt and passed with flying colors. :rainbow:
-Its good to see that **you have customised the website a bit and provided all the three endpoints through which the website could be accessed :clap:**
+Its good to see that **you have customized the website a bit and provided both the  endpoints through which the website could be accessed :clap:**
 
 Kudos on passing the first project .We look forward to receiving your future project submissions soon .
 
@@ -198,7 +220,7 @@ Keep it Up !! Wishing you Best of Luck for journey ahead :)
 * **Security is one of the crucial aspect of any application in an organization. The following video describes how you can [Securely access your Amazon S3 static website](https://www.youtube.com/watch?v=xFzJw6wJ8eY)**
 ***
 
-**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
 
 
 **Have a Good Day and Stay Safe ✌**
@@ -269,7 +291,7 @@ Keep it Up !! Wishing you Best of Luck for journey ahead :)
 * **Security is one of the crucial aspect of any application in an organization. The following video describes how you can Securely access your Amazon S3 static website](https://www.youtube.com/watch?v=sf-JWDDw2O4)**
 ***
 
-**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
 
 Have a Good Day and Stay Safe ✌
 
@@ -277,9 +299,34 @@ Have a Good Day and Stay Safe ✌
 :udacious:
 
 
-**Useful Resources**
-* **This following article explains CI/CD in detail.** - [Continuous Integration Continuous Deployment (CI/CD](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment) - 
-* **Here is the official documentation of AutoScaling groups ** - [AWS : AutoScaling:AutoScalingGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html)   
+**Additional Reading Resources**
+* **This following article explains CI/CD in detail.** - [**Continuous Integration Continuous Deployment (CI/CD)**](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment) 
+* **Here is the official documentation of AutoScaling groups ** - [**AWS : AutoScaling:AutoScalingGroup**](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html)   
 ***
 
+## Hi There !!
+Your project couldn't be reviewed **due to missing screenshots**. As of know, most of the rubric points require you to attach screenshot but as of now I couldn't find any :point_down:
+
+![Screen2022-05-18_21-1221-12-06.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1652888623/Screen2022-05-18_21-1221-12-06.png)
+
+**Please make the following changes :**
+* **Provide a screenshot showing the S3 bucket in the AWS Manamgement Console**
+* **Provide a  screenshot showing all the files (3 folders and index.html file) in the S3 bucket**
+* **Provide a screenshot showing that static website hosting has been configured on S3 bucket**
+* **Provide a screenshot showing the Bucket Policy**
+* **Provide a screenshot for CloudFront which shows the `State` as `Enabled` **
+* **Provide the website-endpoint URL**
+
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+***
+**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+
 ### Great work providing both the URLs :clap:
+
+### Please provide the website endpoint URL too

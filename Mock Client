@@ -114,12 +114,12 @@ You may refer to this post to check some [**JavaScript Libraries or Framework**]
 * **Currently you have mentioned, that you will be using `ReactJs` and what it does. But there will be thousands of developers who will be using `React`. So, it becomes important to somehow convince the client about your solution. This can be done by connecting the technical solution (using `React` and its advantages) to the business aspect like revenue, increased user, high availability of website etc.**
 
 
-* **For eg. your proposed solution is using the `Microsoft Power BI` library, then you should be able to tell how `Microsoft Power BI` is going to help the client. This should be related to business aspect. For instance, how will `Microsoft Power BI` help the client's 'Insurance business'.**
+* **For eg. your proposed solution is using the `Microsoft Power BI`, then you should be able to tell how `Microsoft Power BI` is going to help the client. This should be related to business aspect. For instance, how will `Microsoft Power BI` help the client's 'Insurance business'.**
 
 ### Suggestion
 **I good way to do this is to use the following format : **
 ```
-By using  X tool  Y can be acheived resulting in Z (Here Z can be the business value for the insure company. For eg. revenue, profit, cost/time saving etc)
+By using  X tool  Y can be acheived resulting in Z (Here Z can be the business value for the insurance company. For eg. revenue, profit, cost/time saving etc)
  ```
 
 
@@ -142,7 +142,7 @@ By using  X tool  Y can be acheived resulting in Z (Here Z can be the business v
 ### Suggestion
 **I good way to do this is to use the following format : **
 ```
-By using  X tool  Y can be acheived resulting in Z (Here Z can be the business value for the insure company. For eg. revenue, profit, cost/time saving etc)
+By using  X tool  Y can be acheived resulting in Z (Here Z can be the business value for the email marketing  company. For eg. revenue, profit, cost/time saving etc)
  ```
 
 
@@ -215,9 +215,9 @@ I would recommend you to go through this link to understand the terminologies of
   * **Checklist** :white_check_mark:
 ***
 ### Additional Resource
-**You can read more about the terminologies of Trello Board here - ** [**Getting Started With Trello Board**](https://blog.trello.com/trello-board-best-practices)
+* **You can read more about the terminologies of Trello Board here - ** [**Getting Started With Trello Board**](https://blog.trello.com/trello-board-best-practices)
 
-**You can read more about the adding checklist to action card here - ** [**Adding checklists to cards**](https://help.trello.com/article/737-adding-checklists-to-cards#:~:text=Add%20Checklists%20via%20the%20%22Add,checklist%20from%20the%20card%20back.)
+* **You can read more about the adding checklist to action card here - ** [**Adding checklists to cards**](https://help.trello.com/article/737-adding-checklists-to-cards#:~:text=Add%20Checklists%20via%20the%20%22Add,checklist%20from%20the%20card%20back.)
 
 
 
@@ -313,7 +313,7 @@ OR
 
 ************************************************************************************************************************************************
 
-### The invoice lists the accepted mode of payment :heavy_check_mark:
+### The invoice lists the accepted mode of payment with dummy details :heavy_check_mark:
 
 
 ### The invoice lists the accepted mode of payment :x:
@@ -323,7 +323,7 @@ Bank: Dummy Bank**
 
 
 ***
-### Suggestion
+### Suggestion💡
 **I would suggest you to always keep at least 2 modes of payment. This is recommended so that on an unlucky day, if one payment mode fails to work, the client would have an alternate way to transfer the amount** 
 
 
@@ -387,7 +387,7 @@ Hope you make the required changes soon. We look forward to receiving your futur
 
 ***
 
-**PS: ** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+**PS: ** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
 
 **Have a Good Day and Stay Safe ✌️**
 
@@ -396,7 +396,7 @@ Hope you make the required changes soon. We look forward to receiving your futur
 
 Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project.
 
- a proper invoice template
+a proper invoice template
 ************************************************************************************************************************************************
 
 ## Congratulations !!
@@ -409,8 +409,8 @@ We look forward to receiving your future project submissions soon.
 
 ***
 **PS** : Here is a list of few articles that can help you to advance in your freelancing career :
-* [How to Earn More Money on Fiver?](https://www.goatsontheroad.com/how-to-make-money-on-fiverr/)
-* [Digital Marketing blogs you should be reading to stay updated](https://www.bluefountainmedia.com/blog/the-10-best-digital-marketing-blogs-you-should-be-reading)
+* [**How to Earn More Money on Fiver?**](https://www.goatsontheroad.com/how-to-make-money-on-fiverr/)
+* [**Digital Marketing blogs you should be reading to stay updated**](https://www.bluefountainmedia.com/blog/the-10-best-digital-marketing-blogs-you-should-be-reading)
 
 
 **Have a Good Day and Stay Safe ✌**
@@ -469,3 +469,10 @@ milestone.
 milestone is acheived, the project ends. So, adding 2 more milestones after
 the Payment milestone doesn't make sense logically. Ideally Payment should 
 be the last milestone
+
+
+***
+### **Additional Resources**:
+Here are some resources you might find useful in your journey as a freelancer :
+* [**4 Keys to Retaining Clients (as a Freelancer)**](https://workspace.fiverr.com/blog/4-keys-to-retaining-clients-as-a-freelancer/ )
+* [**How To Write A Perfect EOI**](https://www.linkedin.com/pulse/20140428004842-11984542-4-steps-to-writing-a-perfect-eoi/)

@@ -130,7 +130,7 @@ Please ensure that the ERROR message is recorded only in case of actual error. F
 
 ***
 ### Additional Resources
-* It is always advisable to run [**kube-manifest-lint**](https://pypi.org/project/kube-manifest-lint/) after you've created your manifests, to iron out any issues
+* It is always advisable to run [**kube-manifest-lint**](https://pypi.org/project/kube-manifest-lint/) after you've created your manifests, to figure out any issues in the manifest files.
 * You might find the article useful for further learning [**kubectl Cheat Sheet**](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 ****************************************************************************************************************************************************
 

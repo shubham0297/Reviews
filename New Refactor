@@ -39,7 +39,9 @@ Here is a official documentation for [Best practices for writing Dockerfiles](ht
 ###  2. Screenshot shows a successful build :heavy_check_mark:
 
 
-
+### 1. `.travis.yml` file is included. :heavy_check_mark:
+###  2. Screenshot shows a successful build :x:
+***You need to include a screenshot of Travis CI Interface showing a successfull build and deploy job. Cuerrently you haven't provided one** 
 
 *************************************************************************************************************************
 ### 1. Screenshot shows Frontend and API deployed :heavy_check_mark:
@@ -130,8 +132,7 @@ This is a small detail, but since I do not have access to your AWS account, this
 *************************************************************************************************************************
 ## Congratulations  !!
 
-This is the most complicated project of the degree, but in the end teaches us one of the most valuable skills to have in the industry.
-You have really worked hard on this project and the project is the reflection of it. The hard work did pay off and you have passed with flying colors. :rainbow:
+This is the most complicated project of the degree, but in the end teaches us one of the most valuable skills to have in the industry.You have really worked hard on this project and the project is the reflection of it. The hard work did pay off and you have passed with flying colors. :rainbow:
 Its good to see you included **the screenshot for every milestone in your project and maintained a proper README file which contains all the relevant information.** :clap:
 
 
@@ -139,7 +140,7 @@ Good luck with whatever comes next! :)
 We look forward to receiving your future project submissions soon .
 
 ***
-**Recommedations**
+**Additional Readings**
 
 * Here is good blog containing the basics about creating a [Kubernetes cluster on Amazon](http://blog.juadel.com/2020/05/15/create-a-kubernetes-cluster-in-amazon-eks-using-a-reverse-proxy/). I recommend you going through it and suggesting to fellow friends who face any issue in the same.
 
