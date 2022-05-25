@@ -1,5 +1,6 @@
 ###  **S3 bucket is visible in the AWS Management console. :heavy_check_mark:**
 
+***
 Here is the official document of [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) . It tells you everything you  need to know about  S3 starting from creating a bucket to security policies.
 
 
@@ -11,7 +12,7 @@ Nice job! I see a S3 bucket specified in the AWS management console. :white_chec
 
 
 ![Screen2022-05-06_11-2511-25-51.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1651816622/Screen2022-05-06_11-2511-25-51.png)
-
+***
 Here is the official document of [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) . It tells you everything you  need to know about  S3 starting from creating a bucket to security policies.
 
 ![S3bucket.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1626368090/S3bucket.png)
@@ -108,7 +109,11 @@ The screenshot should say `Enabled` under the `State` column
 ### 3. S3-Object url :white_check_mark:
 
 
-## 1. **You have provided the CloudFront domain name and the website is accessible :heavy_check_mark:**
+
+## Website is accessible publicly through both the  endpoints. :x:
+
+### 1. CloudFront domain name url :white_check_mark:
+**You have provided the CloudFront domain name and the website is accessible :white_check_mark:**
 
 
 ### 2. Website endpoint url :white_check_mark:
@@ -151,7 +156,7 @@ You should a Cloudfront URL. In this [tutorial](https://aws.amazon.com/cloudfron
 
 ## Congratulations !
 You have done an excellent work. Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project. You have nailed the project and passed with flying colors. :rainbow:
-Its good to see that **you have  provided screenshots for all the milestones and both the endpoints through which the website could be accessed :clap:**
+Its good to see that **you have  provided screenshots for all the milestones and both the endpoints through which the website could be accessed successfully :clap:**
 
 Kudos on passing the first project .We look forward to receiving your future project submissions soon .
 
@@ -209,7 +214,7 @@ Hope you make the required changes soon. We look forward to receiving your futur
 ********************************************************************************************************************************************
 ## Congratulations !
 You have nailed the project in your first attempt and passed with flying colors. :rainbow:
-Its good to see that **you have customized the website a bit and provided both the  endpoints through which the website could be accessed :clap:**
+Its good to see that **you have customized the website a bit and provided both the  endpoints through which the website could be accessed successfully :clap:**
 
 Kudos on passing the first project .We look forward to receiving your future project submissions soon .
 
@@ -334,5 +339,7 @@ Hope you make the required changes soon. We look forward to receiving your futur
 :udacious:
 
 ### Great work providing both the URLs :clap:
+
+### Great work providing all the 3 URLs :clap:
 
 ### Please provide the website endpoint URL too

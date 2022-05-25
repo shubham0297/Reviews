@@ -182,7 +182,7 @@ By using  X tool  Y can be acheived resulting in Z (Here Z can be the business v
 **Please ensure that you send the board url that land on your Trello board without asking the user to sign up/sign in**
 
 
-### This specification would be tested once you makes the changes suggested in the previous specification.
+##### This specification would be tested once you makes the changes suggested in the previous specification.
 
 ************************************************************************************************************************************************
 ### 1. Trello board should have overall 5 columns :x:
@@ -205,6 +205,10 @@ The logical ordering of milestone is important as well. In an ideal world scenar
 * **Payment Process** :x:
 
 **The above mentioned columns are mandatory and you need to have them in your Trello board**
+Here is a sample Trello board reference for you :point_down:
+
+
+![SampleTrello.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1653477715/SampleTrello.png)
 ************************************************************************************************************************************************
 I would recommend you to go through this link to understand the terminologies of the Trello Board  - [Getting Started With Trello Board](https://blog.trello.com/trello-board-best-practices)
 
