@@ -115,6 +115,7 @@ The screenshot should say `Enabled` under the `State` column
 ### 1. CloudFront domain name url :heavy_check_mark:
 **You have provided the CloudFront domain name and the website is accessible :white_check_mark:**
 
+***
 
 ### 2. Website endpoint url :x:
 **You also need to  provide the `S3 website-endpoint URL` for the website in the README file.It should be something like : **
