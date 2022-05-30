@@ -29,6 +29,23 @@ The S3 bucket includes :point_down:
 * **img folder** :white_check_mark:
 * **vendor folder** :white_check_mark:
 
+
+### You need to include screenshot showing the following files uploaded to the bucket :point_down:
+* **index.html** 
+* **CSS folder** 
+* **img folder** 
+* **vendor folder** 
+****
+### Your Screenshot
+**The screenshot you have taken shows some of the files, however the specification requires that the above mentioned files and folder should be visible in the bucket**
+![2022-05-29_18-38.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1653829864/2022-05-29_18-38.png)
+***
+### Expected Screenshot
+**Please provide a screenshot similar to this one in which all the files and folder can be seen :point_down:**
+![Screen2022-05-06_19-3819-38-14.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1651846106/Screen2022-05-06_19-3819-38-14.png)
+
+
+
 You need to include screenshot showing the following files uploaded to the bucket :point_down:
 * **index.html** 
 * **CSS folder** 
@@ -187,7 +204,7 @@ Keep it Up !! Wishing you Best of Luck for journey ahead :)
 You have done a great job considering it was your first attempt.
 Its good to see that **you have provided the CloudFront and website-endpoint  urls and the website can be accessed successfully** :clap: 
 You are really close to the appropriate project and just need to make couple of small changes before you're all set to go :
-* **Provide a screenshot showing the S3 bucket in the AWS Manamgement Console**
+* **Provide a screenshot showing the S3 bucket in the AWS Management Console**
 * **Provide a expected screenshot showing all the files (3 folders and index.html file) in the S3 bucket**
 * **Provide a screenshot showing that static website hosting has been configured on S3 bucket**
 * **Provide a screenshot showing the Bucket Policy**

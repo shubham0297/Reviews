@@ -41,7 +41,7 @@ Here is a official documentation for [Best practices for writing Dockerfiles](ht
 
 ### 1. `.travis.yml` file is included. :heavy_check_mark:
 ###  2. Screenshot shows a successful build :x:
-***You need to include a screenshot of Travis CI Interface showing a successfull build and deploy job. Cuerrently you haven't provided one** 
+***You need to include a screenshot of Travis CI Interface showing a successfull build and deploy job. Currently you haven't provided one** 
 
 *************************************************************************************************************************
 ### 1. Screenshot shows Frontend and API deployed :heavy_check_mark:
