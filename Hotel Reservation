@@ -43,8 +43,8 @@ Most of the students miss this specification in their first submission. Its grea
 **You need to override `equals` and `hashcode` methods  for atleast one of the model classes ( `Room`, `Customer`, `Reservation` ) . As of now, you haven't done the same. **
 ***
 
-**Addtional Resources**:
-* [Why to Override equals(Object) and hashCode() method ?](https://www.geeksforgeeks.org/override-equalsobject-hashcode-method/)
+**Additional Resources**:
+**[ Here is a tutorial that explains the need to override the equals() and hashCode() methods ?](https://www.geeksforgeeks.org/override-equalsobject-hashcode-method/)**
 
 Some developers overlook this but you are obviously not one of them. Bravo!! I once spent two hours figuring why duplicate objects were added to my Set and I later found out that I had committed these!!
 
@@ -101,18 +101,15 @@ You can read about the final variable here :point_right: [**Final Variable**](ht
 ![App_Flow_Java.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1620907962/App_Flow_Java.png)
 
 
-## for loop has been used to iterate and process the data :heavy_check_mark:
-
-
-
-## Recommended rooms requirement :heavy_check_mark:
+## 1. for loop has been used to iterate and process the data :heavy_check_mark:
+*** 
+## 2. Recommended rooms requirement :heavy_check_mark:
 **The recommended rooms scenario is working flawlessly. The application shows the recommended rooms correctly :point_down:**
 
 
 ##  Recommended rooms requirement :x:
-There is a part of this specification which requires that - **When all rooms have been booked, you should look for rooms with an alternative date range. Add 7 days to the given input range (start date and end date) and look for rooms with the new range. If no rooms are found, you should let the users know.**
-
-You can see more about this requirement  [**HERE**](https://classroom.udacity.com/nanodegrees/nd079-BETA/parts/d74d0f2c-11e0-43bf-b3ba-e24c8fb931d6/modules/749c72fb-f622-4d19-961a-05e6e733b883/lessons/213a5242-2808-4823-a931-e53b7ec837eb/concepts/660f3c55-24dd-46d2-8b0d-ca3b000e005b)
+There is a part of this specification which requires that - **When all rooms have been booked, you should look for rooms with an alternative date range. Add 7 days to the given input range (start date and end date) and look for rooms with the new range. If no rooms are found, you should let the users know. :point_down:**
+![2022-06-04_11-30.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1654363836/2022-06-04_11-30.png)
 
 **Check the code review for MainMenu.java for more detail**
 
@@ -133,9 +130,9 @@ You can see more about this requirement  [**HERE**](https://classroom.udacity.co
 **4. Customer Service**
 
 As of now, you have made every method inside these 4 classes as **static**. This is not the right way even though it solves the purpose.You need to make the classes as singleton such that they have only one instance variable which we call the methods. Doing this, we don't need to make every method as static. 
-
-
-[You can read more about Singletons in Java here](https://www.baeldung.com/java-singleton#:~:text=For%20example%2C%20singletons%20are%20often,configuration%20for%20the%20test%20environment.)
+***
+**Additional Resources**
+**[You can read more about Singletons in Java here](https://www.baeldung.com/java-singleton#:~:text=For%20example%2C%20singletons%20are%20often,configuration%20for%20the%20test%20environment.)**
 ********************************************************************************************************************************************
 
 **As mentioned in the previous review, you need to create atleast one method with `default` access identifier**.
@@ -193,7 +190,10 @@ Great job meeting this requirement.
 
 **switch statements are sometimes more expressive than if-else statements. Great job meeting this requirement.**
 
-You have used traditional if--else statements for user input flow. In order to meet this specification, you need to use the **switch** statement.  You can read more about switch statements here : [**Switch statements**](https://www.javatpoint.com/java-switch)
+You have used traditional if--else statements for user input flow. In order to meet this specification, you need to use the **switch** statement.  
+
+### Additional Resources
+You can read more about switch statements here : [**Switch statements**](https://www.javatpoint.com/java-switch)
 ********************************************************************************************************************************************
 
 

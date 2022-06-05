@@ -359,7 +359,7 @@ As of now, your application flow is
 `Main Menu -->  HotelResource/ Admin Resource --->  Models (Room/Customer/Reservation)`
 
 
-Great job overriding  the `toString` method :clap:
+### Great job overriding  the `toString` method :clap:
 
 
 As of now the  Admin is able to add one room at a time. You can put all of your code inside a loop and keep adding the rooms to **`rooms`** list.
@@ -367,11 +367,11 @@ Once the admin decides to exit you can pass this `rooms` list to the `Admin Reso
 
 This way admin can add multiple rooms at once without going to the Admin menu again and again.
 
-**Customer email is correctly validated. Well done ! :clap:** 
+### **Customer email is correctly validated. Well done ! :clap:** 
 
-**Good job creating a singleton object :clap:**
+### **Good job creating a singleton object :clap:**
 
-**The date check logic is correctly implemented for overlapping dates :clap:**
+### **The date check logic is correctly implemented for overlapping dates :clap:**
 
 If we have no available rooms between the given checkIn and checkOut dates,** we need to perform another search by adding 7 to the checkIn and checkOut date.** If we get some available rooms, we should display it with some custom message else inform the user that no rooms are available
 
