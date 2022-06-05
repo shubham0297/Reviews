@@ -1,20 +1,21 @@
-7 findings have been identified correctly and each finding has :
-* Title :white_check_mark:
-* Detailed explanation :white_check_mark:
-* Regulation(s) associated with the issue :white_check_mark:
-* Recommendations :white_check_mark:
-
+### 7 findings have been identified correctly and each finding has :
+> * Title :white_check_mark:
+> * Detailed explanation :white_check_mark:
+> * Regulation(s) associated with the issue :white_check_mark:
+> * Recommendations :white_check_mark:
 
 ****************************************************************************************************************************************************
 
-**Recommendations** were provided for each of the following identified issue :
-* Data not adequately protected
-* Profiling an user
-* Doctor able to download patient info to unprotected devices
-* Limiting the data exposed to Analytics team
-* Missing data in export
-* Data export not available to customers after their account is deleted
-* Data not properly encrypted
+### **Recommendations** were provided for each of the following identified issue :
+> * Data not adequately protected
+> * Profiling an user
+> * Doctor able to download patient info to unprotected devices
+> * Limiting the data exposed to Analytics team
+> * Missing data in export
+> * Data export not available to customers after their account is deleted
+> * Data not properly encrypted
+
+**Your recommendations are spot-on. Not only did you point-out the regulation in question, but you offer a detailed solution which often requires implementing organizational changes, not just some technological implementation. :clap:**
 
 ****************************************************************************************************************************************************
 
@@ -44,10 +45,10 @@ K-Anonymity is explained wonderfully on Wikipedia. You can check the example to 
 ****************************************************************************************************************************************************
 
 
-**Privacy Assessment document is submitted in the submission** :white_check_mark:
+### **Privacy Assessment document is submitted in the submission** :heavy_check_mark:
 
 ****************************************************************************************************************************************************
-**Excel Sheet with Anonymized data is present in the submission ** :white_check_mark:
+### **Excel Sheet with Anonymized data is present in the submission ** :heavy_check_mark:
 
 
 
@@ -68,7 +69,7 @@ You are very close to the appropriate project,however you need to correct a smal
 Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
 
 ***
-**Useful Resouces** :
+**Useful Resources** :
 * Here is a good read explaining about Data Generalization - [Understanding Data Generalization](https://www.privitar.com/blog/data-generalization-advanced-de-identification/)
 * [K-Anonymity: Everything You Need to Know](https://www.immuta.com/articles/k-anonymity-everything-you-need-to-know-2021-guide/) - This blog briefly explains the key points about K-Anonymity.  What it is ? How it prevents privacy attacks ?  and how do we implement it?
 *** 

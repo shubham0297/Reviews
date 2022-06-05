@@ -38,7 +38,7 @@ The S3 bucket includes :point_down:
 ****
 ### Your Screenshot
 **The screenshot you have taken shows some of the files, however the specification requires that the above mentioned files and folder should be visible in the bucket**
-![2022-05-29_18-38.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1653829864/2022-05-29_18-38.png)
+
 ***
 ### Expected Screenshot
 **Please provide a screenshot similar to this one in which all the files and folder can be seen :point_down:**
@@ -98,20 +98,19 @@ You can read about **Policies and permissions in IAM**  [here](https://docs.aws.
 **As of now you have shared different screenshot for CloudFront :point_down:**
 
 
-### **You need to upload the screenshot for CloudFront distribution settings saying `Enabled` under the `State` column . **
+### **You need to upload the screenshot for CloudFront distribution settings saying `Enabled` under the `Status` column . **
 ***
 ### Your Screenshot
 
 ***
 ### Expected Screenshot
-![Screen2022-03-29_18-0718-07-34.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1648557462/Screen2022-03-29_18-0718-07-34.png)
-
+![Screen2022-05-31_01-4801-48-57.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1653941951/Screen2022-05-31_01-4801-48-57.png)
 
 ***
 ### Note 💡
 **We know that you have done everything correctly (as the website is correctly accessible through the CloudFront domain name URL). However, as per the rubric - **
 ```
-The screenshot should say `Enabled` under the `State` column
+The screenshot should say `Enabled` under the `Status` column
 ```
 ** So, please attach the expected screenshot in order to pass the specification.**
 **************************************************************************************************************************************************
@@ -144,6 +143,12 @@ The screenshot should say `Enabled` under the `State` column
 ![Screen2022-05-20_20-0420-04-14.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1653057632/Screen2022-05-20_20-0420-04-14.png)
 * **The site should be accessible with just the CloudFront domain name URL. As of now, the website is accessible when we append `index.html` at the end. You should ensure that the Default Root Object from the CloudFront Distribution should be set to index.html so that whenever the user hits the CloudFront Domain name URL, it renders the index.html page**
 * **Please ensure that website can be accessed without appending the object name at the end ie. index.html**
+
+
+
+##### NOTE
+**If you are deleting all the resources before your project review, then you need to :**
+> ##### Provide the screenshot of website (including the URL ) so that we know that you were able to everything corrrectly.
 
 
 I have included some resources that might help you troubleshoot :
@@ -208,9 +213,9 @@ You are really close to the appropriate project and just need to make couple of 
 * **Provide a expected screenshot showing all the files (3 folders and index.html file) in the S3 bucket**
 * **Provide a screenshot showing that static website hosting has been configured on S3 bucket**
 * **Provide a screenshot showing the Bucket Policy**
-* **Provide a screenshot for CloudFront which shows the `State` as `Enabled` **
+* **Provide a screenshot for CloudFront distribution which shows the `Status` as `Enabled` **
 * **Provide the website-endpoint URL**
-* **Make sure that the website is reachable through all the endpoints**
+* **Make sure that the website is reachable through all the endpoints  OR provide the screenshots (URL should be visible) of the website**
 
 
 Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
