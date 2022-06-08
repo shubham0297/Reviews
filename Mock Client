@@ -5,11 +5,21 @@
 ### 2. The expression of interest is within the word limits :heavy_check_mark: 
 
 ***
-### Useful resources
-1. [**Writing Letter Of Interest**](https://au.indeed.com/career-advice/resumes-cover-letters/how-to-write-an-expression-of-interest) - You can go through this article to see how to write a Letter of Interest and see some examples as well.
+### Additional  Resources 💡
+**You can go through this article to see how to write a Letter of Interest and see some examples as well.** -  [**Writing Letter Of Interest**](https://au.indeed.com/career-advice/resumes-cover-letters/how-to-write-an-expression-of-interest) 
 
 
+
+### 1. Professional tone is used throughout the Eol :heavy_check_mark:
+### 2. The expression of interest is within the word limits :x: 
 **As mentioned in the rubric point, the EoI should be between 200-300 words. As of now your EoI is of 124 words. Please make sure it is within the range **
+
+
+***
+### Additional  Resources 💡
+**You can go through this article to see how to write a Letter of Interest and see some examples as well.** -  [**Writing Letter Of Interest**](https://au.indeed.com/career-advice/resumes-cover-letters/how-to-write-an-expression-of-interest) 
+
+
 
 ### 1. Professional tone is used throughout the Eol :heavy_check_mark:
 ### 2. The expression of interest is quite long :x: 
@@ -57,13 +67,15 @@ You may refer to this post to check some [**JavaScript Libraries or Framework**]
 * **You have mentioned that you have 1 year of experience in HTML,CSS and Javascript but you haven't provided any solid solution (any library or tool that you would be using to work on client's problem)**. 
 * **You need to research about some of the JavaScript libraries and mention why do you think we should use it.**
 ***
-### Additional Resource
-You may refer to this post to check some [**JavaScript Libraries or Framework**](https://newrelic.com/blog/best-practices/best-javascript-libraries-frameworks).
+### Additional Resource 💡
+**You may refer to this post to check some [JavaScript Libraries or Framework](https://newrelic.com/blog/best-practices/best-javascript-libraries-frameworks).**
 
 
 
+### 1. EOL identifies potential client's need :heavy_check_mark:
+### 2. EOL provides the solution to client's problem :x: 
 * **You need to provide a solution as to how you will solve the client's problem. **
-* **If you look at the project listing document, it says that the client is `looking for you help in migrating the data with tool of your choice`. So, what client expects in the Expression of Interest is something related to the `some tool to migrate data, organise data or create report`.**
+* **If you look at the project listing document, it says that the client is `looking for you help in migrating the data and creating the dashboard with tool of your choice`. So, what client expects in the Expression of Interest is something related to the `some tool to migrate data, organise data or create dashboard and report`.**
 
 ![Screen2022-04-16_18-3018-30-20.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1650114062/Screen2022-04-16_18-3018-30-20.png)
 * **You have mentioned that you have 1 year of experience in data analysis using python but you haven't provided any solid solution (any library or tool that you would be using to work on client's problem)**. 
@@ -116,10 +128,11 @@ You may refer to this post to check some [**JavaScript Libraries or Framework**]
 
 * **For eg. your proposed solution is using the `Microsoft Power BI`, then you should be able to tell how `Microsoft Power BI` is going to help the client. This should be related to business aspect. For instance, how will `Microsoft Power BI` help the client's 'Insurance business'.**
 
+***
 ### Suggestion
 **I good way to do this is to use the following format : **
 ```
-By using  X tool  Y can be acheived resulting in Z (Here Z can be the business value for the insurance company. For eg. revenue, profit, cost/time saving etc)
+By using  X tool  Y can be achieved resulting in Z (Here Z can be the business value for the insurance company. For eg. revenue, profit, cost/time saving etc)
  ```
 
 
@@ -142,13 +155,24 @@ By using  X tool  Y can be acheived resulting in Z (Here Z can be the business v
 ### Suggestion
 **I good way to do this is to use the following format : **
 ```
-By using  X tool  Y can be acheived resulting in Z (Here Z can be the business value for the email marketing  company. For eg. revenue, profit, cost/time saving etc)
+By using  X tool  Y can be achieved resulting in Z (Here Z can be the business value for the email marketing  company. For eg. revenue, profit, cost/time saving etc)
  ```
 
 
 ************************************************************************************************************************************************
 ### 1. Screenshot of Trello board has been included in the doc file :heavy_check_mark:
 ### 2. Trello board is publicly accessible :heavy_check_mark:
+
+
+### 1. Screenshot of Trello board has been included in the doc file :heavy_check_mark:
+
+***
+### 2. Trello board is publicly accessible :x:
+
+**You need to make the Trello board `PUBLIC` and send the url of the board so that anyone with the link can view your Trello board. As of now, you have provided the `Invitation Link`, which asks a user to sign up to Trello and join your board. :point_down:**
+
+
+**Please ensure that you send the board url that land on your Trello board without asking the user to sign up/sign in**
 
 
 
@@ -169,17 +193,6 @@ By using  X tool  Y can be acheived resulting in Z (Here Z can be the business v
 **You can change the visibility of the board like this :point_down:**
 
 ![2022-01-05_13-20.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1641369319/2022-01-05_13-20.png)
-
-
-
-### 1. Screenshot of Trello board has been included in the doc file :heavy_check_mark:
-![2022-01-12_07-16.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1641952015/2022-01-12_07-16.png)
-***
-### 2. Trello board is publicly accessible :x:
-**You need to make the Trello board `PUBLIC` and send the url of the board so that anyone with the link can view your Trello board. As of now, you have provided the `Invitation Link`, which asks a user to sign up to Trello and join your board. :point_down:**
-
-
-**Please ensure that you send the board url that land on your Trello board without asking the user to sign up/sign in**
 
 
 ##### This specification would be tested once you makes the changes suggested in the previous specification.
@@ -205,10 +218,10 @@ The logical ordering of milestone is important as well. In an ideal world scenar
 * **Payment Process** :x:
 
 **The above mentioned columns are mandatory and you need to have them in your Trello board**
+
 Here is a sample Trello board reference for you :point_down:
-
-
 ![SampleTrello.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1653477715/SampleTrello.png)
+
 ************************************************************************************************************************************************
 I would recommend you to go through this link to understand the terminologies of the Trello Board  - [Getting Started With Trello Board](https://blog.trello.com/trello-board-best-practices)
 
@@ -218,7 +231,7 @@ I would recommend you to go through this link to understand the terminologies of
   * **Description**  :white_check_mark:
   * **Checklist** :white_check_mark:
 ***
-### Additional Resource
+### Additional Resource 💡
 * **You can read more about the terminologies of Trello Board here - ** [**Getting Started With Trello Board**](https://blog.trello.com/trello-board-best-practices)
 
 * **You can read more about the adding checklist to action card here - ** [**Adding checklists to cards**](https://help.trello.com/article/737-adding-checklists-to-cards#:~:text=Add%20Checklists%20via%20the%20%22Add,checklist%20from%20the%20card%20back.)
@@ -471,7 +484,7 @@ For eg. Development is a phase in a project. Similarly Review is a phase in
 project, but Evaulate CSS files looks like a sub-task ie. action card of some
 milestone.
 2. Also, the milestones should be in logical order. For eg. once payment 
-milestone is acheived, the project ends. So, adding 2 more milestones after
+milestone is achieved, the project ends. So, adding 2 more milestones after
 the Payment milestone doesn't make sense logically. Ideally Payment should 
 be the last milestone
 
