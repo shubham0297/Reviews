@@ -1,0 +1,390 @@
+### **This specification was already passed in the previous submission**
+
+
+### *Great presentation. ✅*
+It includes all of the following points:
+* **Benefits of CI/CD.** :white_check_mark:
+* **Business context that will benefit from the automation tools** :white_check_mark:
+* **Translations in terms of revenue and cost for the business. ** :white_check_mark:
+
+***
+### Additional Reading Resource 💡
+**You can go through the following LinkedIn Post which talks about - [5 Tips for Giving Effective Technical Presentations](https://www.linkedin.com/pulse/20140904170930-15291682-5-tips-for-giving-effective-technical-presentations)**
+
+
+
+##### [ Presentation is missing ]❌
+For this specification, *** you need to make a presentation and include in the root of your Github repository * **. Few points that the presentation should include are:
+* **Benefits of CI/CD.** 
+* **Business context that will benefit from the automation tools** 
+* **Translations of CI/CD  benefits in terms of `Revenue` and `Cost` for the business. **
+
+****
+### Useful Resources 💡
+  * **A good start point for the presentation would be the classroom itself - Lesson 2 (Continuous Integration and Continuous Deployment) **
+  * **You can go through the following LinkedIn Post which talks about - [5 Tips for Giving Effective Technical Presentations](https://www.linkedin.com/pulse/20140904170930-15291682-5-tips-for-giving-effective-technical-presentations)**
+
+
+
+##### *REQUIRES CHANGE ❌*
+The presentation includes all of the following points:
+* **Benefits of CI/CD.** :white_check_mark:
+* **Business context that will benefit from the automation tools** :white_check_mark:
+* **Translations in terms of revenue and cost for the business. ** :x:
+*You have mentioned the **Benefits of CI/CD** but when giving presentation to business, you have to relate everything to profit, revenue or cost. **Please translate the benefits of CI/CD to revenue and cost for business.** *
+
+****
+### Useful Resources 💡
+  * **You can go through the classroom content itself for this point -  Lesson 2 (Continuous Integration and Continuous Deployment) **
+  * **You can go through the following LinkedIn Post which talks about - [5 Tips for Giving Effective Technical Presentations](https://www.linkedin.com/pulse/20140904170930-15291682-5-tips-for-giving-effective-technical-presentations)**
+
+
+
+### Suggestions
+* ** *When giving presentation to business, try to keep the words as less as possible. They are not the one who are interested in words or technology. What they would love is analysis, comparison and talks about numbers (profit, cost, revenue etc. )* **
+
+
+Translation of Benefits in business terms  ✅
+
+***************************************************************************************************************************************************************************
+
+> ### *1. [URL01] - A public git repository with your project code. ✅*
+ * **Evidence of code-based CI/CD configuration in the form of yaml files can be found in your git repository.**
+
+***
+
+> ### *2. [SCREENSHOT01] - Console output of build jobs that failed because of compile errors. ✅*
+
+***
+
+> ### *3. [SCREENSHOT02] - Console output of failed unit tests ✅*
+
+***
+
+> ### *4. [SCREENSHOT03] - Console output of failure because of vulnerable packages. ✅*
+
+***
+
+> ### *5. [SCREENSHOT04] - An alert from one of your failed build ✅*
+
+
+
+Git repo and configuration files accessible ✅
+Job failure due to compile errors ✅ 
+Unit test failure ✅
+Job failure due to vulnerable packages ✅
+Alert due to job failure ✅
+
+*****************************************************************************************************************************************************************************
+
+
+> ### *1. [SCREENSHOT05] - Console output of appropriate failure for infrastructure creation job (using CloudFormation).  ✅*
+
+
+***
+
+> ### *2. [SCREENSHOT06] - Console output of a smoke test job that is failing appropriately.  ✅*
+
+
+***
+
+> ### *3. [SCREENSHOT07] - Console output of a successful rollback after a failed smoke test.  ✅*
+
+
+***
+
+> ### *4. [SCREENSHOT08] - Console output of successful promotion of new version to production in CloudFront.  ✅*
+
+
+***
+
+> ### *5. [SCREENSHOT09] - Console output of successful cleanup job that removes old S3 bucket and EC2 instance.  ✅*
+
+
+***
+
+> ### *6. [SCREENSHOT10] - Evidence that the deploy jobs only happen on the master branch.  ✅*
+
+
+***
+
+> ### *7. [URL02] - Evidence of deployed and functioning front-end application in an S3 bucket . ✅*
+
+
+***
+
+> ### *8. [URL03_SCREENSHOT] - Evidence of deployed and functioning front-end application in CloudFront.  ✅*
+
+
+***
+
+> ### *9. [URL04_SCREENSHOT] Evidence of healthy back-end application.  ✅*
+
+
+
+Infrastructure creation failure ✅
+Failed Smoke Test ✅
+Successful Rollback ✅
+Cloudfront promotion ✅
+Successful cleanup job ✅
+Non-master branches not running complete workflow ✅
+Added employees using the S3 website endpoint for frontend application ✅
+Healthy Backend ✅
+
+Frontend is accessible via S3 bucket endpoint URL ✅
+Application is functional ✅
+
+*****************************************************************************************************************************************************************************
+> ### Following points were passed in the previous submission :
+*1. [SCREENSHOT05] - Console output of appropriate failure for infrastructure creation job (using CloudFormation).  ✅* 
+*2. [SCREENSHOT06] - Console output of a smoke test job that is failing appropriately.  ✅* 
+*3. [SCREENSHOT07] - Console output of a successful rollback after a failed smoke test.  ✅* 
+*4. [SCREENSHOT08] - Console output of successful promotion of new version to production in CloudFront.  ✅* 
+*5. [SCREENSHOT09] - Console output of successful cleanup job that removes old S3 bucket and EC2 instance.  ✅* 
+*6. [SCREENSHOT10] - Evidence that the deploy jobs only happen on the master branch. ✅* 
+*7. [URL02] - Evidence of deployed and functioning front-end application in an S3 bucket .✅* 
+*8. [URL03_SCREENSHOT] - Evidence of deployed and functioning front-end application in CloudFront. ✅* 
+*9. [URL04_SCREENSHOT] Evidence of healthy back-end application. ✅* 
+
+****
+
+> ### *1. [SCREENSHOT05] - Console output of appropriate failure for infrastructure creation job (using CloudFormation).  ✅*
+
+***
+
+> ### *2. [SCREENSHOT06] - Console output of a smoke test job that is failing appropriately.  ✅*
+
+***
+
+> ### *3. [SCREENSHOT07] - Console output of a successful rollback after a failed smoke test.  ✅*
+
+***
+
+> ### *4. [SCREENSHOT08] - Console output of successful promotion of new version to production in CloudFront.  ✅*
+
+***
+
+> ### *5. [SCREENSHOT09] - Console output of successful cleanup job that removes old S3 bucket and EC2 instance.  ✅*
+
+***
+
+> ##### *6. [SCREENSHOT10] - Evidence that the deploy jobs only happen on the master branch.  ❌*
+ 
+* ** I see you have changed the `config file` and removed the condition that ensures that some jobs run only on the main/master branch** :point_down:
+* **Please make sure that you include the filter in the config file, and provide a screenshot of non-main/non-master branch which shows only jobs before the `deploy infrastructure` job**. You can take a reference from the below attached screenshot that shows that when the pipeline was triggered by a non-master branch (dev in our case) it just ran first 6 jobs :point_down:**
+![10. Screenshot 10  - Non Main branch commit.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1655332655/10._Screenshot_10__-_Non_Main_branch_commit.png)
+
+
+This filters ensures that this and subsequent jobs will run only when a commit is 
+made in the main branch
+
+For this specification, you need to make a new branch and make some commit in it.
+This will trigger the pipeline but only first 6 jobs will run.
+
+This is the screenshot that is required for this specification
+
+***
+
+> ##### *7. [URL02] - Evidence of deployed and functioning front-end application in an S3 bucket . ❌*
+
+* **Great work deploying the front-end application in the S3 bucket and providing the URL :clap:**
+* **However, the specification requires that the application should be `functioning`. As can be seen below, I was not able to add the employee using the current front-end application :point_down:**
+
+**Please ensure that you are able to add employees using the S3 link for the application**
+
+***
+
+> ##### *8. [URL03_SCREENSHOT] - Evidence of deployed and functioning front-end application in CloudFront.  ❌*
+
+* **Again, great work providing the CloudFront Domain name URL but I was not able the access the application using the link :point_down:**
+
+* **Just like, previous point, this point requires that you are able to add the employees using the application that is accessed via the CloudFront domain name URL. Therefore, please  ensure that you are able to add employees using the CloudFront domain name URL for the application**
+***
+
+> ### *9. [URL04_SCREENSHOT] Evidence of healthy back-end application.  ✅*
+
+****
+
+> ##### NOTE 💡 
+ You can choose one of the following options for `Point 7` and `Point 8` :
+ * You can either provide a live-URL for S3 and CloudFront Distribution so that we can test the application on our end.  OR
+ * You can provide the screenshot/video as an evidence which shows one or more employees added to application using frontend (for both S3 and CloudFront)
+
+
+
+
+* **Just like you have provided the screenshot for point 7 ie. , you need to provide a similar screenshot. The screenshot should show that the website is accessible through the cloudfront domain name URL and is functional (should show some employees added into the application**
+* **This point is exactly similar to previous one. We just need to verify that your application was functional and accessible through the Cloudfront domain name URL too**
+
+
+**You need to provide a screenshot showing the application is accessible via the S3 bucket employee and some employees are added into the application. Here is a sample screenshot for your reference :point_down:**
+![Flameshot-2022-06-19_11-10.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1655658653/Flameshot-2022-06-19_11-10.png)
+
+
+**Just like point 7, you need to provide a screenshot where the application is accessible through the CloudFront domain name URL and there are some employees added into the application.Here is a sample screenshot for your reference :point_down:**
+![Flameshot-2022-06-19_11-13.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1655662486/Flameshot-2022-06-19_11-13.png)
+
+*****************************************************************************************************************************************************************************
+
+> ### *1. [URL05_SCREENSHOT] - Evidence of Prometheus Server. ✅*
+
+***
+
+> ##### *2. [SCREENSHOT11] - Evidence that Prometheus is monitoring memory, CPU and disk usage of EC2 instances. ❌*
+
+**You have provided the screenshot for Memory Usage but not for CPU and Disk Usage :**
+* **Memory  Usage** ✅
+
+* **CPU Usage** ❌
+* **Disk Usage** ❌
+
+** *You also need to share the screenshot for `CPU usage` and `Disk Usage` for the monitored target* **
+
+
+***
+
+> ##### *3. [SCREENSHOT12] - Evidence that Prometheus and Alert Manager send alerts when certain conditions exist in the EC2 instance. ❌*
+
+* **Great work setting up the AlertManager with Prometheus. It's good to see that it is working :clap:**
+* **One small thing that you need to make sure is that `Target in Alert Message should be the one that Prometheus is monitoring`. As of now, I see that both are different :point_down:**
+ 
+ **Please ensure that alert message is for the same target which Prometheus is monitoring. For example., if you look at the screenshot shared below, it shows that the DNS name in the Alert received on Slack is same as the DNS endpoint that prometheus is monitoring :point_down:**
+![Flameshot-2022-06-18_12-42.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1655577790/Flameshot-2022-06-18_12-42.png)
+
+ **Please make sure to capture the screenshot in such a way that we are able to verify the channel on which Alert Manager is sending the message (Gmail/Slack or any other channel**
+
+
+
+> ### Following points were passed in the previous submission :
+*1. [URL05_SCREENSHOT] - Evidence of Prometheus Server. ✅* 
+*2. [SCREENSHOT11] - Evidence that Prometheus is monitoring memory, CPU and disk usage of EC2 instances. ✅* 
+*3. [SCREENSHOT12] - Evidence that Prometheus and Alert Manager send alerts when certain conditions exist in the EC2 instance. ✅* 
+
+
+> ### 1. [URL05_SCREENSHOT] - Evidence of Prometheus Server. ✅
+
+***
+
+> ### 2. [SCREENSHOT11] - Evidence that Prometheus is monitoring memory, CPU and disk usage of EC2 instances. ✅
+
+
+***
+
+> ### 3. [SCREENSHOT12] - Evidence that Prometheus and Alert Manager send alerts when certain conditions exist in the EC2 instance. ✅
+
+
+* You need to take screenshot which shows that an alert was sent by the Alert Manager to one  configured channel (Slack/Gmail etc) for the target that is monitored by Prometheus. As of now, you have just shared the screenshot which is given in the project instructions :point_down:*
+
+*****************************************************************************************************************************************************************************
+Prometheus Target Endpoint ✅
+Free Memory ✅
+CPU Usage ✅
+Disk Usage ✅
+
+
+* ** I see you have changed the `config file` and removed the condition that ensures that some jobs run only on the main/master branch** :point_down:
+**Please make sure that you include the filter in the config file, and provide a screenshot of non-main/non-master branch which shows only jobs before the `deploy infrastructure` job**
+
+The filter was placed here for a purpose. The idea is that this and following jobs will run only if a commit is made in the master/main branch.
+For all the commits made in non-main/non-master branch, only job prior to `deploy infrastructure` should run.
+
+**Please make sure that you include the filter in the config file, and provide a screenshot of non-main/non-master branch which shows only jobs before the `deploy infrastructure` job**
+
+
+
+*****************************************************************************************************************************************************************************
+
+
+## Hi Prerna !
+You did an amazing job considering it was your first attempt. Some of the points that I liked about your submission :
+* ** *Excellent presentation for business stakeholders*  :clap:**
+* **  * You used Email Notification instead of Slack Notification * **    :clap:
+* ** * Build, Test and Analyze job for Frontend and Backend were done perfectly * ** :clap:
+* ** * You were successfully able to deploy the frontend application * ** :clap:
+***
+
+You are very close to the appropriate project, however, you need to correct couple of small points before you're all set to go.
+
+* ⚠️ * **You need to include a presentation (in pdf format) in the root of your Github repository. This should talk about benefits of CI/CD and translation of its benefits in terms of revenue and cost** *
+* ⚠️ * ** A screenshot showing that a non-main/non-master branch runs the jobs prior to `deploy-infrastructure` job** *  
+* ⚠️ * **Provide Screenshot/Video OR Make sure that we are able to add the employees using the Frontend Application accessed via the `S3 bucket endpoint`** * 
+* ⚠️ * **Provide Screenshot/Video OR Make sure that we are able to add the employees using the Frontend Application accessed via the `CloudFront domain name URL`** * 
+* ⚠️ * **Provide the screenshot for healthy backend ie. {Backend_Ip}:3030/api/status** * 
+* ⚠️ * **Provide the screenshot for  Prometheus  targets which includes the URL and all the targets including the Node Exporter targets** * 
+* ⚠️ * **Provide the screenshot for `CPU usage` and `Disk Usage` for the Prometheus  target** * 
+* ⚠️ * **Make sure that the DNS name/IP  is same in  the Prometheus target as well as the Alert Notification** * 
+* ⚠️ * **Provide the screenshot which shows an alert being received through alert manager on one of the configured channel ( Gmail/Slack etc)** * 
+
+
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+
+
+***
+**Additional Resources** :
+* ** If you face challenge while working on Adding the employees part, you can go through the following Knowledge posts to get some idea about potential causes : **
+   * **[Having an error in adding employee using cloudfront now](https://knowledge.udacity.com/questions/785928) **
+   * **[Can't add employee on Cloudfront url](https://knowledge.udacity.com/questions/727272)**
+   * **[Can't add an employee](https://knowledge.udacity.com/questions/809397)**
+* **The best resource to learn anything is to read the documentation. If you developed an interest for configuration management tool like Ansible, you can go through the official documentation of Ansible ** - **[Ansible Documentation](https://docs.ansible.com/ansible/2.3/index.html)**
+
+***
+
+**PS: ** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+**Have a Good Day and Stay Safe ✌️**
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+
+Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project.
+
+****
+
+## Congratulations  !!
+
+You did an excellent work. Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project. :clap: This is the most complicated and tricky  project of the degree, but in the end teaches us one of the most valuable skills to have in the industry. I really like that you **provided screenshots for all the milestones and an effective presentation.** All the hard work did pay off and you have passed with flying colors. :rainbow:
+
+I hope this project gave some good practical learning. Take a small break and prepare for the next battle.
+We look forward to receiving your future project submissions soon .
+Keep it Up !! Wishing you Best of Luck for journey ahead :)
+
+***
+### **Additional Resources** 💡:
+‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎** Here are some of the resources which would good to go through and would be useful for next project  **:
+* ** *Official documentation on - [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) * **
+* ** * [Increase reliability in data science and machine learning projects with CircleCI](https://circleci.com/blog/increase-reliability-in-data-science-and-machine-learning-projects-with-circleci/) * **
+* ** *[Managing Resources for Containers](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)* **
+
+***
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+*****
+## Hi There !!
+
+You're project couldn't be reviewed as it looks like **you have copied the CloudFront requirement from another student** :point_down:
+
+##### NOTE:
+** *You have broken UDACITY Honor Code . UDACITY takes plagiarism very seriously. This may lead to cancellation of nanodegree and your certifications can be revoked. Please make sure you submit your own screenshots. I would recommend you go through this link thoroughly [Consequences of submitting plagiarized work.](https://udacity.zendesk.com/hc/en-us/articles/360001455151-Consequences-of-submitting-plagiarized-work)* **
+
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+***
+**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+
+
+
+### 1. Great work providing both the URLs :clap:
+### 2. It wood be good if you include the CloudFront domain name URL in the README file too

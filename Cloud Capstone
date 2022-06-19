@@ -5,7 +5,7 @@
 * **Create an item** :white_check_mark:
 * **Delete an Item** :white_check_mark:
 ***
-### Suggeston
+### Suggestion
 1.  Normal user behaviour will be like to click on the New Task button first without typing the Item name.
 When user does that, an alert message says `TODO creation failed`. Being a layman he might not get what he is missing.
 You should update the alert message in such a way so that he gets to know what needs to be done. For eg. display the message as Please enter an item name first.
@@ -91,11 +91,11 @@ Good luck with whatever comes next! :)
 We look forward to receiving your future project submissions soon .
 
 ***
-**Resources : **
-* Here is a good read about [Things a Serverless Architect must know](https://aws.amazon.com/blogs/architecture/ten-things-serverless-architects-should-know/). I recommended you to give it a reading for future serverless projects.
+**Additional Reading Resource 💡: **
+* **Here is a good read about [Things a Serverless Architect must know](https://aws.amazon.com/blogs/architecture/ten-things-serverless-architects-should-know/). I recommended you to give it a reading for future serverless projects.**
 
 ***
-**PS: ** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+**PS: ** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
 
 
 **Have a Good Day and Stay Safe ✌**

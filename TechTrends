@@ -1,6 +1,6 @@
 ### Application correctly returns :
 * **200 status code :white_check_mark:**
-*  **JSON response with the message: `“OK - healthy”`  on hitting the **/heathz** endpoint :white_check_mark:**
+*  **JSON response with the message: `“OK - healthy”`  on hitting the **/healthz** endpoint :white_check_mark:**
 
 ***
 ## Suggestion
@@ -50,7 +50,7 @@ Well done!  Logs have been correctly recorded :white_check_mark:
 * When the application encounters an **ERROR**, the logs should reflect the same and show it as error. However, in the current application, when existing the **non-existing article**, the logs capture it as a successful event and is captured at DEBUG level instead of ERROR level :point_down:
 
 ***
-**Useful Resources**
+**Useful Resources 💡**
 
 * Here is a good blog about [**Introduction to Python Logging**](https://rmcomplexity.com/article/2020/12/01/introduction-to-python-logging.html)
 * [**Python Logging Guide – Best Practices**](https://coralogix.com/blog/python-logging-best-practices-tips/)
@@ -124,14 +124,18 @@ Please ensure that the ERROR message is recorded only in case of actual error. F
 ****************************************************************************************************************************************************
 ### Screenshot for `kubectl get no` was provided :heavy_check_mark:
 
+
+***
+**Additional Learning Resources 💡**
+   * ** [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) - This is official kubernetes website which shows some of the useful commands that you may encounter when working with Kuberenetes**
 ****************************************************************************************************************************************************
 ### 1. All the 3 manifests (namespace, deploy and service ) are correctly constructed :heavy_check_mark:
 ###  2. Great job at ensuring that Kubernetes declarative manifests are applied using kubectl command and ensuring that the screenshot shows the expected output. :heavy_check_mark:
 
 ***
-### Additional Resources
-* It is always advisable to run [**kube-manifest-lint**](https://pypi.org/project/kube-manifest-lint/) after you've created your manifests, to figure out any issues in the manifest files.
-* You might find the article useful for further learning [**kubectl Cheat Sheet**](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+### Additional Resources 💡
+* **It is always advisable to run [kube-manifest-lint](https://pypi.org/project/kube-manifest-lint/) after you've created your manifests, to figure out any issues in the manifest files.**
+* **You might find the article useful for further learning [**kubectl Cheat Sheet**](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)**
 ****************************************************************************************************************************************************
 
 ### 1. Screenshot for `kubernetes-declarative-manifests`was provided :heavy_check_mark:
@@ -182,7 +186,7 @@ However, as can be seen below the status is not correct and the two of the Pods 
 * **Resources requests of CPU 350m and memory 128Mi; and limits of CPU 500m and memory 256Mi :white_check_mark:**
 
 *** 
-### Additional Resource
+### Additional Resource 💡
 [**Creating and managing Kubernetes workloads using Helm**](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
 ****************************************************************************************************************************************************
@@ -191,7 +195,7 @@ However, as can be seen below the status is not correct and the two of the Pods 
 ### 2. Screenshot for `argocd-ui`was provided :heavy_check_mark:
 
 ***
-### Additional Reading
+### Additional Resources 💡
 * [**Argo CD - Declarative GitOps CD for Kubernetes**](https://argo-cd.readthedocs.io/en/stable/getting_started/)
 * [**Getting started with ArgoCD on Kubernetes**](https://tanzu.vmware.com/developer/guides/argocd-gs/)
 ****************************************************************************************************************************************************
@@ -291,11 +295,12 @@ We look forward to receiving your future project submissions soon .
 Keep it Up !! Wishing you Best of Luck for journey ahead :)
  
 ***
-**Useful Resources : **
-* [**Kubernetes RollingOut Strategies**](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#strategy)
+**Additional Reading Resources:  **
+* **Here is a good article explaining - [Python Logging Guide – Best Practices and Hands-on Examples](https://coralogix.com/blog/python-logging-best-practices-tips/)**
+* **Official documentation on - [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)**
 * [**ImagePullBackOff / ErrImagePull - Causes and Solution**](https://cloud.google.com/kubernetes-engine/docs/troubleshooting#ImagePullBackOff)
 ***
-**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
 
 
 **Have a Good Day and Stay Safe ✌**
@@ -313,11 +318,13 @@ We look forward to receiving your future project submissions soon .
 Keep it Up !! Wishing you Best of Luck for journey ahead :)
  
 ***
-**Useful Resources : **
+**Additional Reading Resources:  **
+* **Here is a good article explaining - [Python Logging Guide – Best Practices and Hands-on Examples](https://coralogix.com/blog/python-logging-best-practices-tips/)**
+* **Official documentation on - [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)**
 * [**Managing Resources for Containers**](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
 * [**What’s the Difference Between Continuous Integration, Continuous Deployment and Continuous Delivery?**](https://semaphoreci.com/blog/2017/07/27/what-is-the-difference-between-continuous-integration-continuous-deployment-and-continuous-delivery.html)
 ***
-**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
 
 
 **Have a Good Day and Stay Safe ✌**

@@ -1,7 +1,7 @@
 ###  **S3 bucket is visible in the AWS Management console. :heavy_check_mark:**
 
 ***
-Here is the official document of [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) . It tells you everything you  need to know about  S3 starting from creating a bucket to security policies.
+**Here is the official document of [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html) . It tells you everything you  need to know about  S3 starting from creating a bucket to security policies.**
 
 
 Nice job! I see a S3 bucket specified in the AWS management console. :white_check_mark:
@@ -67,8 +67,7 @@ For eg.
 ### Expected Screenshot
 **Kindly provide the screenshot similar to the one mentioned below :point_down:**
 
-![Screen2022-05-06_11-3111-31-04.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1651816875/Screen2022-05-06_11-3111-31-04.png)
-
+![Flameshot-2022-06-12_15-33.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1655069600/Flameshot-2022-06-12_15-33.png)
 
 ![Staitic.PNG](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1560171435/Staitic.PNG)
 
@@ -77,7 +76,7 @@ For eg.
 ###  Public accessibility of content of S3 bucket. This allows to access the content of your bucket by any request over the internet  :heavy_check_mark:
 
 ***
-You can read about **Policies and permissions in IAM**  [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)  
+**You can read about Policies and permissions in IAM - [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)**  
 
 
 
@@ -189,14 +188,14 @@ Keep it Up !! Wishing you Best of Luck for journey ahead :)
 **Suggestion**
 * It would be good if you update the README file by giving a small project description, so that a layman can quickly get a gist of what the project is all about. - [**Sample Template for README file**](https://github.com/othneildrew/Best-README-Template)
 ***
-**Additional Learning Resources**
+**Additional Learning Resources 💡**
 * **Security is one of the crucial aspect of any application in an organization. The following video describes how you can [Securely access your Amazon S3 static website](https://www.youtube.com/watch?v=xFzJw6wJ8eY)**
 
 * **This following article explains CI/CD in detail.** - [**Continuous Integration Continuous Deployment (CI/CD)**](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment) 
 * **Here is the official documentation of AutoScaling groups ** - [**AWS : AutoScaling:AutoScalingGroup**](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html)   
 ***
 
-**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
 
 
 **Have a Good Day and Stay Safe ✌**
@@ -247,7 +246,7 @@ Keep it Up !! Wishing you Best of Luck for journey ahead :)
 **Suggestion**
 * It would be good if you update the README file by giving a small project description, so that a layman can quickly get a gist of what the project is all about. - [**Sample Template for README file**](https://github.com/othneildrew/Best-README-Template)
 ***
-**Additional Learning Resources**
+**Additional Learning Resources 💡**
 * **Security is one of the crucial aspect of any application in an organization. The following video describes how you can [Securely access your Amazon S3 static website](https://www.youtube.com/watch?v=xFzJw6wJ8eY)**
 
 * **This following article explains CI/CD in detail.** - [**Continuous Integration Continuous Deployment (CI/CD)**](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment) 
@@ -366,3 +365,6 @@ Hope you make the required changes soon. We look forward to receiving your futur
 ### Great work providing all the 3 URLs :clap:
 
 ### Please provide the website endpoint URL too
+
+
+ENHDB7GH3HKUVRJ99ULUDWN

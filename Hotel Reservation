@@ -40,10 +40,12 @@ Most of the students miss this specification in their first submission. Its grea
 
 ###   `equals` and `hashcode` have been overridden :x:
 
-**You need to override `equals` and `hashcode` methods  for atleast one of the model classes ( `Room`, `Customer`, `Reservation` ) . As of now, you haven't done the same. **
-***
 
-**Additional Resources**:
+##### REQUIRES CHANGE ❌
+**You need to override `equals` and `hashcode` methods  for atleast one of the model classes ( `Room`, `Customer`, `Reservation` ) . As of now, you haven't done the same. **
+
+***
+**Additional Resources 💡**:
 **[ Here is a tutorial that explains the need to override the equals() and hashCode() methods ?](https://www.geeksforgeeks.org/override-equalsobject-hashcode-method/)**
 
 Some developers overlook this but you are obviously not one of them. Bravo!! I once spent two hours figuring why duplicate objects were added to my Set and I later found out that I had committed these!!
@@ -108,9 +110,8 @@ You can read about the final variable here :point_right: [**Final Variable**](ht
 
 
 ##  Recommended rooms requirement :x:
-There is a part of this specification which requires that - **When all rooms have been booked, you should look for rooms with an alternative date range. Add 7 days to the given input range (start date and end date) and look for rooms with the new range. If no rooms are found, you should let the users know. :point_down:**
+There is a part of this specification which requires that - **`When no room are available for the date range entered by customer, you should look for rooms with an alternative date range. Add 7 days to the given input range (start date and end date) and look for rooms with the new range`**. If no rooms are found, you should let the users know. Here is the project instructions that tell about this requirement :point_down:**
 ![2022-06-04_11-30.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1654363836/2022-06-04_11-30.png)
-
 **Check the code review for MainMenu.java for more detail**
 
 
@@ -120,7 +121,7 @@ There is a part of this specification which requires that - **When all rooms hav
 
 ### Good job using static references to create singletons in your application. :heavy_check_mark:
 ***
-**Additional Resources**
+**Additional Resources 💡**
 * [You can read more about Singletons in Java here](https://www.baeldung.com/java-singleton#:~:text=For%20example%2C%20singletons%20are%20often,configuration%20for%20the%20test%20environment.)
 
 **You need to create static references to create singletons in your application for the following classes :**
@@ -129,9 +130,9 @@ There is a part of this specification which requires that - **When all rooms hav
 **3. Reservation Service**
 **4. Customer Service**
 
-As of now, you have made every method inside these 4 classes as **static**. This is not the right way even though it solves the purpose.You need to make the classes as singleton such that they have only one instance variable which we call the methods. Doing this, we don't need to make every method as static. 
+As of now, you have made every method inside these 4 classes as **static**. This is not the right way even though it solves the purpose. You need to make the classes as singleton such that they have only one instance variable through which we call the methods of that class. Implementing singleton ensures that we don't need to make every method as static in a class. 
 ***
-**Additional Resources**
+**Additional Resources 💡**
 **[You can read more about Singletons in Java here](https://www.baeldung.com/java-singleton#:~:text=For%20example%2C%20singletons%20are%20often,configuration%20for%20the%20test%20environment.)**
 ********************************************************************************************************************************************
 
@@ -142,17 +143,22 @@ Please make sure you work on this specification.
 You can create a method without any identifier and call this method in some other method.
 
 
-Method with the following identifiers have been used used in the ReservationService class :
-* `public` :white_check_mark: 
-* `private` :white_check_mark:
-* `default` :white_check_mark:
+### Method with the following identifiers have been used used in the ReservationService class :
+* **`public` **:white_check_mark: 
+* **`private`** :white_check_mark:
+* **`default`** :white_check_mark:
 
 
 **You need to create atleast one method with `default` access identifier in the `ReservationService` class**.
 Please make sure you work on this specification.
 
-### Hint
-You can create a method without any identifier and call this method in some other method.
+### Hint 💡
+* You can create a method without any identifier and call this method in some other method.
+
+
+* **You can go through this link to understand different access specifiers with example of each - [Access Specifier in Java](https://www.techieclues.com/tutorials/java/access-specifiers-in-java)**
+
+** *Great work adding a method with default access specifier :point_down: * **
 
 ********************************************************************************************************************************************
 
@@ -164,7 +170,7 @@ You can create a method without any identifier and call this method in some othe
 
 ### **Application contains the enumeration class `RoomType` :heavy_check_mark:**
 ***
-### Additional Resources
+### Additional Resources 💡
 * **You can read more about Java Enums here: **[**Enums**](https://www.w3schools.com/java/java_enums.asp)
 
 ********************************************************************************************************************************************
@@ -212,13 +218,13 @@ You have done a great job considering it was your first attempt. Most of the sce
 Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
 
 ***
-**Resources: **
-* [How to override the equals() and hashcode() method](https://www.baeldung.com/java-equals-hashcode-contracts)
-* [Creating Singleton reference in Java](https://www.geeksforgeeks.org/singleton-class-java/)
-* [ How to determine  if two dates overlap each other](https://www.soliantconsulting.com/blog/determining-two-date-ranges-overlap/) 
+**Useful Resources: **
+* **[How to override the equals() and hashcode() method](https://www.baeldung.com/java-equals-hashcode-contracts)**
+* **[Creating Singleton reference in Java](https://www.geeksforgeeks.org/singleton-class-java/)**
+* **[ How to determine  if two dates overlap each other](https://www.soliantconsulting.com/blog/determining-two-date-ranges-overlap/) **
 
 *** 
-**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
 
 
 **Have a Good Day and Stay Safe ✌**
@@ -244,7 +250,7 @@ Keep it Up !! Wishing you Best of Luck for journey ahead :)
 
 ***
 
-**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
 
 
 **Have a Good Day and Stay Safe ✌**
@@ -271,7 +277,7 @@ Keep it Up !! Wishing you Best of Luck for journey ahead :)
 
 ***
 
-**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
 
 
 **Have a Good Day and Stay Safe ✌**
@@ -344,14 +350,15 @@ Hope that helps.
 
 PS : If you think this answer resolved your query, I would request you to mark it as Accepted so that it becomes easier for other student (who might face the similar situation in future)  to search for correct answer on Knowledge portal.
 
-Thanku  !
 
 
+Hope that helps. 
 
 PS : If you think the answer resolved you original query , please mark it as Accepted.  This would :
 Close this thread so that it isn't assigned to any other mentor.
 Help the student search for the correct solution on Knowledge, if anyone has similar doubt.
 
+Thanku  !
 
 
 I hope to achieve a basic and fundamental knowledge about Machine Learning and try to utilize it with my existing FullStack development skills. During the college, i got interested in Java and Frontend  Development. Over the time I took many courses with Udacity (Free and Paid) to improve my skill set. I was provided with the opportunity to become a mentor for Mobile Web Specialist course which primarily focused on the frontend development . I accepted the opportunity,passed it and  provided support to a lot of students. By the end of college, I got an opportunity to work with a leading American telecommunication organization as Full-Stack Developer where I was exposed to Angular, React and Springboot. It made me even more interested into development. Since then I try to learn and share as much knowledge as I can and hope to do same by applying in this program.
