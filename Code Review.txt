@@ -391,3 +391,20 @@ If we have no available rooms between the given checkIn and checkOut dates,** we
 
 For comparing dates you could refer to any of these methods --> Comparing Dates (https://www.geeksforgeeks.org/compare-dates-in-java)
 I recommend using method 2 ie. .before() and .after() method.
+
+
+
+### Please add a method with `default access modifier` in order to pass one of the specification. Here are two example showing how to write a method with default access modifier :point_down:
+
+> class A{  
+‎        ‎ ‎ private A(){}//private constructor  
+‎        ‎ ‎ ‎‎‎default void msg(){System.out.println("Hello java");}        ‎         ‎            // mentioning default explicitly
+}  
+
+****
+
+
+> class A{  
+‎        ‎ ‎ private A(){}//private constructor  
+‎        ‎ ‎ ‎‎‎void msg(){System.out.println("Hello java");}         ‎         ‎           // method with no access modifier also means it has default access modifier
+}  

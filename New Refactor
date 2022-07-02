@@ -17,7 +17,7 @@ Great work deploying the project to kubernetes cluster :clap:
 
 *************************************************************************************************************************
 
-### `/feed` and `/user` backends are separated into independent projects. :heavy_check_mark:
+> ### *`/feed` and `/user` backends are separated into independent projects. ✅*
 
 As these services are standalone, it is unavoidable to repeat some code between them. This is one of the trade-offs of [**microservice architecture**](https://microservices.io/patterns/microservices.html)(You can read about it more over here). But considering the bigger picture, it is more beneficial for a company to repeat code, in order to decouple services which makes it easier to manage these services among different teams. Good job !
 
@@ -27,16 +27,19 @@ Backend is separated into two services, feed and user.
 
 *************************************************************************************************************************
 
-Dockerfile is present for 
-* Frontend :white_check_mark:
-* Backend (feed as well as user) :white_check_mark:
-* Reverse Proxy :white_check_mark:
+> ### Dockerfile is present for 
+* Frontend ✅
+* Backend (feed as well as user) ✅
+* Reverse Proxy ✅
 
-Here is a official documentation for [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) 
+
+***
+**Here is a official documentation for [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) **
+
 
 *************************************************************************************************************************
-### 1. `.travis.yml` file is included. :heavy_check_mark:
-###  2. Screenshot shows a successful build :heavy_check_mark:
+> ### 1. `.travis.yml` file is included. ✅
+###  2. Screenshot shows a successful build ✅
 
 
 ### 1. `.travis.yml` file is included. :heavy_check_mark:
@@ -44,9 +47,9 @@ Here is a official documentation for [Best practices for writing Dockerfiles](ht
 ***You need to include a screenshot of Travis CI Interface showing a successfull build and deploy job. Currently you haven't provided one** 
 
 *************************************************************************************************************************
-### 1. Screenshot shows Frontend and API deployed :heavy_check_mark:
-### 2. `kubectl get pods` shows pods are running successfully :heavy_check_mark:
-### 3. `kubectl describe services` does not expose any sensitive strings such as database passwords. :heavy_check_mark:
+> ### *1. Screenshot shows Frontend and API deployed ✅*
+### *2. `kubectl get pods` shows pods are running successfully ✅*
+### *3. `kubectl describe services` does not expose any sensitive strings such as database passwords. ✅*
 
 
 I see that you have deployed the cluster but from the services, I can see that you have not set the Frontend and reverseproxy as loadbalancer. This means that your cluster is inaccessible. The ip endpoints are local endpoints at the moment.
@@ -77,12 +80,12 @@ name: POSTGRES_PASSWORD
       key: POSTGRES_PASSWORD
 ```
 *************************************************************************************************************************
-### Screenshot of Kubernetes services shows a reverse proxy :heavy_check_mark:
+> ### *Screenshot of Kubernetes services shows a reverse proxy ✅*
 
 
 *************************************************************************************************************************
-### 1. Services have replicas :heavy_check_mark:
-### 2. Autoscaling has been configured :heavy_check_mark:
+> ### *1. Services have replicas ✅*
+### *2. Autoscaling has been configured ✅*
 Here are some common ways of Autoscaling your application :point_right: [Kuberenetes Autoscaling](https://www.stackrox.com/post/2020/05/kubernetes-autoscaling-explained/)
 
 Great work with including the HPA in your submission, however, the **HPA does not work correctly at the moment**. As you can see in the screenshot below, there is an error because **Kubernetes can not show the CPU load of the pod.**
@@ -96,18 +99,18 @@ You can see how hpa is implemented also on the [kubernetes website](http://kuber
 **This is required to ensure that the autoscaling has been configured showing the CPU metrics**
 
 
-### 1. Services have replicas :white_check_mark:
-### 2. Autoscaling has been configured :x:
+> ### *1. Services have replicas ✅*
+> ##### *2. Autoscaling has been configured ❌*
 Great work with including the HPA in your submission, however, the **HPA does not work correctly at the moment**. As you can see in the screenshot below, there is an error because **Kubernetes can not show the CPU load of the pod.**
 The **current value unknown means the pod won't be able to autoscale**.
+
 ***
 ### Suggestion
-* You can see how hpa is implemented also on the [kubernetes website](http://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/).
-
-* You will also need to deploy a metrics server, without it the metrics data won't be collected. If you are having trouble implementing it, please create a question so we can help you.
+* ** *You can see how hpa is implemented also on the [kubernetes website](http://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/).* **
+* ** *You will also need to deploy a metrics server, without it the metrics data won't be collected. If you are having trouble implementing it, please create a question so we can help you.* **
 
 *************************************************************************************************************************
-### Logging details have been attached for `backend pod` showing the user  activity :heavy_check_mark:
+> ### *Logging details have been attached for `backend pod` showing the user  activity ✅*
 
 
 
@@ -121,15 +124,52 @@ Excellent, you have shared the backend logs, additionally I need to be able to s
 
 This is a small detail, but since I do not have access to your AWS account, this is the only way I can check whether the connectivity between your services and database works appropriately accross services. Please provide it with your next submission.
 
+> ##### *Logging details have been attached for `backend pod` showing the user  activity ❌*
+*You need to provide the screenshot for one of the backend pod (user or feed) which shows some user activity. As of now, you have shared the screenshot for reverseproxy and frontend pods. Here is a sample screenshot for your reference :point_down:*
+![Screen2022-03-12_12-5112-51-38.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1647069712/Screen2022-03-12_12-5112-51-38.png)
+
+
 ## Screenshot Missing :x:
 **Please provide screenshot of `kubectl logs {pod_name}` to show logging details of one of the backend API pod. **
 ![Screen2022-03-12_12-5112-51-38.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1647069712/Screen2022-03-12_12-5112-51-38.png)
-*************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
  
  
 **PS :**   If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
 
-*************************************************************************************************************************
+*******************************************************************************************************************************************************************************************
+## Hi There !!
+This is the most complicated project of the degree, but in the end teaches us the most valuable skills to have in the industry. Its good to see you included **have worked well setting up the project and running all the pods and CI correctly** :clap:
+You have done a fantastic job but you need to couple of small changes which are required in order for you to complete this project. 
+
+* ⚠️ ** *Configure the autoscaling correctly so that the output for `kubectl describe hpa` shows some value instead of Unknown* **
+* ⚠️ ** *Make sure to capture all the service in the screenshot for `kubectl describe services* **
+* ⚠️ ** *Provide screenshot for `kubectl log {pod_name}` for one of the backend-pod* **
+
+
+Hope you make the required change soon.
+We look forward to receiving your future project submissions. ✌
+
+***
+**Useful Resources : ** 
+* **This documentation shows how to install the Metric Server - [Installing the Kubernetes Metrics Server
+](https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html)**
+* **Here is good blog containing the basics about creating a [Kubernetes cluster on Amazon](http://blog.juadel.com/2020/05/15/create-a-kubernetes-cluster-in-amazon-eks-using-a-reverse-proxy/). I recommend you going through it and suggesting to fellow friends who face any issue in the same.**
+
+***
+
+
+**PS :**   If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+**Have a Good Day and Stay Safe ✌ **
+
+### Keep Learning and stay Udacious
+:udacious:
+
+*******************************************************************************************************************************************************************************************
+
+
+
 ## Congratulations  !!
 
 This is the most complicated project of the degree, but in the end teaches us one of the most valuable skills to have in the industry.You have really worked hard on this project and the project is the reflection of it. The hard work did pay off and you have passed with flying colors. :rainbow:
@@ -142,10 +182,13 @@ We look forward to receiving your future project submissions soon .
 ***
 **Additional Readings**
 
-* **Here is good blog containing the basics about creating a [Kubernetes cluster on Amazon](http://blog.juadel.com/2020/05/15/create-a-kubernetes-cluster-in-amazon-eks-using-a-reverse-proxy/). I recommend you going through it and suggesting to fellow friends who face any issue in the same.**
+**Additional Readings 💡**
 
-* **Here is a good read about the [Future of Kubernetes](https://www.redhat.com/en/blog/kubernetes-future-what-does-future-look)**
-* **[Kubernetes: Everything you need to know](https://enterprisersproject.com/article/2020/4/kubernetes-everything-you-need-know)**
+* ** *Here is good blog containing the basics about creating a [Kubernetes cluster on Amazon](http://blog.juadel.com/2020/05/15/create-a-kubernetes-cluster-in-amazon-eks-using-a-reverse-proxy/). I recommend you going through it and suggesting to fellow friends who face any issue in the same. ***
+* ** *Here is a good read about the [Future of Kubernetes](https://www.redhat.com/en/blog/kubernetes-future-what-does-future-look)* **
+* ** *[Kubernetes: Everything you need to know](https://enterprisersproject.com/article/2020/4/kubernetes-everything-you-need-know)* **
+
+
 ***
 
 **PS :**   If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
@@ -183,7 +226,7 @@ Hope you make the required change soon.
 We look forward to receiving your future project submissions. ✌
 
  
-**PS :**   If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+**PS :**   If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
 
 
 * Here is a good read about the [Future of Kubernetes](https://www.redhat.com/en/blog/kubernetes-future-what-does-future-look)

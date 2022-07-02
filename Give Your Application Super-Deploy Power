@@ -1,11 +1,11 @@
-### **This specification was already passed in the previous submission**
+### *This specification was already passed in the previous submission* ✅
 
 
-### *Great presentation. ✅*
+> ### *Great presentation. :heavy_check_mark:*
 It includes all of the following points:
-* **Benefits of CI/CD.** :white_check_mark:
-* **Business context that will benefit from the automation tools** :white_check_mark:
-* **Translations in terms of revenue and cost for the business. ** :white_check_mark:
+* Benefits of CI/CD. ✅
+* Business context that will benefit from the automation tools✅
+* Translations in terms of revenue and cost for the business. ✅
 
 ***
 ### Additional Reading Resource 💡
@@ -46,7 +46,21 @@ The presentation includes all of the following points:
 
 Translation of Benefits in business terms  ✅
 
+You need to translate all these benefits in terms of cost and revenue for the business
+
 ***************************************************************************************************************************************************************************
+> ### Following points were passed in the previous submission :
+*1. [URL01] - A public git repository with your project code. ✅*
+*2. [SCREENSHOT01] - Console output of build jobs that failed because of compile errors. ✅*
+*3. [SCREENSHOT02] - Console output of failed unit tests ✅*
+*4. [SCREENSHOT03] - Console output of failure because of vulnerable packages. ✅*
+*5. [SCREENSHOT04] - An alert from one of your failed build ✅*
+
+****
+
+> ### *Fix the vulnerabilities caught by the Analyze Job  as mentioned in the project instructions. ✅*
+
+
 
 > ### *1. [URL01] - A public git repository with your project code. ✅*
  * **Evidence of code-based CI/CD configuration in the form of yaml files can be found in your git repository.**
@@ -75,7 +89,47 @@ Unit test failure ✅
 Job failure due to vulnerable packages ✅
 Alert due to job failure ✅
 
+Correct version has been used for both the packages ✅
+
+‎
+> ##### **You also need to fix the vulnerabilities caught by the Analyze Job  as mentioned in the project instructions. As of now, you haven't done the same :point_down:**
+
+
+
 *****************************************************************************************************************************************************************************
+
+> ### Following points were passed in the previous submission :
+*1. [SCREENSHOT05] - Console output of appropriate failure for infrastructure creation job (using CloudFormation).  ✅* 
+*2. [SCREENSHOT06] - Console output of a smoke test job that is failing appropriately.  ✅* 
+*3. [SCREENSHOT07] - Console output of a successful rollback after a failed smoke test.  ✅* 
+*4. [SCREENSHOT08] - Console output of successful promotion of new version to production in CloudFront.  ✅* 
+*5. [SCREENSHOT09] - Console output of successful cleanup job that removes old S3 bucket and EC2 instance.  ✅* 
+*6. [SCREENSHOT10] - Evidence that the deploy jobs only happen on the master branch. ✅* 
+*7. [URL02] - Evidence of deployed and functioning front-end application in an S3 bucket .✅* 
+*8. [URL03_SCREENSHOT] - Evidence of deployed and functioning front-end application in CloudFront. ✅* 
+*9. [URL04_SCREENSHOT] Evidence of healthy back-end application. ✅* 
+
+****
+
+
+Infrastructure creation failure ✅
+Failed Smoke Test ✅
+Successful Rollback ✅
+Cloudfront promotion ✅
+Successful cleanup job ✅
+Non-master branches not running complete workflow ✅
+Added employees using the S3 website endpoint for frontend application ✅
+
+Frontend is accessible via S3 bucket endpoint URL ✅
+Application is functional ✅
+
+Application is accessible through S3 endpoint ✅
+Application is functional ✅
+
+Application is accessible through CloudFront domain name URL ✅
+Application is functional ✅
+
+Healthy Backend ✅
 
 
 > ### *1. [SCREENSHOT05] - Console output of appropriate failure for infrastructure creation job (using CloudFormation).  ✅*
@@ -121,32 +175,11 @@ Alert due to job failure ✅
 > ### *9. [URL04_SCREENSHOT] Evidence of healthy back-end application.  ✅*
 
 
+##### *For successful rollback, we need to verify that `Destroy Environments` and `Revert Migrations` job ran successfully. Please include both in a single screenshot. As of now, revert-migration is missing :point_down:*
 
-Infrastructure creation failure ✅
-Failed Smoke Test ✅
-Successful Rollback ✅
-Cloudfront promotion ✅
-Successful cleanup job ✅
-Non-master branches not running complete workflow ✅
-Added employees using the S3 website endpoint for frontend application ✅
-Healthy Backend ✅
-
-Frontend is accessible via S3 bucket endpoint URL ✅
-Application is functional ✅
 
 *****************************************************************************************************************************************************************************
-> ### Following points were passed in the previous submission :
-*1. [SCREENSHOT05] - Console output of appropriate failure for infrastructure creation job (using CloudFormation).  ✅* 
-*2. [SCREENSHOT06] - Console output of a smoke test job that is failing appropriately.  ✅* 
-*3. [SCREENSHOT07] - Console output of a successful rollback after a failed smoke test.  ✅* 
-*4. [SCREENSHOT08] - Console output of successful promotion of new version to production in CloudFront.  ✅* 
-*5. [SCREENSHOT09] - Console output of successful cleanup job that removes old S3 bucket and EC2 instance.  ✅* 
-*6. [SCREENSHOT10] - Evidence that the deploy jobs only happen on the master branch. ✅* 
-*7. [URL02] - Evidence of deployed and functioning front-end application in an S3 bucket .✅* 
-*8. [URL03_SCREENSHOT] - Evidence of deployed and functioning front-end application in CloudFront. ✅* 
-*9. [URL04_SCREENSHOT] Evidence of healthy back-end application. ✅* 
 
-****
 
 > ### *1. [SCREENSHOT05] - Console output of appropriate failure for infrastructure creation job (using CloudFormation).  ✅*
 
@@ -172,7 +205,7 @@ Application is functional ✅
  
 * ** I see you have changed the `config file` and removed the condition that ensures that some jobs run only on the main/master branch** :point_down:
 * **Please make sure that you include the filter in the config file, and provide a screenshot of non-main/non-master branch which shows only jobs before the `deploy infrastructure` job**. You can take a reference from the below attached screenshot that shows that when the pipeline was triggered by a non-master branch (dev in our case) it just ran first 6 jobs :point_down:**
-![10. Screenshot 10  - Non Main branch commit.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1655332655/10._Screenshot_10__-_Non_Main_branch_commit.png)
+![Flameshot-2022-06-26_22-02.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1656302551/Flameshot-2022-06-26_22-02.png)
 
 
 This filters ensures that this and subsequent jobs will run only when a commit is 
@@ -183,22 +216,27 @@ This will trigger the pipeline but only first 6 jobs will run.
 
 This is the screenshot that is required for this specification
 
+> **Here is a sample screenshot for your reference :point_down:**
+
 ***
 
 > ##### *7. [URL02] - Evidence of deployed and functioning front-end application in an S3 bucket . ❌*
+* *Great work deploying the front-end application in the S3 bucket and providing the URL :clap:*
+* *However, the specification requires that the application should be `functional`. As can be seen below, I was not able to add the employee using the current front-end application :point_down:*
 
-* **Great work deploying the front-end application in the S3 bucket and providing the URL :clap:**
-* **However, the specification requires that the application should be `functioning`. As can be seen below, I was not able to add the employee using the current front-end application :point_down:**
-
-**Please ensure that you are able to add employees using the S3 link for the application**
+‎
+**Please ensure that you are able to add employees using the S3 link for the application. Here is a sample screenshot for your reference :point_down:**
+![Flameshot-2022-06-19_11-10.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1655658653/Flameshot-2022-06-19_11-10.png)
 
 ***
 
 > ##### *8. [URL03_SCREENSHOT] - Evidence of deployed and functioning front-end application in CloudFront.  ❌*
+* *Again, great work providing the CloudFront Domain name URL but I was not able the access the application using the link :point_down:*
+‎
 
-* **Again, great work providing the CloudFront Domain name URL but I was not able the access the application using the link :point_down:**
+* *Just like, previous point, this point requires that you are able to add the employees using the application that is accessed via the CloudFront domain name URL. Therefore, please  ensure that you are able to add employees using the CloudFront domain name URL for the application. Here is a sample screenshot for your reference :point_down:*
+![Flameshot-2022-07-01_15-16.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1656710205/Flameshot-2022-07-01_15-16.png)
 
-* **Just like, previous point, this point requires that you are able to add the employees using the application that is accessed via the CloudFront domain name URL. Therefore, please  ensure that you are able to add employees using the CloudFront domain name URL for the application**
 ***
 
 > ### *9. [URL04_SCREENSHOT] Evidence of healthy back-end application.  ✅*
@@ -213,6 +251,11 @@ This is the screenshot that is required for this specification
 
 
 
+> ##### *9. [URL04_SCREENSHOT] Evidence of healthy back-end application.  ❌*
+##### You need to provide the screenshot for healthy backend. For this you need to go to `https://{BACKEND_IP}:30303/api/status` and take the screenshot 
+
+
+
 * **Just like you have provided the screenshot for point 7 ie. , you need to provide a similar screenshot. The screenshot should show that the website is accessible through the cloudfront domain name URL and is functional (should show some employees added into the application**
 * **This point is exactly similar to previous one. We just need to verify that your application was functional and accessible through the Cloudfront domain name URL too**
 
@@ -221,38 +264,10 @@ This is the screenshot that is required for this specification
 ![Flameshot-2022-06-19_11-10.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1655658653/Flameshot-2022-06-19_11-10.png)
 
 
-**Just like point 7, you need to provide a screenshot where the application is accessible through the CloudFront domain name URL and there are some employees added into the application.Here is a sample screenshot for your reference :point_down:**
+**Just like point 7, you need to provide a screenshot where the application is accessible through the CloudFront domain name URL and there are some employees added into the application. Here is a sample screenshot for your reference :point_down:**
 ![Flameshot-2022-06-19_11-13.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1655662486/Flameshot-2022-06-19_11-13.png)
 
 *****************************************************************************************************************************************************************************
-
-> ### *1. [URL05_SCREENSHOT] - Evidence of Prometheus Server. ✅*
-
-***
-
-> ##### *2. [SCREENSHOT11] - Evidence that Prometheus is monitoring memory, CPU and disk usage of EC2 instances. ❌*
-
-**You have provided the screenshot for Memory Usage but not for CPU and Disk Usage :**
-* **Memory  Usage** ✅
-
-* **CPU Usage** ❌
-* **Disk Usage** ❌
-
-** *You also need to share the screenshot for `CPU usage` and `Disk Usage` for the monitored target* **
-
-
-***
-
-> ##### *3. [SCREENSHOT12] - Evidence that Prometheus and Alert Manager send alerts when certain conditions exist in the EC2 instance. ❌*
-
-* **Great work setting up the AlertManager with Prometheus. It's good to see that it is working :clap:**
-* **One small thing that you need to make sure is that `Target in Alert Message should be the one that Prometheus is monitoring`. As of now, I see that both are different :point_down:**
- 
- **Please ensure that alert message is for the same target which Prometheus is monitoring. For example., if you look at the screenshot shared below, it shows that the DNS name in the Alert received on Slack is same as the DNS endpoint that prometheus is monitoring :point_down:**
-![Flameshot-2022-06-18_12-42.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1655577790/Flameshot-2022-06-18_12-42.png)
-
- **Please make sure to capture the screenshot in such a way that we are able to verify the channel on which Alert Manager is sending the message (Gmail/Slack or any other channel**
-
 
 
 > ### Following points were passed in the previous submission :
@@ -261,25 +276,82 @@ This is the screenshot that is required for this specification
 *3. [SCREENSHOT12] - Evidence that Prometheus and Alert Manager send alerts when certain conditions exist in the EC2 instance. ✅* 
 
 
-> ### 1. [URL05_SCREENSHOT] - Evidence of Prometheus Server. ✅
 
-***
-
-> ### 2. [SCREENSHOT11] - Evidence that Prometheus is monitoring memory, CPU and disk usage of EC2 instances. ✅
-
-
-***
-
-> ### 3. [SCREENSHOT12] - Evidence that Prometheus and Alert Manager send alerts when certain conditions exist in the EC2 instance. ✅
-
-
-* You need to take screenshot which shows that an alert was sent by the Alert Manager to one  configured channel (Slack/Gmail etc) for the target that is monitored by Prometheus. As of now, you have just shared the screenshot which is given in the project instructions :point_down:*
-
-*****************************************************************************************************************************************************************************
 Prometheus Target Endpoint ✅
 Free Memory ✅
 CPU Usage ✅
 Disk Usage ✅
+Alerts are sent for the targets monitored by Prometheus ✅
+
+
+
+> ### *1. [URL05_SCREENSHOT] - Evidence of Prometheus Server. ✅*
+
+***
+
+> ### *2. [SCREENSHOT11] - Evidence that Prometheus is monitoring memory, CPU and disk usage of EC2 instances. ✅*
+
+
+***
+
+> ### *3. [SCREENSHOT12] - Evidence that Prometheus and Alert Manager send alerts when certain conditions exist in the EC2 instance. ✅*
+
+
+
+
+
+> ##### *1. [URL05_SCREENSHOT] - Evidence of Prometheus Server. ❌*
+##### *You need to provide the screenshot which shows the list of endpoint that prometheus is monitoring. For this you can navigate to `{PROMETHEUS MACHINE's IP}:9090/targets`*
+
+
+> ### *1. [URL05_SCREENSHOT] - Evidence of Prometheus Server. ✅*
+
+***
+
+> ##### *2. [SCREENSHOT11] - Evidence that Prometheus is monitoring memory, CPU and disk usage of EC2 instances. ❌*
+*You have provided the screenshot for Memory Usage but not for CPU and Disk Usage :*
+* **Memory  Usage** ✅
+
+* **CPU Usage** ❌
+* **Disk Usage** ❌
+
+
+‎
+> ** *You also need to share the screenshot for `CPU usage` and `Disk Usage` for the monitored target* **
+
+
+***
+
+> ##### *3. [SCREENSHOT12] - Evidence that Prometheus and Alert Manager send alerts when certain conditions exist in the EC2 instance. ❌*
+* *Great work setting up the AlertManager with Prometheus. It's good to see that it is working :clap:*
+* *One small thing that you need to make sure is that `Target in Alert Message should be the one that Prometheus is monitoring`. As of now, I see that both are different :point_down:*
+ ‎
+ 
+ **Please ensure that alert message is for the same target which Prometheus is monitoring. For example., if you look at the screenshot shared below, it shows that the DNS name in the Alert received on Slack is same as the DNS endpoint that prometheus is monitoring :point_down:**
+![Flameshot-2022-06-18_12-42.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1655577790/Flameshot-2022-06-18_12-42.png)
+
+‎
+ **Please make sure to capture the screenshot in such a way that we are able to verify the channel on which Alert Manager is sending the message (Gmail/Slack or any other channel**
+
+
+
+
+
+
+* You need to take screenshot which shows that an alert was sent by the Alert Manager to one  configured channel (Slack/Gmail etc) for the target that is monitored by Prometheus. As of now, you have just shared the screenshot which is given in the project instructions :point_down:*
+
+* Also, when taking screenshot make sure that the endpoint in the Alert matched with the endpoint that Prometheus was monitoring.  For example., if you look at the screenshot shared below, it shows that the DNS name in the Alert received on Slack is same as the DNS endpoint that prometheus is monitoring :point_down:**
+![Flameshot-2022-06-18_12-42.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1655577790/Flameshot-2022-06-18_12-42.png)
+
+
+> ##### *3. [SCREENSHOT12] - Evidence that Prometheus and Alert Manager send alerts when certain conditions exist in the EC2 instance. ❌*
+* *You need to take screenshot which shows that an alert was sent by the Alert Manager to one configured channel (Slack/Gmail etc) for the target that is monitored by Prometheus. As of now, you have just shared the screenshot which is given in the project instructions :point_down:*
+![Flameshot-2022-06-22_10-55.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1655916923/Flameshot-2022-06-22_10-55.png)‎
+
+> * When taking the screenshot, please ensure that alert message is for the same target which Prometheus is monitoring. For example., if you look at the screenshot shared below, it shows that the DNS name in the Alert received on Slack is same as the DNS endpoint that prometheus is monitoring :point_down:
+![Flameshot-2022-06-18_12-42.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1655916978/Flameshot-2022-06-18_12-42.png)
+
+*****************************************************************************************************************************************************************************
 
 
 * ** I see you have changed the `config file` and removed the condition that ensures that some jobs run only on the main/master branch** :point_down:
@@ -295,7 +367,7 @@ For all the commits made in non-main/non-master branch, only job prior to `deplo
 *****************************************************************************************************************************************************************************
 
 
-## Hi Prerna !
+## Hi !
 You did an amazing job considering it was your first attempt. Some of the points that I liked about your submission :
 * ** *Excellent presentation for business stakeholders*  :clap:**
 * **  * You used Email Notification instead of Slack Notification * **    :clap:
@@ -306,14 +378,16 @@ You did an amazing job considering it was your first attempt. Some of the points
 You are very close to the appropriate project, however, you need to correct couple of small points before you're all set to go.
 
 * ⚠️ * **You need to include a presentation (in pdf format) in the root of your Github repository. This should talk about benefits of CI/CD and translation of its benefits in terms of revenue and cost** *
-* ⚠️ * ** A screenshot showing that a non-main/non-master branch runs the jobs prior to `deploy-infrastructure` job** *  
+* ⚠️ * **You need to translate the benefits of CI/CD in terms of cost, revenue, profit etc. for the business stakeholders** *
+* ⚠️ * **You need to use the correct versions for few of the packages in the backend package.json** *
+* ⚠️ * **You need to provide a screenshot showing that a non-main/non-master branch runs the jobs prior to `deploy-infrastructure` job** *  
 * ⚠️ * **Provide Screenshot/Video OR Make sure that we are able to add the employees using the Frontend Application accessed via the `S3 bucket endpoint`** * 
 * ⚠️ * **Provide Screenshot/Video OR Make sure that we are able to add the employees using the Frontend Application accessed via the `CloudFront domain name URL`** * 
 * ⚠️ * **Provide the screenshot for healthy backend ie. {Backend_Ip}:3030/api/status** * 
 * ⚠️ * **Provide the screenshot for  Prometheus  targets which includes the URL and all the targets including the Node Exporter targets** * 
-* ⚠️ * **Provide the screenshot for `CPU usage` and `Disk Usage` for the Prometheus  target** * 
-* ⚠️ * **Make sure that the DNS name/IP  is same in  the Prometheus target as well as the Alert Notification** * 
-* ⚠️ * **Provide the screenshot which shows an alert being received through alert manager on one of the configured channel ( Gmail/Slack etc)** * 
+* ⚠️ * **Provide the screenshot for `CPU usage` and `Disk Usage` for the target being monitored by Prometheus** * 
+* ⚠️ * **Make sure that the DNS name/IP  in the Alert Notification sent by Alert Manager matches with any 1 of the Prometheus targets** * 
+* ⚠️ * **Provide the screenshot which shows an Alert being received on one of the configured channel ( Gmail/Slack etc) by the Alert Manager for one of the endpoint that is being monitored by Prometheus** * 
 
 
 Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
@@ -339,7 +413,8 @@ Hope you make the required changes soon. We look forward to receiving your futur
 
 Making the required changes and submitting the project in such a short span of time clearly shows your hardwork and dedication towards the project.
 
-****
+*****************************************************************************************************************************************************************************
+
 
 ## Congratulations  !!
 
@@ -365,7 +440,53 @@ Keep it Up !! Wishing you Best of Luck for journey ahead :)
 ### Keep Learning and Stay Udacious
 :udacious:
 
-*****
+
+
+
+*****************************************************************************************************************************************************************************
+
+
+## Hi There !!
+
+You're project couldn't be reviewed because of  * **MISSING REQUIREMENTS** * 
+I will explain you what is expected in your project submission :
+
+* A presentation in the form of PDF present in the root of your Repository, no longer than 5 pages which talks  about* **essential benefits of CI/CD, and describes the business context that will benefit from the automation tools. Also it should include benefits that translate to revenue and cost for the business.** *
+
+* **Screenshots and URLs as follows :**
+    * **A public git repository with your project code - [URL01]**
+    * **Build Jobs that failed because of compile errors. - [SCREENSHOT01]**
+    * **Failed unit tests. - [SCREENSHOT02]**
+    * **Failure because of vulnerable packages. - [SCREENSHOT03]**
+    * **An alert from one of your failed builds. - [SCREENSHOT04]**
+    * **Console output of appropriate failure for infrastructure creation job (using CloudFormation). - [SCREENSHOT05]**
+    * **Console output of a smoke test job that is failing appropriately. - [SCREENSHOT06]**
+    * **Console output of a successful rollback after a failed smoke test. - [SCREENSHOT07]**
+    * **Console output of successful promotion of new version to production in CloudFront. - [SCREENSHOT08]**
+    * **Console output of successful cleanup job that removes old S3 bucket and EC2 instance. - [SCREENSHOT09]**
+    * **Evidence that the deploy jobs only happen on the `master` branch. - [SCREENSHOT10]**
+    * **Evidence of deployed and functioning front-end application in an S3 bucket - [URL02].**
+    * **Evidence of deployed and functioning front-end application in CloudFront. - [URL03_SCREENSHOT]**
+    * **Evidence of healthy back-end application. - [URL04_SCREENSHOT]**
+    * **Evidence of Prometheus Server. - [URL05_SCREENSHOT].**
+    * **Evidence that Prometheus is monitoring memory, cpu and disk usage of EC2 instances. - [SCREENSHOT11]**
+    * **Evidence that Prometheus and AlertManager send alerts when certain conditions exist in the EC2 instance. - [SCREENSHOT12]**
+    
+**As of now, I can't find any screenshots or presentation in your submission. Please go through the project instructions and  [Rubrics](https://review.udacity.com/#!/rubrics/3602/view) once again to understand what all is required before your project can be reviewed by a reviewer.**
+
+
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+***
+**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+**************************************************************************************************************************************************************************************
+
 ## Hi There !!
 
 You're project couldn't be reviewed as it looks like **you have copied the CloudFront requirement from another student** :point_down:
@@ -383,8 +504,57 @@ Hope you make the required changes soon. We look forward to receiving your futur
 ### Keep Learning and Stay Udacious
 :udacious:
 
+*****************************************************************************************************************************************************************************
+
+## Hi There !!
+Your project couldn't be reviewed because **all the screenshots for your CircleCI don't have the URLs. Without the URLs in the screenshot, we can't verify it they are legitimate or not. :point_down:**
+
+
+
+
+> ##### NOTE:
+Please make sure that all the screenshots (Circle CI, Github or AWS) include the URL
+
+****
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+
+**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+
+
+URLs should be visible in the screenshots in order for us to verify the screenshots
+*****************************************************************************************************************************************************************************
+## Hi There !!
+Your project couldn't be reviewed as the **changes suggested in previous review are still not incorporated in the current submission.**
+
+##### *Your Screenshot*
+
+
+##### *Expected Screenshot*
+![Flameshot-2022-06-18_12-42.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1655916978/Flameshot-2022-06-18_12-42.png)
+
+**Please make sure you make the required changes soon**
+
+****
+Hope you make the required changes soon. We look forward to receiving your future project submissions soon .
+
+**PS :** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+
+**Have a Good Day and Stay Safe ✌**
+
+### Keep Learning and Stay Udacious
+:udacious:
+*****************************************************************************************************************************************************************************
+
 
 
 
 ### 1. Great work providing both the URLs :clap:
-### 2. It wood be good if you include the CloudFront domain name URL in the README file too
+### 2. It wood be good if you include the CloudFront domain name URL too in this file
+
+
+### Great work providing all the URLs :clap:

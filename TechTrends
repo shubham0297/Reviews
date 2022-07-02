@@ -1,6 +1,6 @@
-### Application correctly returns :
-* **200 status code :white_check_mark:**
-*  **JSON response with the message: `“OK - healthy”`  on hitting the **/healthz** endpoint :white_check_mark:**
+> ### Application correctly returns :
+* *200 status code ✅*
+*  *JSON response with the message: `“OK - healthy”`  on hitting the **/healthz** endpoint ✅*
 
 ***
 ## Suggestion
@@ -14,9 +14,9 @@ You can try to extend the /healthz endpoint to **return a 500 HTTP ERROR - unhea
 To validate your endpoint, try deleting the database.db file and check if the endpoint is returning a 500 error.
 
 ****************************************************************************************************************************************************
-### Application correctly returns :
-* **200 status code :white_check_mark:**
-* **Amount of posts (post_count)** and **number of database  connections  (db_connection_count)** :white_check_mark:
+> ### Application correctly returns :
+* *200 status code ✅*
+* *`Amount of posts (post_count)` and `number of database  connections  (db_connection_count)` ✅*
 
 ****************************************************************************************************************************************************
 
@@ -24,17 +24,18 @@ To validate your endpoint, try deleting the database.db file and check if the en
 Well done!  Logs have been correctly recorded :white_check_mark:
 
 
-## Whats done correctly :heavy_check_mark:
-### Great work recording the following events to STDOUT & STDERR :
-* **Accessing an article :white_check_mark:**
-* **Access "About Us" page :white_check_mark:**
-* **A new article is created  :white_check_mark:**
-* **404 pages when a non-existing articles are accessed :white_check_mark:**
+> ### Whats done correctly :heavy_check_mark:
+Great work recording the following events to STDOUT & STDERR :
+* *Accessing an article ✅*
+* *Access "About Us" page ✅*
+* *A new article is created  ✅*
+* *404 pages when a non-existing articles are accessed ✅*
 
-## What requires change 
+****
 
-* **Logs have been captured at the DEBUG level. However, the specification requires us to record the logs to both `STDOUT & STDERR`. **
-* The STDOUT uses `sys.stdout` and the STDEER uses the `sys.stderr`. To get an idea about the same, you can take a look at the code given below :point_down:
+> ##### What requires change ?
+* *The logs are recorded into the `app.log` file whereas the specification requires us to record the logs to both `STDOUT & STDERR`.*
+* *The STDOUT uses `sys.stdout` and the STDEER uses the `sys.stderr`. To get an idea about the same, you can take a look at the code given below :point_down:*
 
 ```
 # set logger to handle STDOUT and STDERR 
@@ -47,14 +48,14 @@ Well done!  Logs have been correctly recorded :white_check_mark:
  logging.basicConfig(format=format_output, level=logging.DEBUG, handlers=handlers)
 
 ```
-* When the application encounters an **ERROR**, the logs should reflect the same and show it as error. However, in the current application, when existing the **non-existing article**, the logs capture it as a successful event and is captured at DEBUG level instead of ERROR level :point_down:
+
+> * When the application encounters an **ERROR**, the logs should reflect the same and show it as error. However, in the current application, when existing the **non-existing article**, the logs capture it as a successful event and is captured at DEBUG level instead of ERROR level :point_down:
 
 ***
 **Useful Resources 💡**
 
 * Here is a good blog about [**Introduction to Python Logging**](https://rmcomplexity.com/article/2020/12/01/introduction-to-python-logging.html)
 * [**Python Logging Guide – Best Practices**](https://coralogix.com/blog/python-logging-best-practices-tips/)
-
 
 
 
@@ -92,45 +93,45 @@ As of now,  I can see only one log - when accessing the metric :point_down:
 Please ensure that the ERROR message is recorded only in case of actual error. For eg. on Accessing a non-existent article id.
 
 ****************************************************************************************************************************************************
-### Dockerfile is present in the project directory :heavy_check_mark:
-* **Base version is set to 2.7 :white_check_mark:**
-* **Application has been exported to port 3111 :white_check_mark:**
-* **Install packages defined in the requirements.txt file :white_check_mark:**
-* **Database is initialized with the pre-defined posts in the init_db.py file :white_check_mark:**
+> ### Dockerfile is present in the project directory :heavy_check_mark:
+* *Base version is set to 2.7 ✅*
+* *Application has been exported to port 3111 ✅*
+* *Install packages defined in the requirements.txt file ✅*
+* *Database is initialized with the pre-defined posts in the init_db.py file ✅*
 
 ****************************************************************************************************************************************************
 
 
-### Docker image was successfully built using the docker commands :heavy_check_mark:
+> ### Docker image was successfully built using the docker commands ✅
 
 
 ****************************************************************************************************************************************************
 
 
-### 1. The docker image was executed locally :white_check_mark:
-### 2.  `docker-run-local` screenshot was provided :white_check_mark: 
-### 3.  All the commands and logs are  placed  in `docker_command` file :white_check_mark: 
+> ### *1. The docker image was executed locally ✅*
+> ### *2.  `docker-run-local` screenshot was provided ✅*
+> ### *3.  All the commands and logs are  placed  in `docker_command` file ✅*
 
 
 ****************************************************************************************************************************************************
 
-### 1. Screenshot for `ci-github-actions` is provided :heavy_check_mark:
-### 2. Screenshot for `ci-dockerhub` is provided :heavy_check_mark:
+> ### *1. Screenshot for `ci-github-actions` is provided ✅*
+> ### *2. Screenshot for `ci-dockerhub` is provided ✅*
 
 
 **The Github build and push was successful. I could verify the same :point_down:**
 
 
 ****************************************************************************************************************************************************
-### Screenshot for `kubectl get no` was provided :heavy_check_mark:
+> ### *Screenshot for `kubectl get no` was provided ✅*
 
 
 ***
 **Additional Learning Resources 💡**
    * ** [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) - This is official kubernetes website which shows some of the useful commands that you may encounter when working with Kuberenetes**
 ****************************************************************************************************************************************************
-### 1. All the 3 manifests (namespace, deploy and service ) are correctly constructed :heavy_check_mark:
-###  2. Great job at ensuring that Kubernetes declarative manifests are applied using kubectl command and ensuring that the screenshot shows the expected output. :heavy_check_mark:
+### *1. All the 3 manifests (namespace, deploy and service ) are correctly constructed ✅*
+### * 2. Great job at ensuring that Kubernetes declarative manifests are applied using kubectl command and ensuring that the screenshot shows the expected output. ✅*
 
 ***
 ### Additional Resources 💡
@@ -138,8 +139,8 @@ Please ensure that the ERROR message is recorded only in case of actual error. F
 * **You might find the article useful for further learning [**kubectl Cheat Sheet**](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)**
 ****************************************************************************************************************************************************
 
-### 1. Screenshot for `kubernetes-declarative-manifests`was provided :heavy_check_mark:
-### 2. Namespace, deployment and service resources are all in RUNNING status :heavy_check_mark:
+> ### 1. *Screenshot for `kubernetes-declarative-manifests` was provided ✅*
+### 2. *Namespace, deployment and service resources are all in RUNNING status ✅*
 
 
 * Screenshot for `kubernetes-declarative-manifests`was provided :white_check_mark:
@@ -155,35 +156,37 @@ However, as can be seen below the status is not correct and the two of the Pods 
 
 ****************************************************************************************************************************************************
 
-### Chart.yaml  :heavy_check_mark:
-* **apiVersion: v1 :white_check_mark:**
-* **name: techtrends :white_check_mark: **
-* **version: 1.0.0 :white_check_mark:**
+> ### Chart.yaml  :heavy_check_mark:
+* *apiVersion: v1 *✅
+* *name: techtrends *✅
+* *version: 1.0.0 *✅
 
-### Values.yaml :heavy_check_mark:
-* **Namespace: sandbox :white_check_mark:**
-* **ClusterIP service exposing port “4111” and target port “3111” using “TCP” protocol :white_check_mark:**
-* **Image “techtrends:latest” with pull policy set to “IfNotPresent” :white_check_mark:**
-* **Replicas: 1 :white_check_mark:**
-* **Resources requests of CPU 250m and memory 64Mi; and limits of CPU 500m and memory 128Mi :white_check_mark:**
-* **Container port: “3111” :white_check_mark:**
-* **Liveness and readiness probes checking on “/healthz” path on port “3111” :white_check_mark:**
+***
+> ### Values.yaml :heavy_check_mark:
+* *Namespace: sandbox ✅*
+* *ClusterIP service exposing port “4111” and target port “3111” using “TCP” protocol ✅*
+* *Image “techtrends:latest” with pull policy set to “IfNotPresent” ✅*
+* *Replicas: 1 ✅*
+* *Resources requests of CPU 250m and memory 64Mi; and limits of CPU 500m and memory 128Mi ✅*
+* *Container port: “3111” ✅*
+* *Liveness and readiness probes checking on “/healthz” path on port “3111” ✅*
 
 
 ****************************************************************************************************************************************************
 
-### values-staging.yaml :heavy_check_mark:
-* **Namespace: staging :white_check_mark:**
-* **Service port set to “5111” :white_check_mark:**
-* **Replicas: 3 :white_check_mark:**
-* **Resources requests of CPU 300m and memory 90Mi; and limits of CPU 500m and memory 128Mi :white_check_mark:**
+> ### values-staging.yaml :heavy_check_mark:
+* *Namespace: staging ✅*
+* *Service port set to “5111” ✅*
+* *Replicas: 3 ✅*
+* *Resources requests of CPU 300m and memory 90Mi; and limits of CPU 500m and memory 128Mi ✅*
 
-### values-prod.yaml :heavy_check_mark:
-* **Namespace: prod :white_check_mark:**
-* **Service port set to “7111” :white_check_mark:**
-* **Image pull policy: “Always” :white_check_mark:**
-* **Replicas: 5 :white_check_mark:**
-* **Resources requests of CPU 350m and memory 128Mi; and limits of CPU 500m and memory 256Mi :white_check_mark:**
+****
+> ### values-prod.yaml :heavy_check_mark:
+* *Namespace: prod ✅*
+* *Service port set to “7111” ✅*
+* *Image pull policy: “Always” ✅*
+* *Replicas: 5 ✅*
+* *Resources requests of CPU 350m and memory 128Mi; and limits of CPU 500m and memory 256Mi ✅*
 
 *** 
 ### Additional Resource 💡
@@ -191,8 +194,8 @@ However, as can be seen below the status is not correct and the two of the Pods 
 
 ****************************************************************************************************************************************************
 
-### 1. ArgoCD was successfully installed  and exposed through NodePort service :heavy_check_mark:
-### 2. Screenshot for `argocd-ui`was provided :heavy_check_mark:
+> ### *1. ArgoCD was successfully installed  and exposed through NodePort service ✅*
+### *2. Screenshot for `argocd-ui`was provided ✅*
 
 ***
 ### Additional Resources 💡
@@ -203,19 +206,21 @@ However, as can be seen below the status is not correct and the two of the Pods 
 Helm chart have been used :white_check_mark:
 
 
-### helm-techtrends-staging.yaml :heavy_check_mark:
-* **Name: techtrends-staging :white_check_mark:**
-* **Reference values file: values-staging.yaml :white_check_mark:**
+> ### helm-techtrends-staging.yaml :heavy_check_mark:
+* *Name: techtrends-staging ✅*
+* *Reference values file: values-staging.yaml ✅*
 
-### helm-techtrends-prod.yaml :heavy_check_mark:
-* **Name: techtrends-prod :white_check_mark:**
-* **Reference values file: values-prod.yaml :white_check_mark:**
+****
+
+> ### helm-techtrends-prod.yaml :heavy_check_mark:
+* *Name: techtrends-prod ✅*
+* *Reference values file: values-prod.yaml ✅*
 
 ****************************************************************************************************************************************************
 
-### 1. Application was successfully deployed using the ArgoCD :heavy_check_mark:
-### 2. Screenshot for `argocd-techtrends-staging`was provided :heavy_check_mark:
-### 3. Screenshot for `argocd-techtrends-prod`was provided :heavy_check_mark:
+> ### *1. Application was successfully deployed using the ArgoCD ✅ *
+### *2. Screenshot for `argocd-techtrends-staging`was provided ✅ *
+### *3. Screenshot for `argocd-techtrends-prod`was provided ✅ *
 
 ****************************************************************************************************************************************************
 
@@ -233,7 +238,7 @@ Hope you make the required changes soon. We look forward to receiving your futur
 * [**ImagePullBackOff / ErrImagePull - Causes and Solution**](https://cloud.google.com/kubernetes-engine/docs/troubleshooting#ImagePullBackOff)
 
 ***
-**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [Knowledge](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
+**PS:** If you have any doubts regarding any of the concept, feel free to search or post a question on [**Knowledge Portal**](https://knowledge.udacity.com/) where many of the fellow students and mentors may have faced the same situation before and would have provided the appropriate steps to resolve it.
 
 
 **Have a Good Day and Stay Safe ✌**

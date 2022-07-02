@@ -1,10 +1,14 @@
 Code is syntax highlighted :white_check_mark:
 
-Your code has the **appropriate syntax highlighting**, making it especially readable and easy on the eye. :white_check_mark:
 
-* [Mark Up - Highlighter](http://markup.su/highlighter/)
-* [SQL formatter](http://www.dpriver.com/pp/sqlformat.htm)
+> ### *Your code has the **appropriate syntax highlighting**, making it especially readable and easy on the eye. ✅*
+![Flameshot-2022-06-28_19-57.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1656467872/Flameshot-2022-06-28_19-57.png)
 
+***
+### Additional Resources 💡
+Here are some of the online tools to format your SQL queries :
+* ** *[Mark Up - Highlighter](http://markup.su/highlighter/)* **
+* ** *[SQL formatter](http://www.dpriver.com/pp/sqlformat.htm)* **
 
 
 To make your code easy to read - easier on the eye, it needs to have some syntax highlighting, a way that would make it less clumsy to read. You currently have your DDL code formatted in a single colour, but that is a little less than the desired code formatting. Your DML code on the other hand, does not appear to have any formatting at all.
@@ -21,7 +25,16 @@ You can use any of the following online formatter for this purpose :point_down:
 
 *****************************************************************************************************************
 
-Query is indented and split into multiple lines :white_check_mark:
+> ### *Query is indented and split into multiple lines ✅*
+![Flameshot-2022-06-28_19-59.png](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/263256/1656467993/Flameshot-2022-06-28_19-59.png)
+
+***
+
+### Additional Resources 💡
+Some online tools  to indent the SQL queries are :
+* ** *[Indent SQL](https://poorsql.com/)* **
+* ** *[SQL Indentation](https://www.dpriver.com/pp/sqlformat.htm)* **
+
 
 Nice work here! Your code is properly indented at the **appropriate places and multi-lined at the appropriate lengths, making it clean and even more readable.**  :white_check_mark:
 
@@ -58,7 +71,7 @@ You can indent your queries using a number of tools available online, for exampl
 [Indent SQL](https://www.dpriver.com/pp/sqlformat.htm)
 
 *****************************************************************************************************************
-Flaws in existing schema are mentioned  :white_check_mark:
+> ### *Flaws in existing schema are mentioned  ✅*
 
 Amazing job going above and beyond, you had covered every issue with the original data schema! ✌
 
@@ -67,14 +80,23 @@ Amazing job going above and beyond, you had covered every issue with the origina
 * The “bad_posts” table shows several columns that should really be split into a separate table, e.g. “Users”, “Topics”, “Votes”.
 
 *****************************************************************************************************************
-DDL queries run without any errors.
-All the tables were successfully created :point_down:
+> ### *1. DDL queries run without any errors ✅*
+> ### *2. All the tables were successfully created ✅*
 
 
 Excellent! Your code **runs without errors when copied, pasted, and executed 'as-is'.** Making sure your code runs without errors, reduces the number of round-trips that you'll have to make to get your project reviewed. :white_check_mark:
 
 *****************************************************************************************************************
-All required fields are present in the data model :white_check_mark:
+> ### *All required fields are present in the data model ✅*
+***
+Good job, for creating audit fields ( like `last_login` ) in all the tables. The addition of those fields will answer all the features and queries that are outlined in the guidelines.  :white_check_mark:
+
+```
+2.a
+- List all users who haven’t logged-in in the last year.
+2.b
+- List all users who haven’t created any post.
+```
 
 
 Good job, for creating audit fields ( like `last_login` ) in all the tables. The addition of those fields will answer all the features and queries that are outlined in the guidelines.  :white_check_mark:
@@ -90,7 +112,9 @@ Important auditing fields are missing in some tables where are required  to answ
 
 
 *****************************************************************************************************************
-Data model is in normalised form :white_check_mark:
+> ### *Data model is in normalised form ✅*
+*Good work for **designing your schema to conform to first, second, and third normal forms.** This is a true demonstration that you very much grasped the import of the lessons. Well done* :clap:
+
 
 Nice work creating a completely normalized data model 👏 This a tough work! While it didn't really relate to this project, don't forget that there are some times when you might not want to fully normalize your data.
 

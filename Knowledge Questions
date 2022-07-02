@@ -12,3 +12,14 @@ https://knowledge.udacity.com/questions/860413
 
 Old
 https://knowledge.udacity.com/questions/613411
+
+
+
+
+
+
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner
+- Remove SSH from Circle CI and add it again
+
+
+Opentext098!
